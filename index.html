@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0073)https://bug-squasher-69.preview.emergentagent.com/smr_quiz_corregido.html -->
+<!-- saved from url=(0060)https://auth-fix-142.preview.emergentagent.com/smr_quiz.html -->
 <html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,8 @@
 <meta name="theme-color" content="#050510">
 <meta name="color-scheme" content="dark">
 <!-- Fuentes y estilos locales para GitHub Pages -->
-<link href="./SMR Quiz_files/css2" rel="stylesheet">
-<link rel="stylesheet" href="./SMR Quiz_files/all.min.css">
+<link href="./index_files/css2" rel="stylesheet">
+<link rel="stylesheet" href="./index_files/all.min.css">
 <style>
 /* ===== TODOS LOS ESTILOS EXISTENTES SE MANTIENEN IGUAL ===== */
 :root {
@@ -274,6 +274,52 @@ margin-top: 10px;
 transform: translateY(-2px);
 box-shadow: 0 10px 25px rgba(0, 242, 255, 0.3);
 filter: brightness(1.1);
+}
+/* BOTÓN GOOGLE */
+.login-divider {
+display: flex;
+align-items: center;
+margin: 20px 0;
+color: rgba(255, 255, 255, 0.5);
+font-size: 12px;
+}
+.login-divider::before,
+.login-divider::after {
+content: '';
+flex: 1;
+height: 1px;
+background: linear-gradient(90deg, transparent, rgba(0, 242, 255, 0.3), transparent);
+}
+.login-divider span {
+padding: 0 15px;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+.btn-google {
+width: 100%;
+padding: 14px 20px;
+background: rgba(255, 255, 255, 0.95);
+color: #333;
+border: none;
+border-radius: 12px;
+font-size: 14px;
+font-weight: 600;
+cursor: pointer;
+transition: all 0.3s ease;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+font-family: 'Roboto', sans-serif;
+}
+.btn-google:hover {
+background: #fff;
+transform: translateY(-2px);
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+.btn-google .google-icon {
+flex-shrink: 0;
 }
 .login-footer {
 text-align: center;
@@ -674,6 +720,43 @@ border-color: var(--glass-border);
 .level-card.locked .btn-play {
 cursor: not-allowed;
 opacity: 0.7;
+}
+/* Colores por dificultad */
+.level-card.level-facil {
+border-left: 4px solid #22c55e;
+background: linear-gradient(135deg, rgba(34, 197, 94, 0.15), var(--card-bg));
+}
+.level-card.level-facil:hover {
+border-color: #22c55e;
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 25px rgba(34, 197, 94, 0.3);
+}
+.level-card.level-facil .level-icon {
+background: linear-gradient(135deg, #22c55e, #16a34a);
+box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
+}
+.level-card.level-medio {
+border-left: 4px solid #eab308;
+background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), var(--card-bg));
+}
+.level-card.level-medio:hover {
+border-color: #eab308;
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 25px rgba(234, 179, 8, 0.3);
+}
+.level-card.level-medio .level-icon {
+background: linear-gradient(135deg, #eab308, #ca8a04);
+box-shadow: 0 0 20px rgba(234, 179, 8, 0.4);
+}
+.level-card.level-dificil {
+border-left: 4px solid #ef4444;
+background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), var(--card-bg));
+}
+.level-card.level-dificil:hover {
+border-color: #ef4444;
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 25px rgba(239, 68, 68, 0.3);
+}
+.level-card.level-dificil .level-icon {
+background: linear-gradient(135deg, #ef4444, #dc2626);
+box-shadow: 0 0 20px rgba(239, 68, 68, 0.4);
 }
 .level-header {
 display: flex;
@@ -3492,10 +3575,10 @@ font-size: 1.5rem;
 }
 }
 </style>
-<style type="text/css">:root img[width="728"][height="90"], :root [href="https://adstub.net/cina777/"], :root [href="https://adstub.net/arab777/"], :root [href="https://adstub.net/ratu89/"], :root [href="https://adstub.net/judi89/"], :root [href^="//mage98rquewz.com/"], :root [href^="//x4pollyxxpush.com/"], :root span[id^="ezoic-pub-ad-placeholder-"], :root ins.adsbygoogle[data-ad-slot], :root ins.adsbygoogle[data-ad-client], :root img[src^="https://s-img.adskeeper.com/"], :root guj-ad, :root gpt-ad, :root div[ow-ad-unit-wrapper], :root div[id^="zergnet-widget"], :root div[id^="vuukle-ad-"], :root div[id^="taboola-stream-"], :root div[id^="sticky_ad_"], :root div[id^="st"][style^="z-index: 999999999;"], :root div[id^="rc-widget-"], :root div[id^="mrec-leaderboard-"], :root div[id^="gpt_ad_"], :root div[id^="ezoic-pub-ad-"], :root div[id^="dfp-ad-"], :root div[id^="crt-"][style], :root div[id^="apn_native_ad_slot_"], :root div[id^="adspot-"], :root div[id^="adrotate_widgets-"], :root ps-connatix-module, :root div[id^="ad_position_"], :root div[id^="ad-div-"], :root div[id*="ScriptRoot"], :root div[id*="MarketGid"], :root [href="https://adstub.net/rusia777/"], :root div[data-id-advertdfpconf], :root div[data-dfp-id], :root hl-adsense, :root div[data-contentexchange-widget], :root div[data-alias="300x250 Ad 2"], :root div[data-adunit-path], :root div[data-adname], :root div[data-ad-placeholder], :root a[href^="https://osfultrbriolenai.info/"], :root div[class^="Adstyled__AdWrapper-"], :root a[href^="https://go.xlviiirdr.com"], :root div[class$="-adlabel"], :root display-ads, :root a[href^="https://go.grinsbest.com/"], :root citrus-ad-wrapper, :root a[href^="https://s.zlinkd.com/"], :root bottomadblock, :root amp-fx-flying-carpet, :root amp-embed[type="taboola"], :root amp-connatix-player, :root div[id^="google_dfp_"], :root ad-slot, :root a[href^="https://www.purevpn.com/"][href*="&utm_source=aff-"], :root a[href^="https://www.privateinternetaccess.com/"] > img, :root a[href^="https://www.onlineusershielder.com/"], :root a[href^="https://financeads.net/tc.php?"], :root a[href^="https://www.mrskin.com/tour"], :root a[href^="https://www.infowarsstore.com/"] > img, :root a[href^="https://ak.psaltauw.net/"], :root broadstreet-zone-container, :root a[href^="https://www.highperformancecpmgate.com/"], :root amp-ad, :root a[href^="https://www.highcpmrevenuenetwork.com/"], :root a[href^="https://www.get-express-vpn.com/offer/"], :root a[href^="https://lnkxt.bannerator.com/"], :root a[href^="https://www.geekbuying.com/dynamic-ads/"], :root [href^="https://groorsoa.net/"], :root a[href^="https://www.financeads.net/tc.php?"], :root a[href^="https://www.effectiveratecpm.com/"], :root [href^="https://www.herbanomic.com/"] > img, :root a[href^="https://www.dql2clk.com/"], :root a[href^="https://www.nutaku.net/signup/landing/"], :root a[href^="https://www.dating-finder.com/signup/?ai_d="], :root a[href^="https://explore-site.com/"], :root a[href^="https://www.brazzersnetwork.com/landing/"], :root [data-template-type="nativead"], :root a[href^="https://www.adultempire.com/"][href*="?partner_id="], :root a[href^="https://voluum.prom-xcams.com/"], :root a[href^="https://twinrdsyte.com/"], :root a[href^="https://twinrdsrv.com/"], :root a[href^="https://syndicate.contentsserved.com/"], :root div[data-alias="300x250 Ad 1"], :root a[href^="https://trk.nfl-online-streams.club/"], :root a[href^="https://tracking.avapartner.com/"], :root a[href^="https://track.wg-aff.com"], :root a[href^="https://track.ultravpn.com/"], :root a[href^="https://track.afcpatrk.com/"], :root a[href^="https://track.adform.net/"], :root a[href^="https://torguard.net/aff.php"] > img, :root [data-identity="adhesive-ad"], :root a[href^="https://tc.tradetracker.net/"] > img, :root a[href^="https://tatrck.com/"], :root [href^="https://zstacklife.com/"] img, :root a[href^="https://click.candyoffers.com/"], :root a[href^="https://t.aslnk.link/"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"], :root a[href^="https://t.ajump1.com/"], :root a[href^="https://t.adating.link/"], :root a[href^="https://go.trackitalltheway.com/"], :root [href^="https://track.fiverr.com/visit/"] > img, :root a[href^="https://syndication.exoclick.com/"], :root a[href^="https://syndication.dynsrvtbg.com/"], :root .gnt_em_vp_c[data-g-s="vp_dk"], :root div[data-ad-wrapper], :root a[href^="https://svb-analytics.trackerrr.com/"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"] + .ob_source, :root a[href^="http://www.iyalc.com/"], :root a[href^="https://claring-loccelkin.com/"], :root a[href^="https://stardomcoit.com/"], :root a[href^="https://track.aftrk5.com/"], :root a[href^="https://slkmis.com/"], :root a[href^="https://myclick-2.com/"], :root a[href^="https://sexynearme.com/"], :root [data-ad-manager-id], :root a[href^="https://s.zlinkr.com/"], :root [href="https://adstub.net/gaza88/"], :root a[href^="https://ad.doubleclick.net/"], :root a[href^="https://static.fleshlight.com/images/banners/"], :root a[href^="https://s.zlink7.com/"], :root a[href^="https://s.ma3ion.com/"], :root a[href^="https://s.eunow4u.com/"], :root a[href^="https://random-affiliate.atimaze.com/"], :root #kt_player > div[style$="display: block;"][style*="inset: 0px;"], :root [href$="/sexdating.php"], :root a[href^="https://quotationfirearmrevision.com/"], :root a[href^="https://pubads.g.doubleclick.net/"], :root a[href^="https://prf.hn/click/"][href*="/camref:"] > img, :root a[href^="https://serve.awmdelivery.com/"], :root a[href^="https://www.dating-finder.com/?ai_d="], :root a[href^="https://prf.hn/click/"][href*="/adref:"] > img, :root [href^="https://ap.octopuspop.com/click/"] > img, :root app-ad, :root a[href^="https://postback1win.com/"], :root a[href^="https://a.adtng.com/"], :root a[href^="https://playnano.online/offerwalls/?ref="], :root a[href^="https://mmwebhandler.aff-online.com/"], :root a[href^="https://www.bet365.com/"][href*="affiliate="], :root a[href^="https://pb-track.com/"], :root a[href^="https://pb-front.com/"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root a[href^="https://streamate.com/landing/click/"], :root a[href^="https://upsups.click/"], :root a[href^="https://ndt5.net/"], :root a[href^="https://natour.naughtyamerica.com/track/"], :root a[href^="https://mediaserver.entainpartners.com/renderBanner.do?"], :root [data-ad-name], :root a[href^="https://loboclick.com/"], :root a[href^="https://lead1.pl/"], :root a[href^="https://landing.brazzersnetwork.com/"], :root a[href^="https://juicyads.in/"], :root a[href^="https://snowdayonline.xyz/"], :root a[href^="https://join.dreamsexworld.com/"], :root a[href^="https://join.bannedsextapes.com/track/"], :root a[href^="https://jaxofuna.com/"], :root a[href^="https://italarizege.xyz/"], :root a[href^="https://identicaldrench.com/"], :root ad-shield-ads, :root a[href^="https://hot-growngames.life/"], :root a[href^="https://helmethomicidal.com/"], :root display-ad-component, :root a[href^="https://golinks.work/"], :root a[href^="https://s.zlinkn.com/"], :root a[href^="https://go.xxxvjmp.com/"], :root a[href^="https://go.xxxjmp.com"], :root a[href^="https://zirdough.net/"], :root [class^="tile-picker__CitrusBannerContainer-sc-"], :root a[href^="https://go.xxxiijmp.com"], :root a[href^="https://go.xtbaffiliates.com/"], :root [data-role="tile-ads-module"], :root a[href^="https://go.xlviirdr.com"], :root a[href^="https://go.xlivrdr.com"], :root a[href^="https://ismlks.com/"], :root [href^="https://www.mypillow.com/"] > img, :root a[href^="https://go.xlirdr.com"], :root [data-css-class="dfp-inarticle"], :root a[href^="https://go.tmrjmp.com"], :root a[href^="https://go.markets.com/visit/?bta="], :root a[href^="https://billing.purevpn.com/aff.php"] > img, :root a[href^="https://go.hpyrdr.com/"], :root a[href^="https://lijavaxa.com/"], :root a[href^="https://go.goaserv.com/"], :root app-large-ad, :root [href^="https://turtlebids.irauctions.com/"] img, :root div[data-adunit], :root a[href^="https://go.etoro.com/"] > img, :root a[href^="https://go.dmzjmp.com"], :root a[href^="https://www.bang.com/?aff="], :root #mgb-container > #mgb, :root a[href^="https://go.admjmp.com"], :root a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="] > img, :root a[href^="https://datewhisper.life/"], :root a[href^="https://click.linksynergy.com/fs-bin/"] > img, :root a[href^="https://get-link.xyz/"], :root a[href^="https://www.mrskin.com/account/"], :root a[href^="https://www.adskeeper.com"], :root a[data-redirect^="https://paid.outbrain.com/network/redir?"], :root [href^="https://clicks.affstrack.com/"] > img, :root a[href^="https://engine.phn.doublepimp.com/"], :root a[href^="https://dl-protect.net/"], :root a[href*=".foxqck.com/"], :root a[href^="https://ctosrd.com/"], :root a[href^="https://go.bushheel.com/"], :root a[href^="https://ctjdwm.com/"], :root [href="//sexcams.plus/"], :root a[href^="https://camfapr.com/landing/click/"], :root a[href^="https://prf.hn/click/"][href*="/creativeref:"] > img, :root a[href*="&maxads="], :root a[href^="http://www.adultempire.com/unlimited/promo?"][href*="&partner_id="], :root a[href^="https://1betandgonow.com/"], :root a[href^="https://chaturbate.com/in/?"], :root a[href^="https://t.ajrkm1.com/"], :root a[href^="https://bongacams10.com/track?"], :root a[href*=".g2afse.com/"], :root a[href^="https://bodelen.com/"], :root a[href^="//hoodingluster.com/"], :root a[href^="https://black77854.com/"], :root a[href^="https://getmatchedlocally.com/"], :root app-advertisement, :root a[href^="https://rixofa.com/"], :root a[href^="https://best-experience-cool.com/"], :root [data-taboola-options], :root a[href^="https://believessway.com/"], :root a[href^="https://Click.ggpickaff.com/"], :root a[href^="https://banners.livepartners.com/"], :root a[href^="http://revolvemockerycopper.com/"], :root a[href^="https://awptjmp.com/"], :root a[href^="https://join.sexworld3d.com/track/"], :root a[href^="https://aweptjmp.com/"], :root a[href^="https://ausoafab.net/"], :root a[href^="https://clicks.pipaffiliates.com/"], :root a[href^="https://aj1070.online/"], :root a[href^="https://a.bestcontentoperation.top/"], :root a[href^="https://adultfriendfinder.com/go/"], :root a[href^="https://ads.planetwin365affiliate.com/"], :root a[href^="https://ads.leovegas.com/"], :root a[href^="https://go.xlvirdr.com"], :root img[src^="https://images.purevpnaffiliates.com"], :root a[href^="https://porntubemate.com/"], :root a[href^="https://click.dtiserv2.com/"], :root a[href^="https://clickadilla.com/"], :root a[href^="https://a.medfoodhome.com/"], :root a[href^="https://cam4com.go2cloud.org/"], :root .nya-slot[style], :root a[href^="https://a.bestcontentweb.top/"], :root atf-ad-slot, :root a[href^="https://a2.adform.net/"], :root a[href^="https://a.candyai.love/"], :root .banner-img > .pbl, :root [data-m-ad-id], :root a[href^="https://a-ads.com/"], :root a[href^="https://1winpb.com/"], :root div[id^="optidigital-adslot"], :root [href^="https://wsup.ai/"], :root a[href^="https://123-stream.org/"], :root a[href^="https://in.rabbtrk.com/"], :root a[href^="http://www.h4trck.com/"], :root [href^="https://a.acebet.com/api/click?"], :root a[href^="http://www.friendlyduck.com/AF_"], :root a[href^="http://partners.etoro.com/"], :root [href="https://chaturbate.jjgirls.com/"] > img, :root a[href^="http://cam4com.go2cloud.org/aff_c?"], :root a[href^="https://ads.betfair.com/redirect.aspx?"], :root amp-ad-custom, :root a[href^="http://trk.globwo.online/"], :root a[onclick^="window.location.replace('https://random-affiliate.atimaze.com/"], :root a[href^="https://bongacams2.com/track?"], :root a-ad, :root a[href^="https://offhandpump.com/"], :root a[href^="http://stickingrepute.com/"], :root #slashboxes > .deals-rail, :root div[aria-label="Ads"], :root [href^="http://mypillow.com/"] > img, :root a[href^="http://bongacams.com/track?"], :root a[href^="//startgaming.net/tienda/" i], :root a[href^="https://a.medfoodsafety.com/"], :root a[href^="//go.eabids.com/"], :root a[href^=" https://www.friendlyduck.com/AF_"], :root [data-cl-spot-id], :root a[href*="/jump/next.php?r="], :root a[href^="https://go.nordvpn.net/aff"] > img, :root .\[\&_\.gdprAdTransparencyCogWheelButton\]\:\!pjra-z-\[5\], :root [href^="http://clicks.totemcash.com/"], :root a[href^="https://ad.zanox.com/ppc/"] > img, :root [data-d-ad-id], :root a[href*=".engine.adglare.net/"], :root div[id^="lazyad-"], :root a[href^="http://com-1.pro/"], :root [href^="https://www.profitablegatecpm.com/"], :root a[href*=".cfm?domain="][href*="&fp="], :root a[href^="https://ab.advertiserurl.com/aff/"], :root a[data-oburl^="https://paid.outbrain.com/network/redir?"], :root [id^="section-ad-banner"], :root [id^="ad_slider"], :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="], :root a[href^="https://wmctjd.com/"], :root a[href*="//jjgirls.com/sex/Chaturbate"], :root [id^="ad-wrap-"], :root [href^="https://zone.gotrackier.com/"], :root a[href^="http://sarcasmadvisor.com/"], :root [href^="https://www.restoro.com/"], :root a[href^="https://track.totalav.com/"], :root a[href^="https://ctrdwm.com/"], :root [href^="https://www.targetingpartner.com/"], :root a[href^="https://join.virtuallust3d.com/"], :root .section-subheader > .section-hotel-prices-header, :root [href^="https://www.hostg.xyz/"] > img, :root a[href^="https://bngpt.com/"], :root a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="], :root a[href^="http://adultfriendfinder.com/go/"], :root a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="], :root a[href^="https://tour.mrskin.com/"], :root div[id^="ad-position-"], :root a[href^="https://www.toprevenuegate.com/"], :root a[href^="https://bc.game/"], :root a[href^="http://join.brokestraightboys.com/track/"], :root div[id^="div-ads-"], :root [href^="https://rapidgator.net/article/premium/ref/"], :root [href^="https://join.girlsoutwest.com/"], :root a[href^="https://activate-game.com/"], :root .scroll-fixable.rail-right > .deals-rail, :root [data-wpas-zoneid], :root a[href^="https://track.aftrk3.com/"], :root [href^="https://join3.bannedsextapes.com"], :root div[data-adzone], :root div[id^="adngin-"], :root [data-rc-widget], :root span[data-ez-ph-id], :root [href^="https://track.aftrk1.com/"], :root [href^="https://join.playboyplus.com/track/"], :root a[href^="https://go.xxxijmp.com"], :root [href^="https://istlnkcl.com/"], :root a[href^="https://trk.softonixs.xyz/"], :root a[href^="https://iqbroker.com/"][href*="?aff="], :root [href^="https://rpwmct.com/"], :root [href^="https://wct.link/click?"], :root a[href^="https://t.acam.link/"], :root a[href^="https://go.strpjmp.com/"], :root [href^="https://url.totaladblock.com/"], :root a[href^="https://go.rmishe.com/"], :root [href^="https://ilovemyfreedoms.com/landing-"], :root [href="https://adstub.net/indo666/"], :root [href^="https://glersakr.com/"], :root a[href^="https://tm-offers.gamingadult.com/"], :root [href^="https://charmingdatings.life/"], :root [data-id^="div-gpt-ad"], :root a[href^="https://tracker.loropartners.com/"], :root [href^="https://awbbjmp.com/"], :root a[href^="https://www.friendlyduck.com/AF_"], :root [href^="https://ad1.adfarm1.adition.com/"], :root a[href^="https://t.ajrkm3.com/"], :root [href^="https://aads.com/campaigns/"], :root a[href^="https://fc.lc/ref/"], :root a[href^="https://go.bbrdbr.com"], :root a[href^="http://tc.tradetracker.net/"] > img, :root a[href^="https://s.zlink3.com/"], :root a[href^="http://sneakyadministration.com/"], :root [href^="https://www.brighteonstore.com/products/"] img, :root a[href^="https://bngprm.com/"], :root [href^="https://shiftnetwork.infusionsoft.com/go/"] > img, :root [href^="http://www.mypillow.com/"] > img, :root .ob_container .item-container-obpd, :root [id^="div-gpt-ad"], :root [href="https://jdrucker.com/gold"] > img, :root a[href^="https://join.virtualtaboo.com/track/"], :root [id^="ad_sky"], :root [name^="google_ads_iframe"], :root aside[id^="adrotate_widgets-"], :root a[href^="https://www.liquidfire.mobi/"], :root DFP-AD, :root .grid > .container > #aside-promotion, :root [data-type="ad-vertical"], :root [href^="https://go.xlrdr.com"], :root a[href^="https://s.cant3am.com/"], :root [data-testid^="taboola-"], :root [data-testid^="section-AdRowBillboard"], :root a[href^="https://track.1234sd123.com/"], :root zeus-ad, :root [data-testid="prism-ad-wrapper"], :root [href^="https://ad.admitad.com/"], :root [href^="https://mypillow.com/"] > img, :root [data-testid="ad_testID"], :root [data-mobile-ad-id], :root [data-dynamic-ads], :root a[href^="https://gamingadlt.com/?offer="], :root [data-desktop-ad-id], :root a[href^="https://go.rmhfrtnd.com"], :root a[href^="https://pb-imc.com/"], :root a[href^="https://www8.smartadserver.com/"], :root topadblock, :root a[href^="//s.zlinkd.com/"], :root [href^="https://mypatriotsupply.com/"] > img, :root [data-testid="adBanner-wrapper"], :root [href^="https://mylead.global/stl/"] > img, :root a[href*=".adsrv.eacdn.com/"], :root [href^="https://antiagingbed.com/discount/"] > img, :root #teaser1[style^="width:autopx;"], :root [href^="https://www.cloudways.com/en/?id"], :root [data-asg-ins], :root [data-block-type="ad"], :root [data-ad-width], :root a[href^="https://clickins.slixa.com/"], :root [onclick*="content.ad/"], :root a[href^="https://go.cmtaffiliates.com/"], :root [href^="https://optimizedelite.com/"] > img, :root div[data-ad-region], :root AMP-AD, :root [data-ad-cls], :root a[href^="https://www.adxsrve.com/"], :root a[href^="https://click.Ggpickaff.com/"], :root [data-ez-name], :root a[href^="https://go.mnaspm.com/"], :root a[href^="https://service.bv-aff-trx.com/"], :root a[href^="https://6-partner.com/"], :root [class^="s2nPlayer"], :root [href^="https://affiliate.fastcomet.com/"] > img, :root [class^="adDisplay-module"], :root a[href^="https://adclick.g.doubleclick.net/"], :root [data-freestar-ad][id], :root AD-SLOT, :root a[href^="https://combodef.com/"], :root a[href^="https://click.hoolig.app/"], :root a[href^="https://www.googleadservices.com/pagead/aclk?"] > img, :root [data-ad-module], :root a[href^="https://a.bestcontentfood.top/"], :root #kt_player > a[target="_blank"], :root a[href^="https://go.skinstrip.net"][href*="?campaignId="], :root #teaser2[style^="width:autopx;"], :root [data-revive-zoneid], :root a[href^="https://losingoldfry.com/"], :root div[id^="div-gpt-"], :root a[href^="https://gml-grp.com/"], :root .ob_dual_right > .ob_ads_header ~ .odb_div, :root div[data-ad-targeting], :root a[style="width:100%;height:100%;z-index:10000000000000000;position:absolute;top:0;left:0;"], :root [href^="https://www.avantlink.com/click.php"] img, :root [data-testid="commercial-label-taboola"], :root [class^="div-gpt-ad"], :root a[href^="https://traffdaq.com/"], :root #teaser3[style^="width:autopx;"], :root a[href^="https://go.hpyjmp.com"], :root iframe[scrolling="no"][sandbox*="allow-popups allow-modals"][style^="width: 100%; height: 100%; border: none;"], :root [href^="https://mystore.com/"] > img, :root [class^="amp-ad-"], :root a[href^="https://clixtrac.com/"], :root a[href^="https://wittered-mainging.com/"], :root #teaser3[style="width: 100%;text-align: center;display: scroll;position:fixed;bottom: 0;margin: 0 auto;z-index: 103;"] { display: none !important; }</style></head>
+<style type="text/css">:root img[width="728"][height="90"], :root [href="https://adstub.net/cina777/"], :root [href="https://adstub.net/arab777/"], :root [href="https://adstub.net/ratu89/"], :root [href="https://adstub.net/judi89/"], :root [href^="//mage98rquewz.com/"], :root [href^="//x4pollyxxpush.com/"], :root span[id^="ezoic-pub-ad-placeholder-"], :root ins.adsbygoogle[data-ad-slot], :root ins.adsbygoogle[data-ad-client], :root img[src^="https://s-img.adskeeper.com/"], :root guj-ad, :root gpt-ad, :root div[ow-ad-unit-wrapper], :root div[id^="zergnet-widget"], :root div[id^="vuukle-ad-"], :root div[id^="taboola-stream-"], :root div[id^="sticky_ad_"], :root div[id^="st"][style^="z-index: 999999999;"], :root div[id^="rc-widget-"], :root div[id^="mrec-leaderboard-"], :root div[id^="gpt_ad_"], :root div[id^="ezoic-pub-ad-"], :root div[id^="dfp-ad-"], :root div[id^="crt-"][style], :root div[id^="apn_native_ad_slot_"], :root div[id^="adspot-"], :root div[id^="adrotate_widgets-"], :root ps-connatix-module, :root div[id^="ad_position_"], :root div[id^="ad-div-"], :root div[id*="ScriptRoot"], :root div[id*="MarketGid"], :root [href="https://adstub.net/rusia777/"], :root div[data-id-advertdfpconf], :root div[data-dfp-id], :root hl-adsense, :root div[data-contentexchange-widget], :root div[data-alias="300x250 Ad 2"], :root div[data-adunit-path], :root div[data-adname], :root div[data-ad-placeholder], :root a[href^="https://osfultrbriolenai.info/"], :root div[class^="Adstyled__AdWrapper-"], :root a[href^="https://go.xlviiirdr.com"], :root div[class$="-adlabel"], :root display-ads, :root a[href^="https://go.grinsbest.com/"], :root citrus-ad-wrapper, :root a[href^="https://s.zlinkd.com/"], :root bottomadblock, :root amp-fx-flying-carpet, :root amp-embed[type="taboola"], :root amp-connatix-player, :root div[id^="google_dfp_"], :root ad-slot, :root a[href^="https://www.purevpn.com/"][href*="&utm_source=aff-"], :root a[href^="https://www.privateinternetaccess.com/"] > img, :root a[href^="https://www.onlineusershielder.com/"], :root a[href^="https://financeads.net/tc.php?"], :root a[href^="https://www.mrskin.com/tour"], :root a[href^="https://www.infowarsstore.com/"] > img, :root a[href^="https://ak.psaltauw.net/"], :root broadstreet-zone-container, :root a[href^="https://www.highperformancecpmgate.com/"], :root amp-ad, :root a[href^="https://www.highcpmrevenuenetwork.com/"], :root a[href^="https://www.get-express-vpn.com/offer/"], :root a[href^="https://lnkxt.bannerator.com/"], :root a[href^="https://www.geekbuying.com/dynamic-ads/"], :root [href^="https://groorsoa.net/"], :root a[href^="https://www.financeads.net/tc.php?"], :root a[href^="https://www.effectiveratecpm.com/"], :root [href^="https://www.herbanomic.com/"] > img, :root a[href^="https://www.dql2clk.com/"], :root a[href^="https://www.nutaku.net/signup/landing/"], :root a[href^="https://www.dating-finder.com/signup/?ai_d="], :root a[href^="https://explore-site.com/"], :root a[href^="https://www.brazzersnetwork.com/landing/"], :root [data-template-type="nativead"], :root a[href^="https://www.adultempire.com/"][href*="?partner_id="], :root a[href^="https://voluum.prom-xcams.com/"], :root a[href^="https://twinrdsyte.com/"], :root a[href^="https://twinrdsrv.com/"], :root a[href^="https://syndicate.contentsserved.com/"], :root div[data-alias="300x250 Ad 1"], :root a[href^="https://trk.nfl-online-streams.club/"], :root a[href^="https://tracking.avapartner.com/"], :root a[href^="https://track.wg-aff.com"], :root a[href^="https://track.ultravpn.com/"], :root a[href^="https://track.afcpatrk.com/"], :root a[href^="https://track.adform.net/"], :root a[href^="https://torguard.net/aff.php"] > img, :root [data-identity="adhesive-ad"], :root a[href^="https://tc.tradetracker.net/"] > img, :root a[href^="https://tatrck.com/"], :root [href^="https://zstacklife.com/"] img, :root a[href^="https://click.candyoffers.com/"], :root a[href^="https://t.aslnk.link/"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"], :root a[href^="https://t.ajump1.com/"], :root a[href^="https://t.adating.link/"], :root a[href^="https://go.trackitalltheway.com/"], :root [href^="https://track.fiverr.com/visit/"] > img, :root a[href^="https://syndication.exoclick.com/"], :root a[href^="https://syndication.dynsrvtbg.com/"], :root .gnt_em_vp_c[data-g-s="vp_dk"], :root div[data-ad-wrapper], :root a[href^="https://svb-analytics.trackerrr.com/"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"] + .ob_source, :root a[href^="http://www.iyalc.com/"], :root a[href^="https://claring-loccelkin.com/"], :root a[href^="https://stardomcoit.com/"], :root a[href^="https://track.aftrk5.com/"], :root a[href^="https://slkmis.com/"], :root a[href^="https://myclick-2.com/"], :root a[href^="https://sexynearme.com/"], :root [data-ad-manager-id], :root a[href^="https://s.zlinkr.com/"], :root [href="https://adstub.net/gaza88/"], :root a[href^="https://ad.doubleclick.net/"], :root a[href^="https://static.fleshlight.com/images/banners/"], :root a[href^="https://s.zlink7.com/"], :root a[href^="https://s.ma3ion.com/"], :root a[href^="https://s.eunow4u.com/"], :root a[href^="https://random-affiliate.atimaze.com/"], :root #kt_player > div[style$="display: block;"][style*="inset: 0px;"], :root [href$="/sexdating.php"], :root a[href^="https://quotationfirearmrevision.com/"], :root a[href^="https://pubads.g.doubleclick.net/"], :root a[href^="https://prf.hn/click/"][href*="/camref:"] > img, :root a[href^="https://serve.awmdelivery.com/"], :root a[href^="https://www.dating-finder.com/?ai_d="], :root a[href^="https://prf.hn/click/"][href*="/adref:"] > img, :root [href^="https://ap.octopuspop.com/click/"] > img, :root app-ad, :root a[href^="https://postback1win.com/"], :root a[href^="https://a.adtng.com/"], :root a[href^="https://playnano.online/offerwalls/?ref="], :root a[href^="https://mmwebhandler.aff-online.com/"], :root a[href^="https://www.bet365.com/"][href*="affiliate="], :root a[href^="https://pb-track.com/"], :root a[href^="https://pb-front.com/"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root a[href^="https://streamate.com/landing/click/"], :root a[href^="https://upsups.click/"], :root a[href^="https://ndt5.net/"], :root a[href^="https://natour.naughtyamerica.com/track/"], :root a[href^="https://mediaserver.entainpartners.com/renderBanner.do?"], :root [data-ad-name], :root a[href^="https://loboclick.com/"], :root a[href^="https://lead1.pl/"], :root a[href^="https://landing.brazzersnetwork.com/"], :root a[href^="https://juicyads.in/"], :root a[href^="https://snowdayonline.xyz/"], :root a[href^="https://join.dreamsexworld.com/"], :root a[href^="https://join.bannedsextapes.com/track/"], :root a[href^="https://jaxofuna.com/"], :root a[href^="https://italarizege.xyz/"], :root a[href^="https://identicaldrench.com/"], :root ad-shield-ads, :root a[href^="https://hot-growngames.life/"], :root a[href^="https://helmethomicidal.com/"], :root display-ad-component, :root a[href^="https://golinks.work/"], :root a[href^="https://s.zlinkn.com/"], :root a[href^="https://go.xxxvjmp.com/"], :root a[href^="https://go.xxxjmp.com"], :root a[href^="https://zirdough.net/"], :root [class^="tile-picker__CitrusBannerContainer-sc-"], :root a[href^="https://go.xxxiijmp.com"], :root a[href^="https://go.xtbaffiliates.com/"], :root [data-role="tile-ads-module"], :root a[href^="https://go.xlviirdr.com"], :root a[href^="https://go.xlivrdr.com"], :root a[href^="https://ismlks.com/"], :root [href^="https://www.mypillow.com/"] > img, :root a[href^="https://go.xlirdr.com"], :root [data-css-class="dfp-inarticle"], :root a[href^="https://go.tmrjmp.com"], :root a[href^="https://go.markets.com/visit/?bta="], :root a[href^="https://billing.purevpn.com/aff.php"] > img, :root a[href^="https://go.hpyrdr.com/"], :root a[href^="https://lijavaxa.com/"], :root a[href^="https://go.goaserv.com/"], :root app-large-ad, :root [href^="https://turtlebids.irauctions.com/"] img, :root div[data-adunit], :root a[href^="https://go.etoro.com/"] > img, :root a[href^="https://go.dmzjmp.com"], :root a[href^="https://www.bang.com/?aff="], :root #mgb-container > #mgb, :root a[href^="https://go.admjmp.com"], :root a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="] > img, :root a[href^="https://datewhisper.life/"], :root a[href^="https://click.linksynergy.com/fs-bin/"] > img, :root a[href^="https://get-link.xyz/"], :root a[href^="https://www.mrskin.com/account/"], :root a[href^="https://www.adskeeper.com"], :root a[data-redirect^="https://paid.outbrain.com/network/redir?"], :root [href^="https://clicks.affstrack.com/"] > img, :root a[href^="https://engine.phn.doublepimp.com/"], :root a[href^="https://dl-protect.net/"], :root a[href*=".foxqck.com/"], :root a[href^="https://ctosrd.com/"], :root a[href^="https://go.bushheel.com/"], :root a[href^="https://ctjdwm.com/"], :root [href="//sexcams.plus/"], :root a[href^="https://camfapr.com/landing/click/"], :root a[href^="https://prf.hn/click/"][href*="/creativeref:"] > img, :root a[href*="&maxads="], :root a[href^="http://www.adultempire.com/unlimited/promo?"][href*="&partner_id="], :root a[href^="https://1betandgonow.com/"], :root a[href^="https://chaturbate.com/in/?"], :root a[href^="https://t.ajrkm1.com/"], :root a[href^="https://bongacams10.com/track?"], :root a[href*=".g2afse.com/"], :root a[href^="https://bodelen.com/"], :root a[href^="//hoodingluster.com/"], :root a[href^="https://black77854.com/"], :root a[href^="https://getmatchedlocally.com/"], :root app-advertisement, :root a[href^="https://rixofa.com/"], :root a[href^="https://best-experience-cool.com/"], :root [data-taboola-options], :root a[href^="https://believessway.com/"], :root a[href^="https://Click.ggpickaff.com/"], :root a[href^="https://banners.livepartners.com/"], :root a[href^="http://revolvemockerycopper.com/"], :root a[href^="https://awptjmp.com/"], :root a[href^="https://join.sexworld3d.com/track/"], :root a[href^="https://aweptjmp.com/"], :root a[href^="https://ausoafab.net/"], :root a[href^="https://clicks.pipaffiliates.com/"], :root a[href^="https://aj1070.online/"], :root a[href^="https://a.bestcontentoperation.top/"], :root a[href^="https://adultfriendfinder.com/go/"], :root a[href^="https://ads.planetwin365affiliate.com/"], :root a[href^="https://ads.leovegas.com/"], :root a[href^="https://go.xlvirdr.com"], :root img[src^="https://images.purevpnaffiliates.com"], :root a[href^="https://porntubemate.com/"], :root a[href^="https://click.dtiserv2.com/"], :root a[href^="https://clickadilla.com/"], :root a[href^="https://a.medfoodhome.com/"], :root a[href^="https://cam4com.go2cloud.org/"], :root .nya-slot[style], :root a[href^="https://a.bestcontentweb.top/"], :root atf-ad-slot, :root a[href^="https://a2.adform.net/"], :root a[href^="https://a.candyai.love/"], :root .banner-img > .pbl, :root [data-m-ad-id], :root a[href^="https://a-ads.com/"], :root a[href^="https://1winpb.com/"], :root div[id^="optidigital-adslot"], :root [href^="https://wsup.ai/"], :root a[href^="https://123-stream.org/"], :root a[href^="https://in.rabbtrk.com/"], :root a[href^="http://www.h4trck.com/"], :root [href^="https://a.acebet.com/api/click?"], :root a[href^="http://www.friendlyduck.com/AF_"], :root a[href^="http://partners.etoro.com/"], :root [href="https://chaturbate.jjgirls.com/"] > img, :root a[href^="http://cam4com.go2cloud.org/aff_c?"], :root a[href^="https://ads.betfair.com/redirect.aspx?"], :root amp-ad-custom, :root a[href^="http://trk.globwo.online/"], :root a[onclick^="window.location.replace('https://random-affiliate.atimaze.com/"], :root a[href^="https://bongacams2.com/track?"], :root a-ad, :root a[href^="https://offhandpump.com/"], :root a[href^="http://stickingrepute.com/"], :root #slashboxes > .deals-rail, :root div[aria-label="Ads"], :root [href^="http://mypillow.com/"] > img, :root a[href^="http://bongacams.com/track?"], :root a[href^="//startgaming.net/tienda/" i], :root a[href^="https://a.medfoodsafety.com/"], :root a[href^="//go.eabids.com/"], :root a[href^=" https://www.friendlyduck.com/AF_"], :root [data-cl-spot-id], :root a[href*="/jump/next.php?r="], :root a[href^="https://go.nordvpn.net/aff"] > img, :root .\[\&_\.gdprAdTransparencyCogWheelButton\]\:\!pjra-z-\[5\], :root [href^="http://clicks.totemcash.com/"], :root a[href^="https://ad.zanox.com/ppc/"] > img, :root [data-d-ad-id], :root a[href*=".engine.adglare.net/"], :root div[id^="lazyad-"], :root a[href^="http://com-1.pro/"], :root [href^="https://www.profitablegatecpm.com/"], :root a[href*=".cfm?domain="][href*="&fp="], :root a[href^="https://ab.advertiserurl.com/aff/"], :root a[data-oburl^="https://paid.outbrain.com/network/redir?"], :root [id^="section-ad-banner"], :root [id^="ad_slider"], :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="], :root a[href^="https://wmctjd.com/"], :root a[href*="//jjgirls.com/sex/Chaturbate"], :root [id^="ad-wrap-"], :root [href^="https://zone.gotrackier.com/"], :root a[href^="http://sarcasmadvisor.com/"], :root [href^="https://www.restoro.com/"], :root a[href^="https://track.totalav.com/"], :root a[href^="https://ctrdwm.com/"], :root [href^="https://www.targetingpartner.com/"], :root a[href^="https://join.virtuallust3d.com/"], :root .section-subheader > .section-hotel-prices-header, :root [href^="https://www.hostg.xyz/"] > img, :root a[href^="https://bngpt.com/"], :root a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="], :root a[href^="http://adultfriendfinder.com/go/"], :root a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="], :root a[href^="https://tour.mrskin.com/"], :root div[id^="ad-position-"], :root a[href^="https://www.toprevenuegate.com/"], :root a[href^="https://bc.game/"], :root a[href^="http://join.brokestraightboys.com/track/"], :root div[id^="div-ads-"], :root [href^="https://rapidgator.net/article/premium/ref/"], :root [href^="https://join.girlsoutwest.com/"], :root a[href^="https://activate-game.com/"], :root .scroll-fixable.rail-right > .deals-rail, :root [data-wpas-zoneid], :root a[href^="https://track.aftrk3.com/"], :root [href^="https://join3.bannedsextapes.com"], :root div[data-adzone], :root div[id^="adngin-"], :root [data-rc-widget], :root span[data-ez-ph-id], :root [href^="https://track.aftrk1.com/"], :root [href^="https://join.playboyplus.com/track/"], :root a[href^="https://go.xxxijmp.com"], :root [href^="https://istlnkcl.com/"], :root a[href^="https://trk.softonixs.xyz/"], :root a[href^="https://iqbroker.com/"][href*="?aff="], :root [href^="https://rpwmct.com/"], :root [href^="https://wct.link/click?"], :root a[href^="https://t.acam.link/"], :root a[href^="https://go.strpjmp.com/"], :root [href^="https://url.totaladblock.com/"], :root a[href^="https://go.rmishe.com/"], :root [href^="https://ilovemyfreedoms.com/landing-"], :root [href="https://adstub.net/indo666/"], :root [href^="https://glersakr.com/"], :root a[href^="https://tm-offers.gamingadult.com/"], :root [href^="https://charmingdatings.life/"], :root [data-id^="div-gpt-ad"], :root a[href^="https://tracker.loropartners.com/"], :root [href^="https://awbbjmp.com/"], :root a[href^="https://www.friendlyduck.com/AF_"], :root [href^="https://ad1.adfarm1.adition.com/"], :root a[href^="https://t.ajrkm3.com/"], :root [href^="https://aads.com/campaigns/"], :root a[href^="https://fc.lc/ref/"], :root a[href^="https://go.bbrdbr.com"], :root a[href^="http://tc.tradetracker.net/"] > img, :root a[href^="https://s.zlink3.com/"], :root a[href^="http://sneakyadministration.com/"], :root [href^="https://www.brighteonstore.com/products/"] img, :root a[href^="https://bngprm.com/"], :root [href^="https://shiftnetwork.infusionsoft.com/go/"] > img, :root [href^="http://www.mypillow.com/"] > img, :root .ob_container .item-container-obpd, :root [id^="div-gpt-ad"], :root [href="https://jdrucker.com/gold"] > img, :root a[href^="https://join.virtualtaboo.com/track/"], :root [id^="ad_sky"], :root [name^="google_ads_iframe"], :root aside[id^="adrotate_widgets-"], :root a[href^="https://www.liquidfire.mobi/"], :root DFP-AD, :root .grid > .container > #aside-promotion, :root [data-type="ad-vertical"], :root [href^="https://go.xlrdr.com"], :root a[href^="https://s.cant3am.com/"], :root [data-testid^="taboola-"], :root [data-testid^="section-AdRowBillboard"], :root a[href^="https://track.1234sd123.com/"], :root zeus-ad, :root [data-testid="prism-ad-wrapper"], :root [href^="https://ad.admitad.com/"], :root [href^="https://mypillow.com/"] > img, :root [data-testid="ad_testID"], :root [data-mobile-ad-id], :root [data-dynamic-ads], :root a[href^="https://gamingadlt.com/?offer="], :root [data-desktop-ad-id], :root a[href^="https://go.rmhfrtnd.com"], :root a[href^="https://pb-imc.com/"], :root a[href^="https://www8.smartadserver.com/"], :root topadblock, :root a[href^="//s.zlinkd.com/"], :root [href^="https://mypatriotsupply.com/"] > img, :root [data-testid="adBanner-wrapper"], :root [href^="https://mylead.global/stl/"] > img, :root a[href*=".adsrv.eacdn.com/"], :root [href^="https://antiagingbed.com/discount/"] > img, :root #teaser1[style^="width:autopx;"], :root [href^="https://www.cloudways.com/en/?id"], :root [data-asg-ins], :root [data-block-type="ad"], :root [data-ad-width], :root a[href^="https://clickins.slixa.com/"], :root [onclick*="content.ad/"], :root a[href^="https://go.cmtaffiliates.com/"], :root [href^="https://optimizedelite.com/"] > img, :root div[data-ad-region], :root AMP-AD, :root [data-ad-cls], :root a[href^="https://www.adxsrve.com/"], :root a[href^="https://click.Ggpickaff.com/"], :root [data-ez-name], :root a[href^="https://go.mnaspm.com/"], :root a[href^="https://service.bv-aff-trx.com/"], :root a[href^="https://6-partner.com/"], :root [class^="s2nPlayer"], :root [href^="https://affiliate.fastcomet.com/"] > img, :root [class^="adDisplay-module"], :root a[href^="https://adclick.g.doubleclick.net/"], :root [data-freestar-ad][id], :root AD-SLOT, :root a[href^="https://combodef.com/"], :root a[href^="https://click.hoolig.app/"], :root a[href^="https://www.googleadservices.com/pagead/aclk?"] > img, :root [data-ad-module], :root a[href^="https://a.bestcontentfood.top/"], :root #kt_player > a[target="_blank"], :root a[href^="https://go.skinstrip.net"][href*="?campaignId="], :root #teaser2[style^="width:autopx;"], :root [data-revive-zoneid], :root a[href^="https://losingoldfry.com/"], :root div[id^="div-gpt-"], :root a[href^="https://gml-grp.com/"], :root .ob_dual_right > .ob_ads_header ~ .odb_div, :root div[data-ad-targeting], :root a[style="width:100%;height:100%;z-index:10000000000000000;position:absolute;top:0;left:0;"], :root [href^="https://www.avantlink.com/click.php"] img, :root [data-testid="commercial-label-taboola"], :root [class^="div-gpt-ad"], :root a[href^="https://traffdaq.com/"], :root #teaser3[style^="width:autopx;"], :root a[href^="https://go.hpyjmp.com"], :root iframe[scrolling="no"][sandbox*="allow-popups allow-modals"][style^="width: 100%; height: 100%; border: none;"], :root [href^="https://mystore.com/"] > img, :root [class^="amp-ad-"], :root a[href^="https://clixtrac.com/"], :root a[href^="https://wittered-mainging.com/"], :root #teaser3[style="width: 100%;text-align: center;display: scroll;position:fixed;bottom: 0;margin: 0 auto;z-index: 103;"] { display: none !important; }</style><style type="text/css" id="operaUserStyle"></style><style type="text/css">:root img[width="728"][height="90"], :root [href="https://adstub.net/cina777/"], :root [href="https://adstub.net/arab777/"], :root [href="https://adstub.net/ratu89/"], :root [href="https://adstub.net/judi89/"], :root [href^="//mage98rquewz.com/"], :root [href^="//x4pollyxxpush.com/"], :root span[id^="ezoic-pub-ad-placeholder-"], :root ins.adsbygoogle[data-ad-slot], :root ins.adsbygoogle[data-ad-client], :root img[src^="https://s-img.adskeeper.com/"], :root guj-ad, :root gpt-ad, :root div[ow-ad-unit-wrapper], :root div[id^="zergnet-widget"], :root div[id^="vuukle-ad-"], :root div[id^="taboola-stream-"], :root div[id^="sticky_ad_"], :root div[id^="st"][style^="z-index: 999999999;"], :root div[id^="rc-widget-"], :root div[id^="mrec-leaderboard-"], :root div[id^="gpt_ad_"], :root div[id^="ezoic-pub-ad-"], :root div[id^="dfp-ad-"], :root div[id^="crt-"][style], :root div[id^="apn_native_ad_slot_"], :root div[id^="adspot-"], :root div[id^="adrotate_widgets-"], :root ps-connatix-module, :root div[id^="ad_position_"], :root div[id^="ad-div-"], :root div[id*="ScriptRoot"], :root div[id*="MarketGid"], :root [href="https://adstub.net/rusia777/"], :root div[data-id-advertdfpconf], :root div[data-dfp-id], :root hl-adsense, :root div[data-contentexchange-widget], :root div[data-alias="300x250 Ad 2"], :root div[data-adunit-path], :root div[data-adname], :root div[data-ad-placeholder], :root a[href^="https://osfultrbriolenai.info/"], :root div[class^="Adstyled__AdWrapper-"], :root a[href^="https://go.xlviiirdr.com"], :root div[class$="-adlabel"], :root display-ads, :root a[href^="https://go.grinsbest.com/"], :root citrus-ad-wrapper, :root a[href^="https://s.zlinkd.com/"], :root bottomadblock, :root amp-fx-flying-carpet, :root amp-embed[type="taboola"], :root amp-connatix-player, :root div[id^="google_dfp_"], :root ad-slot, :root a[href^="https://www.purevpn.com/"][href*="&utm_source=aff-"], :root a[href^="https://www.privateinternetaccess.com/"] > img, :root a[href^="https://www.onlineusershielder.com/"], :root a[href^="https://financeads.net/tc.php?"], :root a[href^="https://www.mrskin.com/tour"], :root a[href^="https://www.infowarsstore.com/"] > img, :root a[href^="https://ak.psaltauw.net/"], :root broadstreet-zone-container, :root a[href^="https://www.highperformancecpmgate.com/"], :root amp-ad, :root a[href^="https://www.highcpmrevenuenetwork.com/"], :root a[href^="https://www.get-express-vpn.com/offer/"], :root a[href^="https://lnkxt.bannerator.com/"], :root a[href^="https://www.geekbuying.com/dynamic-ads/"], :root [href^="https://groorsoa.net/"], :root a[href^="https://www.financeads.net/tc.php?"], :root a[href^="https://www.effectiveratecpm.com/"], :root [href^="https://www.herbanomic.com/"] > img, :root a[href^="https://www.dql2clk.com/"], :root a[href^="https://www.nutaku.net/signup/landing/"], :root a[href^="https://www.dating-finder.com/signup/?ai_d="], :root a[href^="https://explore-site.com/"], :root a[href^="https://www.brazzersnetwork.com/landing/"], :root [data-template-type="nativead"], :root a[href^="https://www.adultempire.com/"][href*="?partner_id="], :root a[href^="https://voluum.prom-xcams.com/"], :root a[href^="https://twinrdsyte.com/"], :root a[href^="https://twinrdsrv.com/"], :root a[href^="https://syndicate.contentsserved.com/"], :root div[data-alias="300x250 Ad 1"], :root a[href^="https://trk.nfl-online-streams.club/"], :root a[href^="https://tracking.avapartner.com/"], :root a[href^="https://track.wg-aff.com"], :root a[href^="https://track.ultravpn.com/"], :root a[href^="https://track.afcpatrk.com/"], :root a[href^="https://track.adform.net/"], :root a[href^="https://torguard.net/aff.php"] > img, :root [data-identity="adhesive-ad"], :root a[href^="https://tc.tradetracker.net/"] > img, :root a[href^="https://tatrck.com/"], :root [href^="https://zstacklife.com/"] img, :root a[href^="https://click.candyoffers.com/"], :root a[href^="https://t.aslnk.link/"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"], :root a[href^="https://t.ajump1.com/"], :root a[href^="https://t.adating.link/"], :root a[href^="https://go.trackitalltheway.com/"], :root [href^="https://track.fiverr.com/visit/"] > img, :root a[href^="https://syndication.exoclick.com/"], :root a[href^="https://syndication.dynsrvtbg.com/"], :root .gnt_em_vp_c[data-g-s="vp_dk"], :root div[data-ad-wrapper], :root a[href^="https://svb-analytics.trackerrr.com/"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"] + .ob_source, :root a[href^="http://www.iyalc.com/"], :root a[href^="https://claring-loccelkin.com/"], :root a[href^="https://stardomcoit.com/"], :root a[href^="https://track.aftrk5.com/"], :root a[href^="https://slkmis.com/"], :root a[href^="https://myclick-2.com/"], :root a[href^="https://sexynearme.com/"], :root [data-ad-manager-id], :root a[href^="https://s.zlinkr.com/"], :root [href="https://adstub.net/gaza88/"], :root a[href^="https://ad.doubleclick.net/"], :root a[href^="https://static.fleshlight.com/images/banners/"], :root a[href^="https://s.zlink7.com/"], :root a[href^="https://s.ma3ion.com/"], :root a[href^="https://s.eunow4u.com/"], :root a[href^="https://random-affiliate.atimaze.com/"], :root #kt_player > div[style$="display: block;"][style*="inset: 0px;"], :root [href$="/sexdating.php"], :root a[href^="https://quotationfirearmrevision.com/"], :root a[href^="https://pubads.g.doubleclick.net/"], :root a[href^="https://prf.hn/click/"][href*="/camref:"] > img, :root a[href^="https://serve.awmdelivery.com/"], :root a[href^="https://www.dating-finder.com/?ai_d="], :root a[href^="https://prf.hn/click/"][href*="/adref:"] > img, :root [href^="https://ap.octopuspop.com/click/"] > img, :root app-ad, :root a[href^="https://postback1win.com/"], :root a[href^="https://a.adtng.com/"], :root a[href^="https://playnano.online/offerwalls/?ref="], :root a[href^="https://mmwebhandler.aff-online.com/"], :root a[href^="https://www.bet365.com/"][href*="affiliate="], :root a[href^="https://pb-track.com/"], :root a[href^="https://pb-front.com/"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root a[href^="https://streamate.com/landing/click/"], :root a[href^="https://upsups.click/"], :root a[href^="https://ndt5.net/"], :root a[href^="https://natour.naughtyamerica.com/track/"], :root a[href^="https://mediaserver.entainpartners.com/renderBanner.do?"], :root [data-ad-name], :root a[href^="https://loboclick.com/"], :root a[href^="https://lead1.pl/"], :root a[href^="https://landing.brazzersnetwork.com/"], :root a[href^="https://juicyads.in/"], :root a[href^="https://snowdayonline.xyz/"], :root a[href^="https://join.dreamsexworld.com/"], :root a[href^="https://join.bannedsextapes.com/track/"], :root a[href^="https://jaxofuna.com/"], :root a[href^="https://italarizege.xyz/"], :root a[href^="https://identicaldrench.com/"], :root ad-shield-ads, :root a[href^="https://hot-growngames.life/"], :root a[href^="https://helmethomicidal.com/"], :root display-ad-component, :root a[href^="https://golinks.work/"], :root a[href^="https://s.zlinkn.com/"], :root a[href^="https://go.xxxvjmp.com/"], :root a[href^="https://go.xxxjmp.com"], :root a[href^="https://zirdough.net/"], :root [class^="tile-picker__CitrusBannerContainer-sc-"], :root a[href^="https://go.xxxiijmp.com"], :root a[href^="https://go.xtbaffiliates.com/"], :root [data-role="tile-ads-module"], :root a[href^="https://go.xlviirdr.com"], :root a[href^="https://go.xlivrdr.com"], :root a[href^="https://ismlks.com/"], :root [href^="https://www.mypillow.com/"] > img, :root a[href^="https://go.xlirdr.com"], :root [data-css-class="dfp-inarticle"], :root a[href^="https://go.tmrjmp.com"], :root a[href^="https://go.markets.com/visit/?bta="], :root a[href^="https://billing.purevpn.com/aff.php"] > img, :root a[href^="https://go.hpyrdr.com/"], :root a[href^="https://lijavaxa.com/"], :root a[href^="https://go.goaserv.com/"], :root app-large-ad, :root [href^="https://turtlebids.irauctions.com/"] img, :root div[data-adunit], :root a[href^="https://go.etoro.com/"] > img, :root a[href^="https://go.dmzjmp.com"], :root a[href^="https://www.bang.com/?aff="], :root #mgb-container > #mgb, :root a[href^="https://go.admjmp.com"], :root a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="] > img, :root a[href^="https://datewhisper.life/"], :root a[href^="https://click.linksynergy.com/fs-bin/"] > img, :root a[href^="https://get-link.xyz/"], :root a[href^="https://www.mrskin.com/account/"], :root a[href^="https://www.adskeeper.com"], :root a[data-redirect^="https://paid.outbrain.com/network/redir?"], :root [href^="https://clicks.affstrack.com/"] > img, :root a[href^="https://engine.phn.doublepimp.com/"], :root a[href^="https://dl-protect.net/"], :root a[href*=".foxqck.com/"], :root a[href^="https://ctosrd.com/"], :root a[href^="https://go.bushheel.com/"], :root a[href^="https://ctjdwm.com/"], :root [href="//sexcams.plus/"], :root a[href^="https://camfapr.com/landing/click/"], :root a[href^="https://prf.hn/click/"][href*="/creativeref:"] > img, :root a[href*="&maxads="], :root a[href^="http://www.adultempire.com/unlimited/promo?"][href*="&partner_id="], :root a[href^="https://1betandgonow.com/"], :root a[href^="https://chaturbate.com/in/?"], :root a[href^="https://t.ajrkm1.com/"], :root a[href^="https://bongacams10.com/track?"], :root a[href*=".g2afse.com/"], :root a[href^="https://bodelen.com/"], :root a[href^="//hoodingluster.com/"], :root a[href^="https://black77854.com/"], :root a[href^="https://getmatchedlocally.com/"], :root app-advertisement, :root a[href^="https://rixofa.com/"], :root a[href^="https://best-experience-cool.com/"], :root [data-taboola-options], :root a[href^="https://believessway.com/"], :root a[href^="https://Click.ggpickaff.com/"], :root a[href^="https://banners.livepartners.com/"], :root a[href^="http://revolvemockerycopper.com/"], :root a[href^="https://awptjmp.com/"], :root a[href^="https://join.sexworld3d.com/track/"], :root a[href^="https://aweptjmp.com/"], :root a[href^="https://ausoafab.net/"], :root a[href^="https://clicks.pipaffiliates.com/"], :root a[href^="https://aj1070.online/"], :root a[href^="https://a.bestcontentoperation.top/"], :root a[href^="https://adultfriendfinder.com/go/"], :root a[href^="https://ads.planetwin365affiliate.com/"], :root a[href^="https://ads.leovegas.com/"], :root a[href^="https://go.xlvirdr.com"], :root img[src^="https://images.purevpnaffiliates.com"], :root a[href^="https://porntubemate.com/"], :root a[href^="https://click.dtiserv2.com/"], :root a[href^="https://clickadilla.com/"], :root a[href^="https://a.medfoodhome.com/"], :root a[href^="https://cam4com.go2cloud.org/"], :root .nya-slot[style], :root a[href^="https://a.bestcontentweb.top/"], :root atf-ad-slot, :root a[href^="https://a2.adform.net/"], :root a[href^="https://a.candyai.love/"], :root .banner-img > .pbl, :root [data-m-ad-id], :root a[href^="https://a-ads.com/"], :root a[href^="https://1winpb.com/"], :root div[id^="optidigital-adslot"], :root [href^="https://wsup.ai/"], :root a[href^="https://123-stream.org/"], :root a[href^="https://in.rabbtrk.com/"], :root a[href^="http://www.h4trck.com/"], :root [href^="https://a.acebet.com/api/click?"], :root a[href^="http://www.friendlyduck.com/AF_"], :root a[href^="http://partners.etoro.com/"], :root [href="https://chaturbate.jjgirls.com/"] > img, :root a[href^="http://cam4com.go2cloud.org/aff_c?"], :root a[href^="https://ads.betfair.com/redirect.aspx?"], :root amp-ad-custom, :root a[href^="http://trk.globwo.online/"], :root a[onclick^="window.location.replace('https://random-affiliate.atimaze.com/"], :root a[href^="https://bongacams2.com/track?"], :root a-ad, :root a[href^="https://offhandpump.com/"], :root a[href^="http://stickingrepute.com/"], :root #slashboxes > .deals-rail, :root div[aria-label="Ads"], :root [href^="http://mypillow.com/"] > img, :root a[href^="http://bongacams.com/track?"], :root a[href^="//startgaming.net/tienda/" i], :root a[href^="https://a.medfoodsafety.com/"], :root a[href^="//go.eabids.com/"], :root a[href^=" https://www.friendlyduck.com/AF_"], :root [data-cl-spot-id], :root a[href*="/jump/next.php?r="], :root a[href^="https://go.nordvpn.net/aff"] > img, :root .\[\&_\.gdprAdTransparencyCogWheelButton\]\:\!pjra-z-\[5\], :root [href^="http://clicks.totemcash.com/"], :root a[href^="https://ad.zanox.com/ppc/"] > img, :root [data-d-ad-id], :root a[href*=".engine.adglare.net/"], :root div[id^="lazyad-"], :root a[href^="http://com-1.pro/"], :root [href^="https://www.profitablegatecpm.com/"], :root a[href*=".cfm?domain="][href*="&fp="], :root a[href^="https://ab.advertiserurl.com/aff/"], :root a[data-oburl^="https://paid.outbrain.com/network/redir?"], :root [id^="section-ad-banner"], :root [id^="ad_slider"], :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="], :root a[href^="https://wmctjd.com/"], :root a[href*="//jjgirls.com/sex/Chaturbate"], :root [id^="ad-wrap-"], :root [href^="https://zone.gotrackier.com/"], :root a[href^="http://sarcasmadvisor.com/"], :root [href^="https://www.restoro.com/"], :root a[href^="https://track.totalav.com/"], :root a[href^="https://ctrdwm.com/"], :root [href^="https://www.targetingpartner.com/"], :root a[href^="https://join.virtuallust3d.com/"], :root .section-subheader > .section-hotel-prices-header, :root [href^="https://www.hostg.xyz/"] > img, :root a[href^="https://bngpt.com/"], :root a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="], :root a[href^="http://adultfriendfinder.com/go/"], :root a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="], :root a[href^="https://tour.mrskin.com/"], :root div[id^="ad-position-"], :root a[href^="https://www.toprevenuegate.com/"], :root a[href^="https://bc.game/"], :root a[href^="http://join.brokestraightboys.com/track/"], :root div[id^="div-ads-"], :root [href^="https://rapidgator.net/article/premium/ref/"], :root [href^="https://join.girlsoutwest.com/"], :root a[href^="https://activate-game.com/"], :root .scroll-fixable.rail-right > .deals-rail, :root [data-wpas-zoneid], :root a[href^="https://track.aftrk3.com/"], :root [href^="https://join3.bannedsextapes.com"], :root div[data-adzone], :root div[id^="adngin-"], :root [data-rc-widget], :root span[data-ez-ph-id], :root [href^="https://track.aftrk1.com/"], :root [href^="https://join.playboyplus.com/track/"], :root a[href^="https://go.xxxijmp.com"], :root [href^="https://istlnkcl.com/"], :root a[href^="https://trk.softonixs.xyz/"], :root a[href^="https://iqbroker.com/"][href*="?aff="], :root [href^="https://rpwmct.com/"], :root [href^="https://wct.link/click?"], :root a[href^="https://t.acam.link/"], :root a[href^="https://go.strpjmp.com/"], :root [href^="https://url.totaladblock.com/"], :root a[href^="https://go.rmishe.com/"], :root [href^="https://ilovemyfreedoms.com/landing-"], :root [href="https://adstub.net/indo666/"], :root [href^="https://glersakr.com/"], :root a[href^="https://tm-offers.gamingadult.com/"], :root [href^="https://charmingdatings.life/"], :root [data-id^="div-gpt-ad"], :root a[href^="https://tracker.loropartners.com/"], :root [href^="https://awbbjmp.com/"], :root a[href^="https://www.friendlyduck.com/AF_"], :root [href^="https://ad1.adfarm1.adition.com/"], :root a[href^="https://t.ajrkm3.com/"], :root [href^="https://aads.com/campaigns/"], :root a[href^="https://fc.lc/ref/"], :root a[href^="https://go.bbrdbr.com"], :root a[href^="http://tc.tradetracker.net/"] > img, :root a[href^="https://s.zlink3.com/"], :root a[href^="http://sneakyadministration.com/"], :root [href^="https://www.brighteonstore.com/products/"] img, :root a[href^="https://bngprm.com/"], :root [href^="https://shiftnetwork.infusionsoft.com/go/"] > img, :root [href^="http://www.mypillow.com/"] > img, :root .ob_container .item-container-obpd, :root [id^="div-gpt-ad"], :root [href="https://jdrucker.com/gold"] > img, :root a[href^="https://join.virtualtaboo.com/track/"], :root [id^="ad_sky"], :root [name^="google_ads_iframe"], :root aside[id^="adrotate_widgets-"], :root a[href^="https://www.liquidfire.mobi/"], :root DFP-AD, :root .grid > .container > #aside-promotion, :root [data-type="ad-vertical"], :root [href^="https://go.xlrdr.com"], :root a[href^="https://s.cant3am.com/"], :root [data-testid^="taboola-"], :root [data-testid^="section-AdRowBillboard"], :root a[href^="https://track.1234sd123.com/"], :root zeus-ad, :root [data-testid="prism-ad-wrapper"], :root [href^="https://ad.admitad.com/"], :root [href^="https://mypillow.com/"] > img, :root [data-testid="ad_testID"], :root [data-mobile-ad-id], :root [data-dynamic-ads], :root a[href^="https://gamingadlt.com/?offer="], :root [data-desktop-ad-id], :root a[href^="https://go.rmhfrtnd.com"], :root a[href^="https://pb-imc.com/"], :root a[href^="https://www8.smartadserver.com/"], :root topadblock, :root a[href^="//s.zlinkd.com/"], :root [href^="https://mypatriotsupply.com/"] > img, :root [data-testid="adBanner-wrapper"], :root [href^="https://mylead.global/stl/"] > img, :root a[href*=".adsrv.eacdn.com/"], :root [href^="https://antiagingbed.com/discount/"] > img, :root #teaser1[style^="width:autopx;"], :root [href^="https://www.cloudways.com/en/?id"], :root [data-asg-ins], :root [data-block-type="ad"], :root [data-ad-width], :root a[href^="https://clickins.slixa.com/"], :root [onclick*="content.ad/"], :root a[href^="https://go.cmtaffiliates.com/"], :root [href^="https://optimizedelite.com/"] > img, :root div[data-ad-region], :root AMP-AD, :root [data-ad-cls], :root a[href^="https://www.adxsrve.com/"], :root a[href^="https://click.Ggpickaff.com/"], :root [data-ez-name], :root a[href^="https://go.mnaspm.com/"], :root a[href^="https://service.bv-aff-trx.com/"], :root a[href^="https://6-partner.com/"], :root [class^="s2nPlayer"], :root [href^="https://affiliate.fastcomet.com/"] > img, :root [class^="adDisplay-module"], :root a[href^="https://adclick.g.doubleclick.net/"], :root [data-freestar-ad][id], :root AD-SLOT, :root a[href^="https://combodef.com/"], :root a[href^="https://click.hoolig.app/"], :root a[href^="https://www.googleadservices.com/pagead/aclk?"] > img, :root [data-ad-module], :root a[href^="https://a.bestcontentfood.top/"], :root #kt_player > a[target="_blank"], :root a[href^="https://go.skinstrip.net"][href*="?campaignId="], :root #teaser2[style^="width:autopx;"], :root [data-revive-zoneid], :root a[href^="https://losingoldfry.com/"], :root div[id^="div-gpt-"], :root a[href^="https://gml-grp.com/"], :root .ob_dual_right > .ob_ads_header ~ .odb_div, :root div[data-ad-targeting], :root a[style="width:100%;height:100%;z-index:10000000000000000;position:absolute;top:0;left:0;"], :root [href^="https://www.avantlink.com/click.php"] img, :root [data-testid="commercial-label-taboola"], :root [class^="div-gpt-ad"], :root a[href^="https://traffdaq.com/"], :root #teaser3[style^="width:autopx;"], :root a[href^="https://go.hpyjmp.com"], :root iframe[scrolling="no"][sandbox*="allow-popups allow-modals"][style^="width: 100%; height: 100%; border: none;"], :root [href^="https://mystore.com/"] > img, :root [class^="amp-ad-"], :root a[href^="https://clixtrac.com/"], :root a[href^="https://wittered-mainging.com/"], :root #teaser3[style="width: 100%;text-align: center;display: scroll;position:fixed;bottom: 0;margin: 0 auto;z-index: 103;"] { display: none !important; }</style></head>
 <body>
 <!-- FONDO MATRIX ANIMADO -->
-<div class="matrix-bg" id="matrixBg"></div>
+<div class="matrix-bg" id="matrixBg"><div class="matrix-rain" style="left: 59.2861vw; animation-duration: 3.06887s; opacity: 0.666811;"></div><div class="matrix-rain" style="left: 74.3038vw; animation-duration: 2.1828s; opacity: 0.767115;"></div><div class="matrix-rain" style="left: 12.0518vw; animation-duration: 2.78668s; opacity: 0.316756;"></div><div class="matrix-rain" style="left: 66.5558vw; animation-duration: 2.95483s; opacity: 0.392511;"></div><div class="matrix-rain" style="left: 45.0508vw; animation-duration: 2.65094s; opacity: 0.769809;"></div><div class="matrix-rain" style="left: 72.3974vw; animation-duration: 2.75031s; opacity: 0.393954;"></div><div class="matrix-rain" style="left: 11.9321vw; animation-duration: 3.15868s; opacity: 0.632297;"></div><div class="matrix-rain" style="left: 66.0887vw; animation-duration: 3.16167s; opacity: 0.490007;"></div><div class="matrix-rain" style="left: 85.9243vw; animation-duration: 2.72498s; opacity: 0.742292;"></div><div class="matrix-rain" style="left: 14.8657vw; animation-duration: 3.70742s; opacity: 0.472982;"></div><div class="matrix-rain" style="left: 64.5209vw; animation-duration: 3.10134s; opacity: 0.365898;"></div><div class="matrix-rain" style="left: 41.9491vw; animation-duration: 3.52873s; opacity: 0.356807;"></div><div class="matrix-rain" style="left: 88.9167vw; animation-duration: 2.32745s; opacity: 0.586515;"></div><div class="matrix-rain" style="left: 80.206vw; animation-duration: 3.3445s; opacity: 0.418092;"></div><div class="matrix-rain" style="left: 83.3808vw; animation-duration: 2.18941s; opacity: 0.508855;"></div><div class="matrix-rain" style="left: 47.459vw; animation-duration: 3.90358s; opacity: 0.558381;"></div><div class="matrix-rain" style="left: 87.7108vw; animation-duration: 2.51569s; opacity: 0.68143;"></div><div class="matrix-rain" style="left: 61.2777vw; animation-duration: 3.1365s; opacity: 0.789532;"></div><div class="matrix-rain" style="left: 63.0879vw; animation-duration: 3.12857s; opacity: 0.359093;"></div><div class="matrix-rain" style="left: 15.0501vw; animation-duration: 3.78033s; opacity: 0.652591;"></div></div>
 <!-- BOTÓN DE ACCESIBILIDAD -->
 <button class="accessibility-float-btn" onclick="toggleAccessibilityMenu()">🔄️</button>
 <!-- MENÚ DE ACCESIBILIDAD -->
@@ -3509,7 +3592,7 @@ font-size: 1.5rem;
 <button onclick="toggleAccessibilityMenu()" style="background: var(--danger); margin-top: 10px;">✖ Cerrar</button>
 </div>
 <!-- PANTALLA DE LOGIN -->
-<div id="loginScreen" class="login-container">
+<div id="loginScreen" class="login-container" style="display: flex;">
 <div class="login-box">
 <div class="login-logo">
 <div class="logo">💻</div>
@@ -3521,7 +3604,7 @@ font-size: 1.5rem;
 <button class="login-tab" onclick="showLoginForm(&#39;register&#39;)">REGISTRARSE</button>
 </div>
 <!-- FORMULARIO DE INICIO DE SESIÓN -->
-<div id="loginForm" class="login-form active">
+<div id="loginForm" class="login-form active" style="display: block;">
 <div class="form-group">
 <label class="form-label">Usuario o Email</label>
 <input type="text" id="loginUsername" class="form-input" placeholder="Tu usuario o email">
@@ -3538,12 +3621,24 @@ font-size: 1.5rem;
 <div class="form-error" id="loginPasswordError"></div>
 </div>
 <button class="btn-login" onclick="login()">ACCEDER AL SISTEMA</button>
+<div class="login-divider">
+<span>o continúa con</span>
+</div>
+<button class="btn-google" onclick="loginWithGoogle()">
+<svg class="google-icon" viewBox="0 0 24 24" width="20" height="20">
+<path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"></path>
+<path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"></path>
+<path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"></path>
+<path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"></path>
+</svg>
+Continuar con Google
+</button>
 <div class="login-footer">
-<p>¿No tienes cuenta? <a href="https://bug-squasher-69.preview.emergentagent.com/smr_quiz_corregido.html#" onclick="showLoginForm(&#39;register&#39;)">Regístrate aquí</a></p>
+<p>¿No tienes cuenta? <a href="javascript:void(0)" onclick="showLoginForm(&#39;register&#39;)">Regístrate aquí</a></p>
 </div>
 </div>
 <!-- FORMULARIO DE REGISTRO -->
-<div id="registerForm" class="login-form">
+<div id="registerForm" class="login-form" style="display: none;">
 <div class="form-group">
 <label class="form-label">Nombre Completo</label>
 <input type="text" id="registerName" class="form-input" placeholder="Tu nombre completo">
@@ -3580,8 +3675,20 @@ font-size: 1.5rem;
 <div class="form-error" id="registerConfirmPasswordError"></div>
 </div>
 <button class="btn-login" onclick="register()">CREAR CUENTA</button>
+<div class="login-divider">
+<span>o continúa con</span>
+</div>
+<button class="btn-google" onclick="loginWithGoogle()">
+<svg class="google-icon" viewBox="0 0 24 24" width="20" height="20">
+<path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"></path>
+<path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"></path>
+<path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"></path>
+<path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"></path>
+</svg>
+Continuar con Google
+</button>
 <div class="login-footer">
-<p>¿Ya tienes cuenta? <a href="https://bug-squasher-69.preview.emergentagent.com/smr_quiz_corregido.html#" onclick="showLoginForm(&#39;login&#39;)">Inicia sesión aquí</a></p>
+<p>¿Ya tienes cuenta? <a href="javascript:void(0)" onclick="showLoginForm(&#39;login&#39;)">Inicia sesión aquí</a></p>
 </div>
 </div>
 </div>
@@ -4062,7 +4169,7 @@ Confirmar Respuesta
 <div class="chatbot-message bot">
 <div class="message-content">
 <span class="message-text">¡Conexión establecida! <span style="color: var(--primary)">Sistema NEXUS-AI</span> activo.</span>
-<div class="message-time" id="currentTime"></div>
+<div class="message-time" id="currentTime">19:51</div>
 </div>
 <div class="message-status">
 <i class="fas fa-bolt" style="color: var(--primary)"></i>
@@ -6426,32 +6533,10 @@ q: "¿Qué es la ruta crítica en un proyecto?",
 a: ["secuencia de tareas que determina la duración del proyecto"],
 points: 20
 }
-,
-seguridad_facil:[{type:"multiple_choice",q:"¿Qué tipo de malware cifra archivos y pide rescate?",options:['A:Virus', 'B:Ransomware', 'C:Troyano', 'D:Gusano'],correct:1,points:10},{type:"true_false",q:"Un firewall bloquea tráfico no autorizado",correct:true,points:10},{type:"fill_blank",q:"La autenticación de _____ factores usa contraseña + código móvil",answers:[['dos', '2']],points:10},{type:"match_pairs",q:"Empareja amenazas:",left:['Virus', 'Gusano', 'Spyware', 'Ransomware'],right:['Infecta archivos', 'Se replica solo', 'Espía usuario', 'Cifra datos'],points:10},{type:"order_steps",q:"Ordena capas de seguridad:",steps:['Prevención', 'Detección', 'Respuesta', 'Recuperación', 'Análisis forense'],points:10},{type:"multiple_choice",q:"¿Qué tipo de malware cifra archivos y pide rescate?",options:['A:Virus', 'B:Ransomware', 'C:Troyano', 'D:Gusano'],correct:1,points:10},{type:"true_false",q:"Un firewall bloquea tráfico no autorizado",correct:true,points:10},{type:"fill_blank",q:"La autenticación de _____ factores usa contraseña + código móvil",answers:[['dos', '2']],points:10},{type:"match_pairs",q:"Empareja amenazas:",left:['Virus', 'Gusano', 'Spyware', 'Ransomware'],right:['Infecta archivos', 'Se replica solo', 'Espía usuario', 'Cifra datos'],points:10},{type:"order_steps",q:"Ordena capas de seguridad:",steps:['Prevención', 'Detección', 'Respuesta', 'Recuperación', 'Análisis forense'],points:10},{type:"multiple_choice",q:"¿Qué tipo de malware cifra archivos y pide rescate?",options:['A:Virus', 'B:Ransomware', 'C:Troyano', 'D:Gusano'],correct:1,points:10},{type:"true_false",q:"Un firewall bloquea tráfico no autorizado",correct:true,points:10},{type:"fill_blank",q:"La autenticación de _____ factores usa contraseña + código móvil",answers:[['dos', '2']],points:10},{type:"match_pairs",q:"Empareja amenazas:",left:['Virus', 'Gusano', 'Spyware', 'Ransomware'],right:['Infecta archivos', 'Se replica solo', 'Espía usuario', 'Cifra datos'],points:10},{type:"order_steps",q:"Ordena capas de seguridad:",steps:['Prevención', 'Detección', 'Respuesta', 'Recuperación', 'Análisis forense'],points:10}],
-seguridad_medio:[{type:"multiple_choice",q:"¿Qué algoritmo de cifrado simétrico es estándar actual?",options:['A:DES', 'B:3DES', 'C:AES-256', 'D:RC4'],correct:2,points:15},{type:"true_false",q:"VPN cifra conexiones mediante túneles seguros",correct:true,points:15},{type:"fill_blank",q:"Un ataque _____ sobrecarga servidores con tráfico masivo",answers:[['ddos', 'denegacion servicio']],points:15},{type:"match_pairs",q:"Empareja protocolos:",left:['HTTPS', 'SSH', 'FTPS', 'SMTPS'],right:['443', '22', '990', '465'],points:15},{type:"order_steps",q:"Ordena fases ataque:",steps:['Reconocimiento', 'Escaneo', 'Explotación', 'Mantener acceso', 'Borrar huellas'],points:15},{type:"multiple_choice",q:"¿Qué algoritmo de cifrado simétrico es estándar actual?",options:['A:DES', 'B:3DES', 'C:AES-256', 'D:RC4'],correct:2,points:15},{type:"true_false",q:"VPN cifra conexiones mediante túneles seguros",correct:true,points:15},{type:"fill_blank",q:"Un ataque _____ sobrecarga servidores con tráfico masivo",answers:[['ddos', 'denegacion servicio']],points:15},{type:"match_pairs",q:"Empareja protocolos:",left:['HTTPS', 'SSH', 'FTPS', 'SMTPS'],right:['443', '22', '990', '465'],points:15},{type:"order_steps",q:"Ordena fases ataque:",steps:['Reconocimiento', 'Escaneo', 'Explotación', 'Mantener acceso', 'Borrar huellas'],points:15},{type:"multiple_choice",q:"¿Qué algoritmo de cifrado simétrico es estándar actual?",options:['A:DES', 'B:3DES', 'C:AES-256', 'D:RC4'],correct:2,points:15},{type:"true_false",q:"VPN cifra conexiones mediante túneles seguros",correct:true,points:15},{type:"fill_blank",q:"Un ataque _____ sobrecarga servidores con tráfico masivo",answers:[['ddos', 'denegacion servicio']],points:15},{type:"match_pairs",q:"Empareja protocolos:",left:['HTTPS', 'SSH', 'FTPS', 'SMTPS'],right:['443', '22', '990', '465'],points:15},{type:"order_steps",q:"Ordena fases ataque:",steps:['Reconocimiento', 'Escaneo', 'Explotación', 'Mantener acceso', 'Borrar huellas'],points:15}],
-seguridad_dificil:[{type:"multiple_choice",q:"¿Qué estándar ISO define gestión de seguridad de información?",options:['A:9001', 'B:27001', 'C:14001', 'D:20000'],correct:1,points:20},{type:"true_false",q:"Zero-day explota vulnerabilidad sin parche disponible",correct:true,points:20},{type:"fill_blank",q:"SIEM significa Security _____ and Event _____",answers:[['information', 'management']],points:20},{type:"match_pairs",q:"Empareja herramientas:",left:['Nmap', 'Metasploit', 'Wireshark', 'Burp Suite'],right:['Escaneo puertos', 'Explotación', 'Análisis red', 'Test web'],points:20},{type:"order_steps",q:"Ordena respuesta incidente:",steps:['Preparación', 'Detección', 'Contención', 'Erradicación', 'Recuperación', 'Lecciones'],points:20},{type:"multiple_choice",q:"¿Qué estándar ISO define gestión de seguridad de información?",options:['A:9001', 'B:27001', 'C:14001', 'D:20000'],correct:1,points:20},{type:"true_false",q:"Zero-day explota vulnerabilidad sin parche disponible",correct:true,points:20},{type:"fill_blank",q:"SIEM significa Security _____ and Event _____",answers:[['information', 'management']],points:20},{type:"match_pairs",q:"Empareja herramientas:",left:['Nmap', 'Metasploit', 'Wireshark', 'Burp Suite'],right:['Escaneo puertos', 'Explotación', 'Análisis red', 'Test web'],points:20},{type:"order_steps",q:"Ordena respuesta incidente:",steps:['Preparación', 'Detección', 'Contención', 'Erradicación', 'Recuperación', 'Lecciones'],points:20},{type:"multiple_choice",q:"¿Qué estándar ISO define gestión de seguridad de información?",options:['A:9001', 'B:27001', 'C:14001', 'D:20000'],correct:1,points:20},{type:"true_false",q:"Zero-day explota vulnerabilidad sin parche disponible",correct:true,points:20},{type:"fill_blank",q:"SIEM significa Security _____ and Event _____",answers:[['information', 'management']],points:20},{type:"match_pairs",q:"Empareja herramientas:",left:['Nmap', 'Metasploit', 'Wireshark', 'Burp Suite'],right:['Escaneo puertos', 'Explotación', 'Análisis red', 'Test web'],points:20},{type:"order_steps",q:"Ordena respuesta incidente:",steps:['Preparación', 'Detección', 'Contención', 'Erradicación', 'Recuperación', 'Lecciones'],points:20}],
-servicios_facil:[{type:"multiple_choice",q:"¿Qué puerto usa HTTP por defecto?",options:['A:21', 'B:80', 'C:443', 'D:8080'],correct:1,points:10},{type:"true_false",q:"DNS traduce nombres de dominio a direcciones IP",correct:true,points:10},{type:"fill_blank",q:"_____ asigna IPs automáticamente en una red",answers:[['dhcp']],points:10},{type:"match_pairs",q:"Empareja servicios:",left:['Apache', 'MySQL', 'Postfix', 'Samba'],right:['Web server', 'Base datos', 'Email', 'Archivos Windows'],points:10},{type:"order_steps",q:"Ordena instalación Apache:",steps:['Instalar paquete', 'Configurar virtual hosts', 'Habilitar módulos', 'Reiniciar servicio', 'Verificar funcionamiento'],points:10},{type:"multiple_choice",q:"¿Qué puerto usa HTTP por defecto?",options:['A:21', 'B:80', 'C:443', 'D:8080'],correct:1,points:10},{type:"true_false",q:"DNS traduce nombres de dominio a direcciones IP",correct:true,points:10},{type:"fill_blank",q:"_____ asigna IPs automáticamente en una red",answers:[['dhcp']],points:10},{type:"match_pairs",q:"Empareja servicios:",left:['Apache', 'MySQL', 'Postfix', 'Samba'],right:['Web server', 'Base datos', 'Email', 'Archivos Windows'],points:10},{type:"order_steps",q:"Ordena instalación Apache:",steps:['Instalar paquete', 'Configurar virtual hosts', 'Habilitar módulos', 'Reiniciar servicio', 'Verificar funcionamiento'],points:10},{type:"multiple_choice",q:"¿Qué puerto usa HTTP por defecto?",options:['A:21', 'B:80', 'C:443', 'D:8080'],correct:1,points:10},{type:"true_false",q:"DNS traduce nombres de dominio a direcciones IP",correct:true,points:10},{type:"fill_blank",q:"_____ asigna IPs automáticamente en una red",answers:[['dhcp']],points:10},{type:"match_pairs",q:"Empareja servicios:",left:['Apache', 'MySQL', 'Postfix', 'Samba'],right:['Web server', 'Base datos', 'Email', 'Archivos Windows'],points:10},{type:"order_steps",q:"Ordena instalación Apache:",steps:['Instalar paquete', 'Configurar virtual hosts', 'Habilitar módulos', 'Reiniciar servicio', 'Verificar funcionamiento'],points:10}],
-servicios_medio:[{type:"multiple_choice",q:"¿En qué archivo se configura Apache en Ubuntu?",options:['A:/etc/httpd.conf', 'B:/etc/apache2/apache2.conf', 'C:/var/www/conf', 'D:/usr/apache/config'],correct:1,points:15},{type:"true_false",q:"Un servidor DNS autoritativo almacena registros de zona",correct:true,points:15},{type:"fill_blank",q:"FTP usa puerto _____ para control y 20 para datos",answers:[['21']],points:15},{type:"match_pairs",q:"Empareja registros DNS:",left:['A', 'AAAA', 'MX', 'CNAME'],right:['IPv4', 'IPv6', 'Mail server', 'Alias'],points:15},{type:"order_steps",q:"Ordena configuración DHCP:",steps:['Instalar servidor', 'Definir rango IPs', 'Configurar gateway', 'Establecer DNS', 'Reiniciar servicio'],points:15},{type:"multiple_choice",q:"¿En qué archivo se configura Apache en Ubuntu?",options:['A:/etc/httpd.conf', 'B:/etc/apache2/apache2.conf', 'C:/var/www/conf', 'D:/usr/apache/config'],correct:1,points:15},{type:"true_false",q:"Un servidor DNS autoritativo almacena registros de zona",correct:true,points:15},{type:"fill_blank",q:"FTP usa puerto _____ para control y 20 para datos",answers:[['21']],points:15},{type:"match_pairs",q:"Empareja registros DNS:",left:['A', 'AAAA', 'MX', 'CNAME'],right:['IPv4', 'IPv6', 'Mail server', 'Alias'],points:15},{type:"order_steps",q:"Ordena configuración DHCP:",steps:['Instalar servidor', 'Definir rango IPs', 'Configurar gateway', 'Establecer DNS', 'Reiniciar servicio'],points:15},{type:"multiple_choice",q:"¿En qué archivo se configura Apache en Ubuntu?",options:['A:/etc/httpd.conf', 'B:/etc/apache2/apache2.conf', 'C:/var/www/conf', 'D:/usr/apache/config'],correct:1,points:15},{type:"true_false",q:"Un servidor DNS autoritativo almacena registros de zona",correct:true,points:15},{type:"fill_blank",q:"FTP usa puerto _____ para control y 20 para datos",answers:[['21']],points:15},{type:"match_pairs",q:"Empareja registros DNS:",left:['A', 'AAAA', 'MX', 'CNAME'],right:['IPv4', 'IPv6', 'Mail server', 'Alias'],points:15},{type:"order_steps",q:"Ordena configuración DHCP:",steps:['Instalar servidor', 'Definir rango IPs', 'Configurar gateway', 'Establecer DNS', 'Reiniciar servicio'],points:15}],
-servicios_dificil:[{type:"multiple_choice",q:"¿Qué directiva Apache define document root?",options:['A:ServerRoot', 'B:DocumentRoot', 'C:RootDir', 'D:WebRoot'],correct:1,points:20},{type:"true_false",q:"Nginx puede actuar como proxy reverso y balanceador",correct:true,points:20},{type:"fill_blank",q:"El archivo _____ contiene zonas DNS en BIND",answers:[['named.conf']],points:20},{type:"match_pairs",q:"Empareja conceptos:",left:['Load Balancer', 'Reverse Proxy', 'Cache Server', 'CDN'],right:['Distribuye carga', 'Protege backend', 'Acelera respuestas', 'Distribuye contenido'],points:20},{type:"order_steps",q:"Ordena troubleshooting web:",steps:['Verificar servicio activo', 'Revisar logs error', 'Comprobar permisos archivos', 'Validar configuración', 'Testear conectividad'],points:20},{type:"multiple_choice",q:"¿Qué directiva Apache define document root?",options:['A:ServerRoot', 'B:DocumentRoot', 'C:RootDir', 'D:WebRoot'],correct:1,points:20},{type:"true_false",q:"Nginx puede actuar como proxy reverso y balanceador",correct:true,points:20},{type:"fill_blank",q:"El archivo _____ contiene zonas DNS en BIND",answers:[['named.conf']],points:20},{type:"match_pairs",q:"Empareja conceptos:",left:['Load Balancer', 'Reverse Proxy', 'Cache Server', 'CDN'],right:['Distribuye carga', 'Protege backend', 'Acelera respuestas', 'Distribuye contenido'],points:20},{type:"order_steps",q:"Ordena troubleshooting web:",steps:['Verificar servicio activo', 'Revisar logs error', 'Comprobar permisos archivos', 'Validar configuración', 'Testear conectividad'],points:20},{type:"multiple_choice",q:"¿Qué directiva Apache define document root?",options:['A:ServerRoot', 'B:DocumentRoot', 'C:RootDir', 'D:WebRoot'],correct:1,points:20},{type:"true_false",q:"Nginx puede actuar como proxy reverso y balanceador",correct:true,points:20},{type:"fill_blank",q:"El archivo _____ contiene zonas DNS en BIND",answers:[['named.conf']],points:20},{type:"match_pairs",q:"Empareja conceptos:",left:['Load Balancer', 'Reverse Proxy', 'Cache Server', 'CDN'],right:['Distribuye carga', 'Protege backend', 'Acelera respuestas', 'Distribuye contenido'],points:20},{type:"order_steps",q:"Ordena troubleshooting web:",steps:['Verificar servicio activo', 'Revisar logs error', 'Comprobar permisos archivos', 'Validar configuración', 'Testear conectividad'],points:20}],
-sistemasred_facil:[{type:"multiple_choice",q:"¿Qué es Active Directory?",options:['A:Antivirus', 'B:Servicio directorio', 'C:Firewall', 'D:Base datos'],correct:1,points:10},{type:"true_false",q:"LDAP es protocolo para directorios",correct:true,points:10},{type:"fill_blank",q:"Windows Server usa _____ para gestión centralizada",answers:[['active directory', 'ad']],points:10},{type:"match_pairs",q:"Empareja conceptos:",left:['DC', 'OU', 'GPO', 'FSMO'],right:['Domain Controller', 'Organizational Unit', 'Group Policy', 'Roles maestro'],points:10},{type:"order_steps",q:"Ordena unión dominio:",steps:['Configurar DNS', 'Cambiar a dominio', 'Introducir credenciales admin', 'Reiniciar PC', 'Verificar acceso'],points:10},{type:"multiple_choice",q:"¿Qué es Active Directory?",options:['A:Antivirus', 'B:Servicio directorio', 'C:Firewall', 'D:Base datos'],correct:1,points:10},{type:"true_false",q:"LDAP es protocolo para directorios",correct:true,points:10},{type:"fill_blank",q:"Windows Server usa _____ para gestión centralizada",answers:[['active directory', 'ad']],points:10},{type:"match_pairs",q:"Empareja conceptos:",left:['DC', 'OU', 'GPO', 'FSMO'],right:['Domain Controller', 'Organizational Unit', 'Group Policy', 'Roles maestro'],points:10},{type:"order_steps",q:"Ordena unión dominio:",steps:['Configurar DNS', 'Cambiar a dominio', 'Introducir credenciales admin', 'Reiniciar PC', 'Verificar acceso'],points:10},{type:"multiple_choice",q:"¿Qué es Active Directory?",options:['A:Antivirus', 'B:Servicio directorio', 'C:Firewall', 'D:Base datos'],correct:1,points:10},{type:"true_false",q:"LDAP es protocolo para directorios",correct:true,points:10},{type:"fill_blank",q:"Windows Server usa _____ para gestión centralizada",answers:[['active directory', 'ad']],points:10},{type:"match_pairs",q:"Empareja conceptos:",left:['DC', 'OU', 'GPO', 'FSMO'],right:['Domain Controller', 'Organizational Unit', 'Group Policy', 'Roles maestro'],points:10},{type:"order_steps",q:"Ordena unión dominio:",steps:['Configurar DNS', 'Cambiar a dominio', 'Introducir credenciales admin', 'Reiniciar PC', 'Verificar acceso'],points:10}],
-sistemasred_medio:[{type:"multiple_choice",q:"¿Qué comando crea usuario en AD?",options:['A:adduser', 'B:New-ADUser', 'C:useradd', 'D:create-user'],correct:1,points:15},{type:"true_false",q:"GPO aplica políticas de forma centralizada",correct:true,points:15},{type:"fill_blank",q:"_____ permite inicio sesión único en red",answers:[['sso', 'single sign-on']],points:15},{type:"match_pairs",q:"Empareja roles FSMO:",left:['Schema Master', 'Domain Naming', 'RID Master', 'PDC Emulator'],right:['Esquema AD', 'Añadir dominios', 'Identificadores', 'Sincronización tiempo'],points:15},{type:"order_steps",q:"Ordena configuración GPO:",steps:['Crear GPO', 'Configurar settings', 'Vincular a OU', 'Forzar actualización', 'Verificar aplicación'],points:15},{type:"multiple_choice",q:"¿Qué comando crea usuario en AD?",options:['A:adduser', 'B:New-ADUser', 'C:useradd', 'D:create-user'],correct:1,points:15},{type:"true_false",q:"GPO aplica políticas de forma centralizada",correct:true,points:15},{type:"fill_blank",q:"_____ permite inicio sesión único en red",answers:[['sso', 'single sign-on']],points:15},{type:"match_pairs",q:"Empareja roles FSMO:",left:['Schema Master', 'Domain Naming', 'RID Master', 'PDC Emulator'],right:['Esquema AD', 'Añadir dominios', 'Identificadores', 'Sincronización tiempo'],points:15},{type:"order_steps",q:"Ordena configuración GPO:",steps:['Crear GPO', 'Configurar settings', 'Vincular a OU', 'Forzar actualización', 'Verificar aplicación'],points:15},{type:"multiple_choice",q:"¿Qué comando crea usuario en AD?",options:['A:adduser', 'B:New-ADUser', 'C:useradd', 'D:create-user'],correct:1,points:15},{type:"true_false",q:"GPO aplica políticas de forma centralizada",correct:true,points:15},{type:"fill_blank",q:"_____ permite inicio sesión único en red",answers:[['sso', 'single sign-on']],points:15},{type:"match_pairs",q:"Empareja roles FSMO:",left:['Schema Master', 'Domain Naming', 'RID Master', 'PDC Emulator'],right:['Esquema AD', 'Añadir dominios', 'Identificadores', 'Sincronización tiempo'],points:15},{type:"order_steps",q:"Ordena configuración GPO:",steps:['Crear GPO', 'Configurar settings', 'Vincular a OU', 'Forzar actualización', 'Verificar aplicación'],points:15}],
-sistemasred_dificil:[{type:"multiple_choice",q:"¿Qué nivel funcional mínimo para Windows Server 2022 AD?",options:['A:2012', 'B:2016', 'C:2019', 'D:2022'],correct:1,points:20},{type:"true_false",q:"Replicación AD usa protocolo DRS entre controladores",correct:true,points:20},{type:"fill_blank",q:"_____ almacena contraseñas de forma segura en AD",answers:[['ntds.dit']],points:20},{type:"match_pairs",q:"Empareja conceptos:",left:['Trust', 'Forest', 'Tree', 'Site'],right:['Relación dominios', 'Conjunto árboles', 'Jerarquía dominios', 'Topología red'],points:20},{type:"order_steps",q:"Ordena backup AD:",steps:['Usar Windows Backup', 'Seleccionar System State', 'Ejecutar backup', 'Verificar integridad', 'Documentar proceso'],points:20},{type:"multiple_choice",q:"¿Qué nivel funcional mínimo para Windows Server 2022 AD?",options:['A:2012', 'B:2016', 'C:2019', 'D:2022'],correct:1,points:20},{type:"true_false",q:"Replicación AD usa protocolo DRS entre controladores",correct:true,points:20},{type:"fill_blank",q:"_____ almacena contraseñas de forma segura en AD",answers:[['ntds.dit']],points:20},{type:"match_pairs",q:"Empareja conceptos:",left:['Trust', 'Forest', 'Tree', 'Site'],right:['Relación dominios', 'Conjunto árboles', 'Jerarquía dominios', 'Topología red'],points:20},{type:"order_steps",q:"Ordena backup AD:",steps:['Usar Windows Backup', 'Seleccionar System State', 'Ejecutar backup', 'Verificar integridad', 'Documentar proceso'],points:20},{type:"multiple_choice",q:"¿Qué nivel funcional mínimo para Windows Server 2022 AD?",options:['A:2012', 'B:2016', 'C:2019', 'D:2022'],correct:1,points:20},{type:"true_false",q:"Replicación AD usa protocolo DRS entre controladores",correct:true,points:20},{type:"fill_blank",q:"_____ almacena contraseñas de forma segura en AD",answers:[['ntds.dit']],points:20},{type:"match_pairs",q:"Empareja conceptos:",left:['Trust', 'Forest', 'Tree', 'Site'],right:['Relación dominios', 'Conjunto árboles', 'Jerarquía dominios', 'Topología red'],points:20},{type:"order_steps",q:"Ordena backup AD:",steps:['Usar Windows Backup', 'Seleccionar System State', 'Ejecutar backup', 'Verificar integridad', 'Documentar proceso'],points:20}],
-web_facil:[{type:"multiple_choice",q:"¿Qué etiqueta HTML define título página?",options:['A:<header>', 'B:<title>', 'C:<h1>', 'D:<head>'],correct:1,points:10},{type:"true_false",q:"CSS controla la presentación visual de HTML",correct:true,points:10},{type:"fill_blank",q:"_____ es lenguaje de programación del navegador",answers:[['javascript', 'js']],points:10},{type:"match_pairs",q:"Empareja tecnologías:",left:['HTML', 'CSS', 'JavaScript', 'PHP'],right:['Estructura', 'Estilos', 'Interactividad', 'Servidor'],points:10},{type:"order_steps",q:"Ordena estructura HTML:",steps:['<!DOCTYPE html>', '<html>', '<head>', '<body>', '</html>'],points:10},{type:"multiple_choice",q:"¿Qué etiqueta HTML define título página?",options:['A:<header>', 'B:<title>', 'C:<h1>', 'D:<head>'],correct:1,points:10},{type:"true_false",q:"CSS controla la presentación visual de HTML",correct:true,points:10},{type:"fill_blank",q:"_____ es lenguaje de programación del navegador",answers:[['javascript', 'js']],points:10},{type:"match_pairs",q:"Empareja tecnologías:",left:['HTML', 'CSS', 'JavaScript', 'PHP'],right:['Estructura', 'Estilos', 'Interactividad', 'Servidor'],points:10},{type:"order_steps",q:"Ordena estructura HTML:",steps:['<!DOCTYPE html>', '<html>', '<head>', '<body>', '</html>'],points:10},{type:"multiple_choice",q:"¿Qué etiqueta HTML define título página?",options:['A:<header>', 'B:<title>', 'C:<h1>', 'D:<head>'],correct:1,points:10},{type:"true_false",q:"CSS controla la presentación visual de HTML",correct:true,points:10},{type:"fill_blank",q:"_____ es lenguaje de programación del navegador",answers:[['javascript', 'js']],points:10},{type:"match_pairs",q:"Empareja tecnologías:",left:['HTML', 'CSS', 'JavaScript', 'PHP'],right:['Estructura', 'Estilos', 'Interactividad', 'Servidor'],points:10},{type:"order_steps",q:"Ordena estructura HTML:",steps:['<!DOCTYPE html>', '<html>', '<head>', '<body>', '</html>'],points:10}],
-web_medio:[{type:"multiple_choice",q:"¿Qué selector CSS tiene mayor especificidad?",options:['A:.clase', 'B:#id', 'C:etiqueta', 'D:*'],correct:1,points:15},{type:"true_false",q:"Fetch API permite peticiones HTTP asíncronas en JS",correct:true,points:15},{type:"fill_blank",q:"_____ es framework CSS popular para diseño responsive",answers:[['bootstrap', 'tailwind']],points:15},{type:"match_pairs",q:"Empareja conceptos:",left:['DOM', 'JSON', 'AJAX', 'REST'],right:['Árbol documento', 'Formato datos', 'Peticiones asíncronas', 'API arquitectura'],points:15},{type:"order_steps",q:"Ordena desarrollo web:",steps:['Diseñar wireframe', 'Escribir HTML', 'Aplicar CSS', 'Añadir JavaScript', 'Testear responsive'],points:15},{type:"multiple_choice",q:"¿Qué selector CSS tiene mayor especificidad?",options:['A:.clase', 'B:#id', 'C:etiqueta', 'D:*'],correct:1,points:15},{type:"true_false",q:"Fetch API permite peticiones HTTP asíncronas en JS",correct:true,points:15},{type:"fill_blank",q:"_____ es framework CSS popular para diseño responsive",answers:[['bootstrap', 'tailwind']],points:15},{type:"match_pairs",q:"Empareja conceptos:",left:['DOM', 'JSON', 'AJAX', 'REST'],right:['Árbol documento', 'Formato datos', 'Peticiones asíncronas', 'API arquitectura'],points:15},{type:"order_steps",q:"Ordena desarrollo web:",steps:['Diseñar wireframe', 'Escribir HTML', 'Aplicar CSS', 'Añadir JavaScript', 'Testear responsive'],points:15},{type:"multiple_choice",q:"¿Qué selector CSS tiene mayor especificidad?",options:['A:.clase', 'B:#id', 'C:etiqueta', 'D:*'],correct:1,points:15},{type:"true_false",q:"Fetch API permite peticiones HTTP asíncronas en JS",correct:true,points:15},{type:"fill_blank",q:"_____ es framework CSS popular para diseño responsive",answers:[['bootstrap', 'tailwind']],points:15},{type:"match_pairs",q:"Empareja conceptos:",left:['DOM', 'JSON', 'AJAX', 'REST'],right:['Árbol documento', 'Formato datos', 'Peticiones asíncronas', 'API arquitectura'],points:15},{type:"order_steps",q:"Ordena desarrollo web:",steps:['Diseñar wireframe', 'Escribir HTML', 'Aplicar CSS', 'Añadir JavaScript', 'Testear responsive'],points:15}],
-web_dificil:[{type:"multiple_choice",q:"¿Qué método HTTP es idempotente y seguro?",options:['A:POST', 'B:GET', 'C:PUT', 'D:DELETE'],correct:1,points:20},{type:"true_false",q:"WebSockets permiten comunicación bidireccional en tiempo real",correct:true,points:20},{type:"fill_blank",q:"_____ previene ataques XSS sanitizando entradas",answers:[['validacion', 'escape', 'sanitizacion']],points:20},{type:"match_pairs",q:"Empareja frameworks:",left:['React', 'Vue', 'Angular', 'Svelte'],right:['Componentes UI', 'Progressive framework', 'Full framework', 'Compilador'],points:20},{type:"order_steps",q:"Ordena optimización web:",steps:['Minificar archivos', 'Comprimir imágenes', 'Habilitar cache', 'Usar CDN', 'Lazy loading'],points:20},{type:"multiple_choice",q:"¿Qué método HTTP es idempotente y seguro?",options:['A:POST', 'B:GET', 'C:PUT', 'D:DELETE'],correct:1,points:20},{type:"true_false",q:"WebSockets permiten comunicación bidireccional en tiempo real",correct:true,points:20},{type:"fill_blank",q:"_____ previene ataques XSS sanitizando entradas",answers:[['validacion', 'escape', 'sanitizacion']],points:20},{type:"match_pairs",q:"Empareja frameworks:",left:['React', 'Vue', 'Angular', 'Svelte'],right:['Componentes UI', 'Progressive framework', 'Full framework', 'Compilador'],points:20},{type:"order_steps",q:"Ordena optimización web:",steps:['Minificar archivos', 'Comprimir imágenes', 'Habilitar cache', 'Usar CDN', 'Lazy loading'],points:20},{type:"multiple_choice",q:"¿Qué método HTTP es idempotente y seguro?",options:['A:POST', 'B:GET', 'C:PUT', 'D:DELETE'],correct:1,points:20},{type:"true_false",q:"WebSockets permiten comunicación bidireccional en tiempo real",correct:true,points:20},{type:"fill_blank",q:"_____ previene ataques XSS sanitizando entradas",answers:[['validacion', 'escape', 'sanitizacion']],points:20},{type:"match_pairs",q:"Empareja frameworks:",left:['React', 'Vue', 'Angular', 'Svelte'],right:['Componentes UI', 'Progressive framework', 'Full framework', 'Compilador'],points:20},{type:"order_steps",q:"Ordena optimización web:",steps:['Minificar archivos', 'Comprimir imágenes', 'Habilitar cache', 'Usar CDN', 'Lazy loading'],points:20}],
-ingles_facil:[{type:"multiple_choice",q:"'To boot' significa:",options:['A:Arrancar', 'B:Apagar', 'C:Instalar', 'D:Actualizar'],correct:0,points:10},{type:"true_false",q:"'Download' significa descargar archivos",correct:true,points:10},{type:"fill_blank",q:"The opposite of 'upload' is _____",answers:[['download']],points:10},{type:"match_pairs",q:"Match terms:",left:['Hardware', 'Software', 'Firmware', 'Driver'],right:['Physical components', 'Programs', 'Embedded code', 'Device controller'],points:10},{type:"order_steps",q:"Order PC startup:",steps:['Press power', 'POST test', 'Load BIOS', 'Boot OS', 'Login screen'],points:10},{type:"multiple_choice",q:"'To boot' significa:",options:['A:Arrancar', 'B:Apagar', 'C:Instalar', 'D:Actualizar'],correct:0,points:10},{type:"true_false",q:"'Download' significa descargar archivos",correct:true,points:10},{type:"fill_blank",q:"The opposite of 'upload' is _____",answers:[['download']],points:10},{type:"match_pairs",q:"Match terms:",left:['Hardware', 'Software', 'Firmware', 'Driver'],right:['Physical components', 'Programs', 'Embedded code', 'Device controller'],points:10},{type:"order_steps",q:"Order PC startup:",steps:['Press power', 'POST test', 'Load BIOS', 'Boot OS', 'Login screen'],points:10},{type:"multiple_choice",q:"'To boot' significa:",options:['A:Arrancar', 'B:Apagar', 'C:Instalar', 'D:Actualizar'],correct:0,points:10},{type:"true_false",q:"'Download' significa descargar archivos",correct:true,points:10},{type:"fill_blank",q:"The opposite of 'upload' is _____",answers:[['download']],points:10},{type:"match_pairs",q:"Match terms:",left:['Hardware', 'Software', 'Firmware', 'Driver'],right:['Physical components', 'Programs', 'Embedded code', 'Device controller'],points:10},{type:"order_steps",q:"Order PC startup:",steps:['Press power', 'POST test', 'Load BIOS', 'Boot OS', 'Login screen'],points:10}],
-ingles_medio:[{type:"multiple_choice",q:"'Troubleshooting' significa:",options:['A:Instalar', 'B:Solucionar problemas', 'C:Actualizar', 'D:Configurar'],correct:1,points:15},{type:"true_false",q:"'Firewall' protects networks from unauthorized access",correct:true,points:15},{type:"fill_blank",q:"A _____ is a malicious software program",answers:[['malware', 'virus']],points:15},{type:"match_pairs",q:"Match network terms:",left:['Router', 'Switch', 'Hub', 'Gateway'],right:['Routes packets', 'Connects devices', 'Broadcasts data', 'Network bridge'],points:15},{type:"order_steps",q:"Order network setup:",steps:['Connect cables', 'Configure IP', 'Set gateway', 'Test connectivity', 'Verify access'],points:15},{type:"multiple_choice",q:"'Troubleshooting' significa:",options:['A:Instalar', 'B:Solucionar problemas', 'C:Actualizar', 'D:Configurar'],correct:1,points:15},{type:"true_false",q:"'Firewall' protects networks from unauthorized access",correct:true,points:15},{type:"fill_blank",q:"A _____ is a malicious software program",answers:[['malware', 'virus']],points:15},{type:"match_pairs",q:"Match network terms:",left:['Router', 'Switch', 'Hub', 'Gateway'],right:['Routes packets', 'Connects devices', 'Broadcasts data', 'Network bridge'],points:15},{type:"order_steps",q:"Order network setup:",steps:['Connect cables', 'Configure IP', 'Set gateway', 'Test connectivity', 'Verify access'],points:15},{type:"multiple_choice",q:"'Troubleshooting' significa:",options:['A:Instalar', 'B:Solucionar problemas', 'C:Actualizar', 'D:Configurar'],correct:1,points:15},{type:"true_false",q:"'Firewall' protects networks from unauthorized access",correct:true,points:15},{type:"fill_blank",q:"A _____ is a malicious software program",answers:[['malware', 'virus']],points:15},{type:"match_pairs",q:"Match network terms:",left:['Router', 'Switch', 'Hub', 'Gateway'],right:['Routes packets', 'Connects devices', 'Broadcasts data', 'Network bridge'],points:15},{type:"order_steps",q:"Order network setup:",steps:['Connect cables', 'Configure IP', 'Set gateway', 'Test connectivity', 'Verify access'],points:15}],
-ingles_dificil:[{type:"multiple_choice",q:"'Deprecated' means:",options:['A:New', 'B:Obsolete', 'C:Updated', 'D:Popular'],correct:1,points:20},{type:"true_false",q:"'Bandwidth' refers to data transmission capacity",correct:true,points:20},{type:"fill_blank",q:"_____ is the process of converting data to unreadable format",answers:[['encryption', 'encrypting']],points:20},{type:"match_pairs",q:"Match security terms:",left:['Phishing', 'Spoofing', 'Sniffing', 'Hijacking'],right:['Fake emails', 'Identity theft', 'Packet capture', 'Session takeover'],points:20},{type:"order_steps",q:"Order incident response:",steps:['Identify threat', 'Contain damage', 'Eradicate cause', 'Recover systems', 'Document lessons'],points:20},{type:"multiple_choice",q:"'Deprecated' means:",options:['A:New', 'B:Obsolete', 'C:Updated', 'D:Popular'],correct:1,points:20},{type:"true_false",q:"'Bandwidth' refers to data transmission capacity",correct:true,points:20},{type:"fill_blank",q:"_____ is the process of converting data to unreadable format",answers:[['encryption', 'encrypting']],points:20},{type:"match_pairs",q:"Match security terms:",left:['Phishing', 'Spoofing', 'Sniffing', 'Hijacking'],right:['Fake emails', 'Identity theft', 'Packet capture', 'Session takeover'],points:20},{type:"order_steps",q:"Order incident response:",steps:['Identify threat', 'Contain damage', 'Eradicate cause', 'Recover systems', 'Document lessons'],points:20},{type:"multiple_choice",q:"'Deprecated' means:",options:['A:New', 'B:Obsolete', 'C:Updated', 'D:Popular'],correct:1,points:20},{type:"true_false",q:"'Bandwidth' refers to data transmission capacity",correct:true,points:20},{type:"fill_blank",q:"_____ is the process of converting data to unreadable format",answers:[['encryption', 'encrypting']],points:20},{type:"match_pairs",q:"Match security terms:",left:['Phishing', 'Spoofing', 'Sniffing', 'Hijacking'],right:['Fake emails', 'Identity theft', 'Packet capture', 'Session takeover'],points:20},{type:"order_steps",q:"Order incident response:",steps:['Identify threat', 'Contain damage', 'Eradicate cause', 'Recover systems', 'Document lessons'],points:20}],
-proyecto_facil:[{type:"multiple_choice",q:"¿Qué es un diagrama de Gantt?",options:['A:Flujo procesos', 'B:Planificación temporal', 'C:Org anigrama', 'D:Red computadoras'],correct:1,points:10},{type:"true_false",q:"La metodología Agile usa iteraciones cortas",correct:true,points:10},{type:"fill_blank",q:"_____ es documento que define alcance del proyecto",answers:[['edt', 'wbs', 'scope']],points:10},{type:"match_pairs",q:"Empareja roles:",left:['Product Owner', 'Scrum Master', 'Developer', 'Stakeholder'],right:['Define producto', 'Facilita proceso', 'Implementa', 'Interesado'],points:10},{type:"order_steps",q:"Ordena proyecto:",steps:['Inicio', 'Planificación', 'Ejecución', 'Monitoreo', 'Cierre'],points:10},{type:"multiple_choice",q:"¿Qué es un diagrama de Gantt?",options:['A:Flujo procesos', 'B:Planificación temporal', 'C:Org anigrama', 'D:Red computadoras'],correct:1,points:10},{type:"true_false",q:"La metodología Agile usa iteraciones cortas",correct:true,points:10},{type:"fill_blank",q:"_____ es documento que define alcance del proyecto",answers:[['edt', 'wbs', 'scope']],points:10},{type:"match_pairs",q:"Empareja roles:",left:['Product Owner', 'Scrum Master', 'Developer', 'Stakeholder'],right:['Define producto', 'Facilita proceso', 'Implementa', 'Interesado'],points:10},{type:"order_steps",q:"Ordena proyecto:",steps:['Inicio', 'Planificación', 'Ejecución', 'Monitoreo', 'Cierre'],points:10},{type:"multiple_choice",q:"¿Qué es un diagrama de Gantt?",options:['A:Flujo procesos', 'B:Planificación temporal', 'C:Org anigrama', 'D:Red computadoras'],correct:1,points:10},{type:"true_false",q:"La metodología Agile usa iteraciones cortas",correct:true,points:10},{type:"fill_blank",q:"_____ es documento que define alcance del proyecto",answers:[['edt', 'wbs', 'scope']],points:10},{type:"match_pairs",q:"Empareja roles:",left:['Product Owner', 'Scrum Master', 'Developer', 'Stakeholder'],right:['Define producto', 'Facilita proceso', 'Implementa', 'Interesado'],points:10},{type:"order_steps",q:"Ordena proyecto:",steps:['Inicio', 'Planificación', 'Ejecución', 'Monitoreo', 'Cierre'],points:10}],
-proyecto_medio:[{type:"multiple_choice",q:"¿Qué metodología usa sprints de 2-4 semanas?",options:['A:Waterfall', 'B:Scrum', 'C:Kanban', 'D:XP'],correct:1,points:15},{type:"true_false",q:"El triángulo de gestión incluye alcance, tiempo y coste",correct:true,points:15},{type:"fill_blank",q:"_____ identifica y evalúa riesgos del proyecto",answers:[['analisis riesgos', 'risk management']],points:15},{type:"match_pairs",q:"Empareja artefactos:",left:['Product Backlog', 'Sprint Backlog', 'Burndown', 'Retrospective'],right:['Lista priorizada', 'Tareas sprint', 'Progreso visual', 'Mejora continua'],points:15},{type:"order_steps",q:"Ordena Scrum:",steps:['Sprint Planning', 'Daily Standup', 'Development', 'Sprint Review', 'Sprint Retrospective'],points:15},{type:"multiple_choice",q:"¿Qué metodología usa sprints de 2-4 semanas?",options:['A:Waterfall', 'B:Scrum', 'C:Kanban', 'D:XP'],correct:1,points:15},{type:"true_false",q:"El triángulo de gestión incluye alcance, tiempo y coste",correct:true,points:15},{type:"fill_blank",q:"_____ identifica y evalúa riesgos del proyecto",answers:[['analisis riesgos', 'risk management']],points:15},{type:"match_pairs",q:"Empareja artefactos:",left:['Product Backlog', 'Sprint Backlog', 'Burndown', 'Retrospective'],right:['Lista priorizada', 'Tareas sprint', 'Progreso visual', 'Mejora continua'],points:15},{type:"order_steps",q:"Ordena Scrum:",steps:['Sprint Planning', 'Daily Standup', 'Development', 'Sprint Review', 'Sprint Retrospective'],points:15},{type:"multiple_choice",q:"¿Qué metodología usa sprints de 2-4 semanas?",options:['A:Waterfall', 'B:Scrum', 'C:Kanban', 'D:XP'],correct:1,points:15},{type:"true_false",q:"El triángulo de gestión incluye alcance, tiempo y coste",correct:true,points:15},{type:"fill_blank",q:"_____ identifica y evalúa riesgos del proyecto",answers:[['analisis riesgos', 'risk management']],points:15},{type:"match_pairs",q:"Empareja artefactos:",left:['Product Backlog', 'Sprint Backlog', 'Burndown', 'Retrospective'],right:['Lista priorizada', 'Tareas sprint', 'Progreso visual', 'Mejora continua'],points:15},{type:"order_steps",q:"Ordena Scrum:",steps:['Sprint Planning', 'Daily Standup', 'Development', 'Sprint Review', 'Sprint Retrospective'],points:15}],
-proyecto_dificil:[{type:"multiple_choice",q:"¿Qué técnica estima esfuerzo con consenso?",options:['A:PERT', 'B:Planning Poker', 'C:CPM', 'D:Monte Carlo'],correct:1,points:20},{type:"true_false",q:"DevOps integra desarrollo y operaciones IT",correct:true,points:20},{type:"fill_blank",q:"_____ mide valor ganado en gestión proyectos",answers:[['evm', 'earned value']],points:20},{type:"match_pairs",q:"Empareja métricas:",left:['Velocity', 'Lead Time', 'Cycle Time', 'Throughput'],right:['Puntos por sprint', 'Tiempo entrega', 'Tiempo desarrollo', 'Items completados'],points:20},{type:"order_steps",q:"Ordena CI/CD:",steps:['Commit code', 'Run tests', 'Build artifact', 'Deploy staging', 'Release production'],points:20},{type:"multiple_choice",q:"¿Qué técnica estima esfuerzo con consenso?",options:['A:PERT', 'B:Planning Poker', 'C:CPM', 'D:Monte Carlo'],correct:1,points:20},{type:"true_false",q:"DevOps integra desarrollo y operaciones IT",correct:true,points:20},{type:"fill_blank",q:"_____ mide valor ganado en gestión proyectos",answers:[['evm', 'earned value']],points:20},{type:"match_pairs",q:"Empareja métricas:",left:['Velocity', 'Lead Time', 'Cycle Time', 'Throughput'],right:['Puntos por sprint', 'Tiempo entrega', 'Tiempo desarrollo', 'Items completados'],points:20},{type:"order_steps",q:"Ordena CI/CD:",steps:['Commit code', 'Run tests', 'Build artifact', 'Deploy staging', 'Release production'],points:20},{type:"multiple_choice",q:"¿Qué técnica estima esfuerzo con consenso?",options:['A:PERT', 'B:Planning Poker', 'C:CPM', 'D:Monte Carlo'],correct:1,points:20},{type:"true_false",q:"DevOps integra desarrollo y operaciones IT",correct:true,points:20},{type:"fill_blank",q:"_____ mide valor ganado en gestión proyectos",answers:[['evm', 'earned value']],points:20},{type:"match_pairs",q:"Empareja métricas:",left:['Velocity', 'Lead Time', 'Cycle Time', 'Throughput'],right:['Puntos por sprint', 'Tiempo entrega', 'Tiempo desarrollo', 'Items completados'],points:20},{type:"order_steps",q:"Ordena CI/CD:",steps:['Commit code', 'Run tests', 'Build artifact', 'Deploy staging', 'Release production'],points:20}],
-empleabilidad_facil:[{type:"multiple_choice",q:"¿Qué documento resume experiencia laboral?",options:['A:Carta', 'B:CV', 'C:Contrato', 'D:Nómina'],correct:1,points:10},{type:"true_false",q:"LinkedIn es red social profesional",correct:true,points:10},{type:"fill_blank",q:"_____ es reunión para evaluar candidato",answers:[['entrevista']],points:10},{type:"match_pairs",q:"Empareja conceptos:",left:['CV', 'Cover Letter', 'Portfolio', 'References'],right:['Currículum', 'Carta presentación', 'Trabajos realizados', 'Recomendaciones'],points:10},{type:"order_steps",q:"Ordena búsqueda empleo:",steps:['Actualizar CV', 'Buscar ofertas', 'Enviar candidatura', 'Preparar entrevista', 'Follow-up'],points:10},{type:"multiple_choice",q:"¿Qué documento resume experiencia laboral?",options:['A:Carta', 'B:CV', 'C:Contrato', 'D:Nómina'],correct:1,points:10},{type:"true_false",q:"LinkedIn es red social profesional",correct:true,points:10},{type:"fill_blank",q:"_____ es reunión para evaluar candidato",answers:[['entrevista']],points:10},{type:"match_pairs",q:"Empareja conceptos:",left:['CV', 'Cover Letter', 'Portfolio', 'References'],right:['Currículum', 'Carta presentación', 'Trabajos realizados', 'Recomendaciones'],points:10},{type:"order_steps",q:"Ordena búsqueda empleo:",steps:['Actualizar CV', 'Buscar ofertas', 'Enviar candidatura', 'Preparar entrevista', 'Follow-up'],points:10},{type:"multiple_choice",q:"¿Qué documento resume experiencia laboral?",options:['A:Carta', 'B:CV', 'C:Contrato', 'D:Nómina'],correct:1,points:10},{type:"true_false",q:"LinkedIn es red social profesional",correct:true,points:10},{type:"fill_blank",q:"_____ es reunión para evaluar candidato",answers:[['entrevista']],points:10},{type:"match_pairs",q:"Empareja conceptos:",left:['CV', 'Cover Letter', 'Portfolio', 'References'],right:['Currículum', 'Carta presentación', 'Trabajos realizados', 'Recomendaciones'],points:10},{type:"order_steps",q:"Ordena búsqueda empleo:",steps:['Actualizar CV', 'Buscar ofertas', 'Enviar candidatura', 'Preparar entrevista', 'Follow-up'],points:10}],
-empleabilidad_medio:[{type:"multiple_choice",q:"¿Qué técnica responde preguntas conductuales?",options:['A:Freestyle', 'B:STAR', 'C:SWOT', 'D:5W'],correct:1,points:15},{type:"true_false",q:"Soft skills incluyen comunicación y trabajo en equipo",correct:true,points:15},{type:"fill_blank",q:"_____ es proceso de adaptación a nueva empresa",answers:[['onboarding']],points:15},{type:"match_pairs",q:"Empareja habilidades:",left:['Hard Skills', 'Soft Skills', 'Leadership', 'Problem Solving'],right:['Técnicas específicas', 'Interpersonales', 'Liderazgo', 'Resolución'],points:15},{type:"order_steps",q:"Ordena entrevista:",steps:['Investigar empresa', 'Preparar respuestas', 'Vestir apropiadamente', 'Llegar puntual', 'Agradecer oportunidad'],points:15},{type:"multiple_choice",q:"¿Qué técnica responde preguntas conductuales?",options:['A:Freestyle', 'B:STAR', 'C:SWOT', 'D:5W'],correct:1,points:15},{type:"true_false",q:"Soft skills incluyen comunicación y trabajo en equipo",correct:true,points:15},{type:"fill_blank",q:"_____ es proceso de adaptación a nueva empresa",answers:[['onboarding']],points:15},{type:"match_pairs",q:"Empareja habilidades:",left:['Hard Skills', 'Soft Skills', 'Leadership', 'Problem Solving'],right:['Técnicas específicas', 'Interpersonales', 'Liderazgo', 'Resolución'],points:15},{type:"order_steps",q:"Ordena entrevista:",steps:['Investigar empresa', 'Preparar respuestas', 'Vestir apropiadamente', 'Llegar puntual', 'Agradecer oportunidad'],points:15},{type:"multiple_choice",q:"¿Qué técnica responde preguntas conductuales?",options:['A:Freestyle', 'B:STAR', 'C:SWOT', 'D:5W'],correct:1,points:15},{type:"true_false",q:"Soft skills incluyen comunicación y trabajo en equipo",correct:true,points:15},{type:"fill_blank",q:"_____ es proceso de adaptación a nueva empresa",answers:[['onboarding']],points:15},{type:"match_pairs",q:"Empareja habilidades:",left:['Hard Skills', 'Soft Skills', 'Leadership', 'Problem Solving'],right:['Técnicas específicas', 'Interpersonales', 'Liderazgo', 'Resolución'],points:15},{type:"order_steps",q:"Ordena entrevista:",steps:['Investigar empresa', 'Preparar respuestas', 'Vestir apropiadamente', 'Llegar puntual', 'Agradecer oportunidad'],points:15}],
-empleabilidad_dificil:[{type:"multiple_choice",q:"¿Qué herramienta gestiona marca personal online?",options:['A:ERP', 'B:Personal Branding', 'C:CRM', 'D:SCM'],correct:1,points:20},{type:"true_false",q:"Networking profesional abre oportunidades laborales",correct:true,points:20},{type:"fill_blank",q:"_____ es estrategia para negociar salario",answers:[['benchmarking', 'investigacion mercado']],points:20},{type:"match_pairs",q:"Empareja conceptos:",left:['Elevator Pitch', 'Networking', 'Mentoring', 'Upskilling'],right:['Presentación breve', 'Red contactos', 'Guía experiencia', 'Mejorar habilidades'],points:20},{type:"order_steps",q:"Ordena desarrollo carrera:",steps:['Autoevaluación', 'Definir objetivos', 'Adquirir skills', 'Ganar experiencia', 'Evaluar progreso'],points:20},{type:"multiple_choice",q:"¿Qué herramienta gestiona marca personal online?",options:['A:ERP', 'B:Personal Branding', 'C:CRM', 'D:SCM'],correct:1,points:20},{type:"true_false",q:"Networking profesional abre oportunidades laborales",correct:true,points:20},{type:"fill_blank",q:"_____ es estrategia para negociar salario",answers:[['benchmarking', 'investigacion mercado']],points:20},{type:"match_pairs",q:"Empareja conceptos:",left:['Elevator Pitch', 'Networking', 'Mentoring', 'Upskilling'],right:['Presentación breve', 'Red contactos', 'Guía experiencia', 'Mejorar habilidades'],points:20},{type:"order_steps",q:"Ordena desarrollo carrera:",steps:['Autoevaluación', 'Definir objetivos', 'Adquirir skills', 'Ganar experiencia', 'Evaluar progreso'],points:20},{type:"multiple_choice",q:"¿Qué herramienta gestiona marca personal online?",options:['A:ERP', 'B:Personal Branding', 'C:CRM', 'D:SCM'],correct:1,points:20},{type:"true_false",q:"Networking profesional abre oportunidades laborales",correct:true,points:20},{type:"fill_blank",q:"_____ es estrategia para negociar salario",answers:[['benchmarking', 'investigacion mercado']],points:20},{type:"match_pairs",q:"Empareja conceptos:",left:['Elevator Pitch', 'Networking', 'Mentoring', 'Upskilling'],right:['Presentación breve', 'Red contactos', 'Guía experiencia', 'Mejorar habilidades'],points:20},{type:"order_steps",q:"Ordena desarrollo carrera:",steps:['Autoevaluación', 'Definir objetivos', 'Adquirir skills', 'Ganar experiencia', 'Evaluar progreso'],points:20}],
+],
 empleabilidad2_facil:[{type:"multiple_choice",q:"¿Qué plataforma es clave para empleo IT?",options:['A:Facebook', 'B:LinkedIn', 'C:Instagram', 'D:TikTok'],correct:1,points:10},{type:"true_false",q:"Portfolio online muestra proyectos realizados",correct:true,points:10},{type:"fill_blank",q:"_____ es certificación popular en ciberseguridad",answers:[['comptia', 'ceh', 'cissp']],points:10},{type:"match_pairs",q:"Empareja plataformas:",left:['LinkedIn', 'GitHub', 'Behance', 'Stack Overflow'],right:['Profesional', 'Código', 'Diseño', 'Programación'],points:10},{type:"order_steps",q:"Ordena marca personal:",steps:['Definir nicho', 'Crear contenido', 'Compartir conocimiento', 'Interactuar comunidad', 'Medir impacto'],points:10},{type:"multiple_choice",q:"¿Qué plataforma es clave para empleo IT?",options:['A:Facebook', 'B:LinkedIn', 'C:Instagram', 'D:TikTok'],correct:1,points:10},{type:"true_false",q:"Portfolio online muestra proyectos realizados",correct:true,points:10},{type:"fill_blank",q:"_____ es certificación popular en ciberseguridad",answers:[['comptia', 'ceh', 'cissp']],points:10},{type:"match_pairs",q:"Empareja plataformas:",left:['LinkedIn', 'GitHub', 'Behance', 'Stack Overflow'],right:['Profesional', 'Código', 'Diseño', 'Programación'],points:10},{type:"order_steps",q:"Ordena marca personal:",steps:['Definir nicho', 'Crear contenido', 'Compartir conocimiento', 'Interactuar comunidad', 'Medir impacto'],points:10},{type:"multiple_choice",q:"¿Qué plataforma es clave para empleo IT?",options:['A:Facebook', 'B:LinkedIn', 'C:Instagram', 'D:TikTok'],correct:1,points:10},{type:"true_false",q:"Portfolio online muestra proyectos realizados",correct:true,points:10},{type:"fill_blank",q:"_____ es certificación popular en ciberseguridad",answers:[['comptia', 'ceh', 'cissp']],points:10},{type:"match_pairs",q:"Empareja plataformas:",left:['LinkedIn', 'GitHub', 'Behance', 'Stack Overflow'],right:['Profesional', 'Código', 'Diseño', 'Programación'],points:10},{type:"order_steps",q:"Ordena marca personal:",steps:['Definir nicho', 'Crear contenido', 'Compartir conocimiento', 'Interactuar comunidad', 'Medir impacto'],points:10}],
 empleabilidad2_medio:[{type:"multiple_choice",q:"¿Qué metodología mejora empleabilidad IT?",options:['A:Solo teoría', 'B:Proyectos prácticos', 'C:Solo títulos', 'D:Solo experiencia'],correct:1,points:15},{type:"true_false",q:"Contribuir a open source mejora perfil profesional",correct:true,points:15},{type:"fill_blank",q:"_____ son eventos para conocer profesionales del sector",answers:[['meetups', 'conferencias']],points:15},{type:"match_pairs",q:"Empareja estrategias:",left:['Side Projects', 'Freelancing', 'Bootcamps', 'Hackathons'],right:['Proyectos personales', 'Trabajo autónomo', 'Formación intensiva', 'Competiciones'],points:15},{type:"order_steps",q:"Ordena transición laboral:",steps:['Identificar gap skills', 'Formarse áreas nuevas', 'Hacer networking', 'Aplicar posiciones', 'Negociar oferta'],points:15},{type:"multiple_choice",q:"¿Qué metodología mejora empleabilidad IT?",options:['A:Solo teoría', 'B:Proyectos prácticos', 'C:Solo títulos', 'D:Solo experiencia'],correct:1,points:15},{type:"true_false",q:"Contribuir a open source mejora perfil profesional",correct:true,points:15},{type:"fill_blank",q:"_____ son eventos para conocer profesionales del sector",answers:[['meetups', 'conferencias']],points:15},{type:"match_pairs",q:"Empareja estrategias:",left:['Side Projects', 'Freelancing', 'Bootcamps', 'Hackathons'],right:['Proyectos personales', 'Trabajo autónomo', 'Formación intensiva', 'Competiciones'],points:15},{type:"order_steps",q:"Ordena transición laboral:",steps:['Identificar gap skills', 'Formarse áreas nuevas', 'Hacer networking', 'Aplicar posiciones', 'Negociar oferta'],points:15},{type:"multiple_choice",q:"¿Qué metodología mejora empleabilidad IT?",options:['A:Solo teoría', 'B:Proyectos prácticos', 'C:Solo títulos', 'D:Solo experiencia'],correct:1,points:15},{type:"true_false",q:"Contribuir a open source mejora perfil profesional",correct:true,points:15},{type:"fill_blank",q:"_____ son eventos para conocer profesionales del sector",answers:[['meetups', 'conferencias']],points:15},{type:"match_pairs",q:"Empareja estrategias:",left:['Side Projects', 'Freelancing', 'Bootcamps', 'Hackathons'],right:['Proyectos personales', 'Trabajo autónomo', 'Formación intensiva', 'Competiciones'],points:15},{type:"order_steps",q:"Ordena transición laboral:",steps:['Identificar gap skills', 'Formarse áreas nuevas', 'Hacer networking', 'Aplicar posiciones', 'Negociar oferta'],points:15}],
-empleabilidad2_dificil:[{type:"multiple_choice",q:"¿Qué indicador mide satisfacción laboral?",options:['A:Salario único', 'B:Work-Life Balance', 'C:Solo título', 'D:Ubicación'],correct:1,points:20},{type:"true_false",q:"Remote work requiere autodisciplina y comunicación efectiva",correct:true,points:20},{type:"fill_blank",q:"_____ es técnica para gestionar múltiples ofertas",answers:[['negociacion', 'leverage']],points:20},{type:"match_pairs",q:"Empareja tendencias:",left:['Remote Work', 'Agile Teams', 'DevOps Culture', 'Continuous Learning'],right:['Trabajo remoto', 'Equipos ágiles', 'Cultura DevOps', 'Aprendizaje continuo'],points:20},{type:"order_steps",q:"Ordena crecimiento profesional:",steps:['Evaluar competencias', 'Establecer metas', 'Buscar mentores', 'Obtener certificaciones', 'Liderar proyectos'],points:20},{type:"multiple_choice",q:"¿Qué indicador mide satisfacción laboral?",options:['A:Salario único', 'B:Work-Life Balance', 'C:Solo título', 'D:Ubicación'],correct:1,points:20},{type:"true_false",q:"Remote work requiere autodisciplina y comunicación efectiva",correct:true,points:20},{type:"fill_blank",q:"_____ es técnica para gestionar múltiples ofertas",answers:[['negociacion', 'leverage']],points:20},{type:"match_pairs",q:"Empareja tendencias:",left:['Remote Work', 'Agile Teams', 'DevOps Culture', 'Continuous Learning'],right:['Trabajo remoto', 'Equipos ágiles', 'Cultura DevOps', 'Aprendizaje continuo'],points:20},{type:"order_steps",q:"Ordena crecimiento profesional:",steps:['Evaluar competencias', 'Establecer metas', 'Buscar mentores', 'Obtener certificaciones', 'Liderar proyectos'],points:20},{type:"multiple_choice",q:"¿Qué indicador mide satisfacción laboral?",options:['A:Salario único', 'B:Work-Life Balance', 'C:Solo título', 'D:Ubicación'],correct:1,points:20},{type:"true_false",q:"Remote work requiere autodisciplina y comunicación efectiva",correct:true,points:20},{type:"fill_blank",q:"_____ es técnica para gestionar múltiples ofertas",answers:[['negociacion', 'leverage']],points:20},{type:"match_pairs",q:"Empareja tendencias:",left:['Remote Work', 'Agile Teams', 'DevOps Culture', 'Continuous Learning'],right:['Trabajo remoto', 'Equipos ágiles', 'Cultura DevOps', 'Aprendizaje continuo'],points:20},{type:"order_steps",q:"Ordena crecimiento profesional:",steps:['Evaluar competencias', 'Establecer metas', 'Buscar mentores', 'Obtener certificaciones', 'Liderar proyectos'],points:20}],
-]
+empleabilidad2_dificil:[{type:"multiple_choice",q:"¿Qué indicador mide satisfacción laboral?",options:['A:Salario único', 'B:Work-Life Balance', 'C:Solo título', 'D:Ubicación'],correct:1,points:20},{type:"true_false",q:"Remote work requiere autodisciplina y comunicación efectiva",correct:true,points:20},{type:"fill_blank",q:"_____ es técnica para gestionar múltiples ofertas",answers:[['negociacion', 'leverage']],points:20},{type:"match_pairs",q:"Empareja tendencias:",left:['Remote Work', 'Agile Teams', 'DevOps Culture', 'Continuous Learning'],right:['Trabajo remoto', 'Equipos ágiles', 'Cultura DevOps', 'Aprendizaje continuo'],points:20},{type:"order_steps",q:"Ordena crecimiento profesional:",steps:['Evaluar competencias', 'Establecer metas', 'Buscar mentores', 'Obtener certificaciones', 'Liderar proyectos'],points:20},{type:"multiple_choice",q:"¿Qué indicador mide satisfacción laboral?",options:['A:Salario único', 'B:Work-Life Balance', 'C:Solo título', 'D:Ubicación'],correct:1,points:20},{type:"true_false",q:"Remote work requiere autodisciplina y comunicación efectiva",correct:true,points:20},{type:"fill_blank",q:"_____ es técnica para gestionar múltiples ofertas",answers:[['negociacion', 'leverage']],points:20},{type:"match_pairs",q:"Empareja tendencias:",left:['Remote Work', 'Agile Teams', 'DevOps Culture', 'Continuous Learning'],right:['Trabajo remoto', 'Equipos ágiles', 'Cultura DevOps', 'Aprendizaje continuo'],points:20},{type:"order_steps",q:"Ordena crecimiento profesional:",steps:['Evaluar competencias', 'Establecer metas', 'Buscar mentores', 'Obtener certificaciones', 'Liderar proyectos'],points:20},{type:"multiple_choice",q:"¿Qué indicador mide satisfacción laboral?",options:['A:Salario único', 'B:Work-Life Balance', 'C:Solo título', 'D:Ubicación'],correct:1,points:20},{type:"true_false",q:"Remote work requiere autodisciplina y comunicación efectiva",correct:true,points:20},{type:"fill_blank",q:"_____ es técnica para gestionar múltiples ofertas",answers:[['negociacion', 'leverage']],points:20},{type:"match_pairs",q:"Empareja tendencias:",left:['Remote Work', 'Agile Teams', 'DevOps Culture', 'Continuous Learning'],right:['Trabajo remoto', 'Equipos ágiles', 'Cultura DevOps', 'Aprendizaje continuo'],points:20},{type:"order_steps",q:"Ordena crecimiento profesional:",steps:['Evaluar competencias', 'Establecer metas', 'Buscar mentores', 'Obtener certificaciones', 'Liderar proyectos'],points:20}]
 };
 // ============================================
 // SISTEMA DE AVATARES - PERSONAJES
@@ -6461,270 +6546,262 @@ empleabilidad2_dificil:[{type:"multiple_choice",q:"¿Qué indicador mide satisfa
 const avatarCharacters = [
 // GRATUITOS (Iniciales)
 {
-id: 'student_m',
-name: 'Estudiante',
+id: 'chico_sonriente',
+name: 'Chico Sonriente',
 category: 'basico',
 gender: 'male',
 cost: 0,
-description: 'Tu avatar inicial',
+description: 'Tu avatar inicial - Sudadera morada',
 unlocked: true
 },
 {
-id: 'student_f',
-name: 'Estudiante',
+id: 'chica_kawaii',
+name: 'Chica Kawaii',
 category: 'basico',
 gender: 'female',
 cost: 0,
-description: 'Tu avatar inicial',
+description: 'Tu avatar inicial - Estilo anime',
 unlocked: true
 },
 
-// SUPERHÉROES
+// CHICOS SUDADERA
 {
-id: 'hero_cyber',
-name: 'Cyber Hero',
-category: 'superheroe',
+id: 'chico_guino',
+name: 'Chico Guiño',
+category: 'basico',
 gender: 'male',
-cost: 200,
-description: 'Héroe con poderes tecnológicos'
+cost: 50,
+description: 'Haciendo un guiño simpático'
 },
 {
-id: 'hero_thunder',
-name: 'Thunder Woman',
-category: 'superheroe',
-gender: 'female',
-cost: 200,
-description: 'Heroína del trueno'
-},
-{
-id: 'hero_shadow',
-name: 'Shadow Knight',
-category: 'superheroe',
+id: 'chico_feliz',
+name: 'Chico Feliz',
+category: 'basico',
 gender: 'male',
-cost: 250,
-description: 'Guardián de las sombras'
+cost: 50,
+description: 'Siempre de buen humor'
 },
 {
-id: 'hero_phoenix',
-name: 'Phoenix Lady',
-category: 'superheroe',
-gender: 'female',
-cost: 250,
-description: 'Renace de las cenizas'
+id: 'chico_contento',
+name: 'Chico Contento',
+category: 'basico',
+gender: 'male',
+cost: 50,
+description: 'Listo para aprender'
+},
+{
+id: 'chico_wink',
+name: 'Chico Wink',
+category: 'basico',
+gender: 'male',
+cost: 75,
+description: 'El más carismático'
 },
 
-// FANTASÍA - CABALLEROS
+// CHICAS
 {
-id: 'knight_gold',
-name: 'Caballero Dorado',
-category: 'caballero',
-gender: 'male',
-cost: 180,
-description: 'Noble guerrero de armadura dorada'
-},
-{
-id: 'knight_silver',
-name: 'Caballero de Plata',
-category: 'caballero',
-gender: 'male',
-cost: 180,
-description: 'Defensor del reino'
-},
-{
-id: 'knight_dragon',
-name: 'Caballera Dragón',
-category: 'caballero',
+id: 'chica_morena',
+name: 'Chica Morena',
+category: 'basico',
 gender: 'female',
-cost: 220,
-description: 'Domadora de dragones'
+cost: 50,
+description: 'Cabello oscuro elegante'
+},
+{
+id: 'chica_rizos',
+name: 'Chica Rizos',
+category: 'basico',
+gender: 'female',
+cost: 75,
+description: 'Rizos naturales preciosos'
+},
+{
+id: 'chica_coletas',
+name: 'Chica Coletas',
+category: 'basico',
+gender: 'female',
+cost: 50,
+description: 'Coletas adorables'
 },
 
-// FANTASÍA - PRINCESAS/PRÍNCIPES
+// PRINCESAS Y MUÑECAS
 {
-id: 'princess_ice',
-name: 'Princesa del Hielo',
+id: 'princesa_rosa',
+name: 'Princesa Rosa',
 category: 'realeza',
 gender: 'female',
-cost: 200,
-description: 'Gobernante del reino helado'
+cost: 150,
+description: 'Elegante y encantadora'
 },
 {
-id: 'princess_fire',
-name: 'Princesa del Fuego',
+id: 'nina_campo',
+name: 'Niña del Campo',
 category: 'realeza',
 gender: 'female',
-cost: 200,
-description: 'Señora de las llamas'
+cost: 100,
+description: 'Natural y fresca'
 },
 {
-id: 'prince_stars',
-name: 'Príncipe Estelar',
-category: 'realeza',
-gender: 'male',
-cost: 200,
-description: 'Heredero de las estrellas'
-},
-
-// FANTASÍA - HADAS Y ELFOS
-{
-id: 'fairy_forest',
+id: 'hadas_bosque',
 name: 'Hada del Bosque',
 category: 'magico',
 gender: 'female',
-cost: 150,
+cost: 180,
 description: 'Protectora de la naturaleza'
 },
-{
-id: 'fairy_crystal',
-name: 'Hada de Cristal',
-category: 'magico',
-gender: 'female',
-cost: 180,
-description: 'Guardiana de los cristales'
-},
-{
-id: 'elf_archer',
-name: 'Elfo Arquero',
-category: 'magico',
-gender: 'male',
-cost: 170,
-description: 'Maestro del arco élfico'
-},
-{
-id: 'elf_mage',
-name: 'Elfa Maga',
-category: 'magico',
-gender: 'female',
-cost: 170,
-description: 'Sabia de la magia antigua'
-},
 
-// CIENCIA FICCIÓN
+// VIKINGOS Y GUERREROS
 {
-id: 'astronaut',
-name: 'Astronauta',
-category: 'scifi',
-gender: 'neutral',
-cost: 160,
-description: 'Explorador del espacio'
-},
-{
-id: 'robot_friendly',
-name: 'Robot Amigable',
-category: 'scifi',
-gender: 'neutral',
-cost: 180,
-description: 'Androide tecnológico'
-},
-{
-id: 'alien_cool',
-name: 'Alien Genial',
-category: 'scifi',
-gender: 'neutral',
+id: 'vikingo_escudo',
+name: 'Vikingo Escudo',
+category: 'caballero',
+gender: 'male',
 cost: 200,
-description: 'Visitante intergaláctico'
+description: 'Guerrero nórdico valiente'
 },
-
-// PROFESIONES TECH
 {
-id: 'hacker_pro',
-name: 'Hacker Pro',
-category: 'tech',
+id: 'vikingo_casco',
+name: 'Vikingo Casco',
+category: 'caballero',
 gender: 'male',
-cost: 150,
-description: 'Maestro de la seguridad'
+cost: 200,
+description: 'Con casco con cuernos'
 },
 {
-id: 'hacker_girl',
-name: 'Hacker Girl',
-category: 'tech',
-gender: 'female',
-cost: 150,
-description: 'Experta en código'
-},
-{
-id: 'gamer_boy',
-name: 'Gamer Pro',
-category: 'tech',
+id: 'samurai_espada',
+name: 'Samurái',
+category: 'caballero',
 gender: 'male',
-cost: 120,
-description: 'Campeón de esports'
+cost: 250,
+description: 'Maestro de la katana'
 },
 {
-id: 'gamer_girl',
-name: 'Gamer Girl',
-category: 'tech',
-gender: 'female',
-cost: 120,
-description: 'Streamer profesional'
-},
-
-// ANIMALES ANTROPOMORFOS
-{
-id: 'wolf_warrior',
-name: 'Lobo Guerrero',
-category: 'animal',
+id: 'guerrero_rojo',
+name: 'Guerrero Rojo',
+category: 'caballero',
 gender: 'male',
 cost: 220,
-description: 'Líder de la manada'
+description: 'Feroz en batalla'
 },
 {
-id: 'cat_ninja',
-name: 'Gata Ninja',
-category: 'animal',
+id: 'guerrera_katana',
+name: 'Guerrera Katana',
+category: 'caballero',
 gender: 'female',
-cost: 200,
-description: 'Sigilosa y letal'
-},
-{
-id: 'fox_mage',
-name: 'Zorro Mago',
-category: 'animal',
-gender: 'male',
-cost: 190,
-description: 'Astuto hechicero'
-},
-{
-id: 'bunny_hero',
-name: 'Conejita Heroína',
-category: 'animal',
-gender: 'female',
-cost: 180,
-description: 'Rápida y valiente'
+cost: 220,
+description: 'Maestra de artes marciales'
 },
 
-// LEGENDARIOS (Muy caros)
+// ROBOTS Y TECNOLOGÍA
 {
-id: 'dragon_lord',
-name: 'Señor Dragón',
+id: 'robot_azul',
+name: 'Robot Azul',
+category: 'scifi',
+gender: 'neutral',
+cost: 180,
+description: 'Androide futurista'
+},
+{
+id: 'robot_marron',
+name: 'Robot Vintage',
+category: 'scifi',
+gender: 'neutral',
+cost: 150,
+description: 'Estilo retro-futurista'
+},
+{
+id: 'robot_naranja',
+name: 'Robot Naranja',
+category: 'scifi',
+gender: 'neutral',
+cost: 200,
+description: 'Modelo avanzado'
+},
+{
+id: 'maniqui_blanco',
+name: 'Maniquí Digital',
+category: 'scifi',
+gender: 'neutral',
+cost: 120,
+description: 'Avatar minimalista'
+},
+
+// ASTRONAUTAS
+{
+id: 'astronauta_cohete',
+name: 'Astronauta Cohete',
+category: 'scifi',
+gender: 'neutral',
+cost: 180,
+description: 'Explorador espacial'
+},
+{
+id: 'astronauta_casco',
+name: 'Astronauta Casco',
+category: 'scifi',
+gender: 'neutral',
+cost: 200,
+description: 'Listo para la misión'
+},
+
+// FIGURAS ESPECIALES
+{
+id: 'naruto_lego',
+name: 'Ninja Lego',
+category: 'animal',
+gender: 'male',
+cost: 250,
+description: 'Figura de colección'
+},
+{
+id: 'caballero_metal',
+name: 'Caballero Metal',
 category: 'legendario',
 gender: 'male',
-cost: 500,
-description: 'Antiguo y poderoso'
+cost: 300,
+description: 'Armadura brillante'
 },
 {
-id: 'goddess_light',
-name: 'Diosa de la Luz',
+id: 'robot_vintage',
+name: 'Robot Clásico',
 category: 'legendario',
-gender: 'female',
-cost: 500,
-description: 'Ser divino celestial'
+gender: 'neutral',
+cost: 280,
+description: 'De otra época'
 },
 {
-id: 'demon_king',
-name: 'Rey Demonio',
+id: 'astronauta_retro',
+name: 'Astronauta Retro',
+category: 'legendario',
+gender: 'neutral',
+cost: 350,
+description: 'Estilo años 60'
+},
+
+// BUSTOS ARTÍSTICOS
+{
+id: 'busto_mohawk',
+name: 'Busto Mohawk',
 category: 'legendario',
 gender: 'male',
-cost: 500,
-description: 'Gobernante del inframundo'
+cost: 400,
+description: 'Escultura artística'
 },
 {
-id: 'angel_warrior',
-name: 'Ángel Guerrero',
+id: 'busto_serio',
+name: 'Busto Serio',
+category: 'legendario',
+gender: 'male',
+cost: 400,
+description: 'Expresión intensa'
+},
+{
+id: 'maniqui_coletas',
+name: 'Maniquí Coletas',
 category: 'legendario',
 gender: 'female',
-cost: 500,
-description: 'Protectora celestial'
+cost: 350,
+description: 'Arte digital único'
 }
 ];
 
@@ -6741,90 +6818,70 @@ animal: { name: '🐾 Animales', color: '#f97316' },
 legendario: { name: '🌟 Legendarios', color: '#ffd700' }
 };
 
-// Genera el SVG del personaje
-function generateCharacterSVG(characterId) {
-const char = avatarCharacters.find(c => c.id === characterId) || avatarCharacters[0];
-const svgs = {
-// BÁSICOS
-student_m: `<svg viewBox="0 0 120 180"><defs><linearGradient id="shirt1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#3b82f6"/><stop offset="100%" style="stop-color:#1d4ed8"/></linearGradient></defs><ellipse cx="60" cy="60" rx="28" ry="32" fill="#FFE0BD"/><ellipse cx="60" cy="42" rx="25" ry="18" fill="#4a3728"/><ellipse cx="48" cy="58" rx="4" ry="5" fill="#fff"/><ellipse cx="72" cy="58" rx="4" ry="5" fill="#fff"/><circle cx="49" cy="59" r="2" fill="#333"/><circle cx="73" cy="59" r="2" fill="#333"/><path d="M55 75 Q60 80 65 75" fill="none" stroke="#c97878" stroke-width="2"/><rect x="52" y="88" width="16" height="15" fill="#FFE0BD"/><path d="M35 100 L30 170 L90 170 L85 100 Q60 90 35 100" fill="url(#shirt1)"/><path d="M55 105 L55 130 L65 130 L65 105" fill="#1e40af"/></svg>`,
-
-student_f: `<svg viewBox="0 0 120 180"><defs><linearGradient id="dress1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#ec4899"/><stop offset="100%" style="stop-color:#be185d"/></linearGradient></defs><ellipse cx="60" cy="60" rx="28" ry="32" fill="#FFE0BD"/><path d="M32 55 Q30 25 60 20 Q90 25 88 55 L88 80 Q60 85 32 80 Z" fill="#4a3728"/><ellipse cx="48" cy="58" rx="4" ry="5" fill="#fff"/><ellipse cx="72" cy="58" rx="4" ry="5" fill="#fff"/><circle cx="49" cy="59" r="2" fill="#333"/><circle cx="73" cy="59" r="2" fill="#333"/><path d="M52 68 L55 72 L60 70 L65 72 L68 68" fill="none" stroke="#333" stroke-width="1"/><path d="M55 75 Q60 80 65 75" fill="none" stroke="#e879a9" stroke-width="2"/><rect x="52" y="88" width="16" height="15" fill="#FFE0BD"/><path d="M35 100 L25 170 L95 170 L85 100 Q60 90 35 100" fill="url(#dress1)"/></svg>`,
-
-// SUPERHÉROES
-hero_cyber: `<svg viewBox="0 0 120 180"><defs><linearGradient id="cyber1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#00f2ff"/><stop offset="100%" style="stop-color:#0066cc"/></linearGradient><filter id="glow1"><feGaussianBlur stdDeviation="2" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><ellipse cx="60" cy="60" rx="28" ry="32" fill="#FFE0BD"/><path d="M32 50 L35 25 L60 20 L85 25 L88 50 L88 65 L32 65 Z" fill="#1a1a2e"/><rect x="38" y="52" width="44" height="12" rx="3" fill="#111" stroke="#00f2ff" stroke-width="2" filter="url(#glow1)"/><line x1="42" y1="58" x2="78" y2="58" stroke="#00f2ff" stroke-width="2" filter="url(#glow1)"/><path d="M55 75 Q60 78 65 75" fill="none" stroke="#c97878" stroke-width="2"/><rect x="52" y="88" width="16" height="15" fill="#FFE0BD"/><path d="M30 100 L25 170 L95 170 L90 100 Q60 85 30 100" fill="url(#cyber1)"/><path d="M60 100 L60 160" stroke="#00f2ff" stroke-width="3" filter="url(#glow1)"/><circle cx="60" cy="115" r="8" fill="#111" stroke="#00f2ff" stroke-width="2"/></svg>`,
-
-hero_thunder: `<svg viewBox="0 0 120 180"><defs><linearGradient id="thunder1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#fbbf24"/><stop offset="100%" style="stop-color:#f59e0b"/></linearGradient></defs><ellipse cx="60" cy="60" rx="28" ry="32" fill="#FFE0BD"/><path d="M28 55 Q25 20 60 15 Q95 20 92 55 L92 75 Q60 80 28 75 Z" fill="#fbbf24"/><ellipse cx="48" cy="58" rx="4" ry="5" fill="#fff"/><ellipse cx="72" cy="58" rx="4" ry="5" fill="#fff"/><circle cx="49" cy="59" r="2" fill="#1e3a5f"/><circle cx="73" cy="59" r="2" fill="#1e3a5f"/><path d="M55 75 Q60 80 65 75" fill="none" stroke="#e879a9" stroke-width="2"/><rect x="52" y="88" width="16" height="15" fill="#FFE0BD"/><path d="M30 100 L25 170 L95 170 L90 100 Q60 85 30 100" fill="url(#thunder1)"/><path d="M55 110 L65 125 L58 125 L65 145 L50 128 L58 128 Z" fill="#fff"/></svg>`,
-
-hero_shadow: `<svg viewBox="0 0 120 180"><defs><linearGradient id="shadow1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#374151"/><stop offset="100%" style="stop-color:#111827"/></linearGradient></defs><ellipse cx="60" cy="60" rx="28" ry="32" fill="#d4a574"/><path d="M32 55 Q35 30 60 28 Q85 30 88 55" fill="#111"/><path d="M30 50 Q60 40 90 50 L88 68 Q60 72 32 68 Z" fill="#111"/><rect x="38" y="52" width="44" height="10" rx="2" fill="#111"/><ellipse cx="50" cy="57" rx="6" ry="4" fill="#7c3aed"/><ellipse cx="70" cy="57" rx="6" ry="4" fill="#7c3aed"/><rect x="52" y="88" width="16" height="15" fill="#d4a574"/><path d="M28 100 L20 170 L100 170 L92 100 Q60 85 28 100" fill="url(#shadow1)"/><path d="M60 105 L60 155" stroke="#7c3aed" stroke-width="2"/><path d="M45 115 L75 115" stroke="#7c3aed" stroke-width="2"/></svg>`,
-
-hero_phoenix: `<svg viewBox="0 0 120 180"><defs><linearGradient id="phoenix1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#ef4444"/><stop offset="50%" style="stop-color:#f97316"/><stop offset="100%" style="stop-color:#fbbf24"/></linearGradient></defs><ellipse cx="60" cy="60" rx="28" ry="32" fill="#FFE0BD"/><path d="M25 50 Q20 15 60 10 Q100 15 95 50 L95 85 Q60 95 25 85 Z" fill="url(#phoenix1)"/><ellipse cx="48" cy="58" rx="4" ry="5" fill="#fff"/><ellipse cx="72" cy="58" rx="4" ry="5" fill="#fff"/><circle cx="49" cy="59" r="2" fill="#ef4444"/><circle cx="73" cy="59" r="2" fill="#ef4444"/><path d="M55 75 Q60 80 65 75" fill="none" stroke="#e879a9" stroke-width="2"/><rect x="52" y="88" width="16" height="15" fill="#FFE0BD"/><path d="M30 100 L25 170 L95 170 L90 100 Q60 85 30 100" fill="url(#phoenix1)"/><path d="M40 100 L30 80 M60 95 L60 70 M80 100 L90 80" stroke="#fbbf24" stroke-width="3"/></svg>`,
-
-// CABALLEROS
-knight_gold: `<svg viewBox="0 0 120 180"><defs><linearGradient id="gold1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#fbbf24"/><stop offset="100%" style="stop-color:#b45309"/></linearGradient></defs><ellipse cx="60" cy="60" rx="26" ry="30" fill="#FFE0BD"/><path d="M30 55 Q30 20 60 15 Q90 20 90 55 L90 72 L30 72 Z" fill="url(#gold1)"/><rect x="35" y="55" width="50" height="12" fill="#111" opacity="0.8"/><ellipse cx="48" cy="60" rx="3" ry="4" fill="#fff"/><ellipse cx="72" cy="60" rx="3" ry="4" fill="#fff"/><circle cx="48" cy="60" r="2" fill="#333"/><circle cx="72" cy="60" r="2" fill="#333"/><path d="M55 75 Q60 78 65 75" fill="none" stroke="#c97878" stroke-width="2"/><rect x="52" y="85" width="16" height="18" fill="#FFE0BD"/><path d="M25 100 L20 175 L100 175 L95 100 Q60 85 25 100" fill="url(#gold1)"/><rect x="45" y="105" width="30" height="45" fill="#b45309" stroke="#fbbf24" stroke-width="2"/><path d="M60 115 L60 140 M50 125 L70 125" stroke="#fbbf24" stroke-width="3"/></svg>`,
-
-knight_silver: `<svg viewBox="0 0 120 180"><defs><linearGradient id="silver1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#e5e7eb"/><stop offset="100%" style="stop-color:#6b7280"/></linearGradient></defs><ellipse cx="60" cy="60" rx="26" ry="30" fill="#FFE0BD"/><path d="M30 55 Q30 20 60 15 Q90 20 90 55 L90 72 L30 72 Z" fill="url(#silver1)"/><rect x="35" y="55" width="50" height="12" fill="#111" opacity="0.8"/><ellipse cx="48" cy="60" rx="3" ry="4" fill="#fff"/><ellipse cx="72" cy="60" rx="3" ry="4" fill="#fff"/><circle cx="48" cy="60" r="2" fill="#333"/><circle cx="72" cy="60" r="2" fill="#333"/><rect x="52" y="85" width="16" height="18" fill="#FFE0BD"/><path d="M25 100 L20 175 L100 175 L95 100 Q60 85 25 100" fill="url(#silver1)"/><rect x="45" y="105" width="30" height="45" fill="#4b5563" stroke="#e5e7eb" stroke-width="2"/><circle cx="60" cy="125" r="10" fill="#3b82f6" stroke="#e5e7eb" stroke-width="2"/></svg>`,
-
-knight_dragon: `<svg viewBox="0 0 120 180"><defs><linearGradient id="dragon1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#dc2626"/><stop offset="100%" style="stop-color:#7f1d1d"/></linearGradient></defs><ellipse cx="60" cy="60" rx="26" ry="30" fill="#FFE0BD"/><path d="M30 55 Q30 20 60 15 Q90 20 90 55 L90 72 L30 72 Z" fill="url(#dragon1)"/><path d="M30 30 L20 15 L35 25 M90 30 L100 15 L85 25" fill="url(#dragon1)"/><rect x="35" y="55" width="50" height="12" fill="#111" opacity="0.8"/><ellipse cx="48" cy="60" rx="3" ry="4" fill="#fbbf24"/><ellipse cx="72" cy="60" rx="3" ry="4" fill="#fbbf24"/><rect x="52" y="85" width="16" height="18" fill="#FFE0BD"/><path d="M25 100 L20 175 L100 175 L95 100 Q60 85 25 100" fill="url(#dragon1)"/><path d="M50 115 L60 105 L70 115 L60 140 Z" fill="#fbbf24"/></svg>`,
-
-// REALEZA
-princess_ice: `<svg viewBox="0 0 120 180"><defs><linearGradient id="ice1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#e0f2fe"/><stop offset="100%" style="stop-color:#0ea5e9"/></linearGradient></defs><ellipse cx="60" cy="60" rx="28" ry="32" fill="#FFE0BD"/><path d="M25 50 Q20 20 60 15 Q100 20 95 50 L95 85 Q60 90 25 85 Z" fill="#bfdbfe"/><path d="M45 15 L50 5 L55 15 M65 15 L70 5 L75 15 M55 10 L60 0 L65 10" fill="#60a5fa" stroke="#bfdbfe" stroke-width="1"/><ellipse cx="48" cy="58" rx="4" ry="5" fill="#fff"/><ellipse cx="72" cy="58" rx="4" ry="5" fill="#fff"/><circle cx="49" cy="59" r="2" fill="#0ea5e9"/><circle cx="73" cy="59" r="2" fill="#0ea5e9"/><path d="M55 75 Q60 80 65 75" fill="none" stroke="#f9a8d4" stroke-width="2"/><rect x="52" y="88" width="16" height="15" fill="#FFE0BD"/><path d="M30 100 L15 175 L105 175 L90 100 Q60 85 30 100" fill="url(#ice1)"/><path d="M60 105 L50 175 M60 105 L70 175" stroke="#bfdbfe" stroke-width="3"/></svg>`,
-
-princess_fire: `<svg viewBox="0 0 120 180"><defs><linearGradient id="fire1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#fef3c7"/><stop offset="50%" style="stop-color:#f97316"/><stop offset="100%" style="stop-color:#dc2626"/></linearGradient></defs><ellipse cx="60" cy="60" rx="28" ry="32" fill="#FFE0BD"/><path d="M25 50 Q20 20 60 10 Q100 20 95 50 L95 85 Q60 90 25 85 Z" fill="#ef4444"/><path d="M45 15 L48 2 L55 12 M60 10 L60 -2 L65 8 M72 12 L75 2 L80 15" fill="#fbbf24"/><ellipse cx="48" cy="58" rx="4" ry="5" fill="#fff"/><ellipse cx="72" cy="58" rx="4" ry="5" fill="#fff"/><circle cx="49" cy="59" r="2" fill="#dc2626"/><circle cx="73" cy="59" r="2" fill="#dc2626"/><path d="M55 75 Q60 80 65 75" fill="none" stroke="#f9a8d4" stroke-width="2"/><rect x="52" y="88" width="16" height="15" fill="#FFE0BD"/><path d="M30 100 L15 175 L105 175 L90 100 Q60 85 30 100" fill="url(#fire1)"/></svg>`,
-
-prince_stars: `<svg viewBox="0 0 120 180"><defs><linearGradient id="stars1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#1e1b4b"/><stop offset="100%" style="stop-color:#312e81"/></linearGradient></defs><ellipse cx="60" cy="60" rx="28" ry="32" fill="#FFE0BD"/><ellipse cx="60" cy="42" rx="25" ry="18" fill="#1e1b4b"/><path d="M55 18 L60 8 L65 18 L60 15 Z" fill="#fbbf24"/><ellipse cx="48" cy="58" rx="4" ry="5" fill="#fff"/><ellipse cx="72" cy="58" rx="4" ry="5" fill="#fff"/><circle cx="49" cy="59" r="2" fill="#6366f1"/><circle cx="73" cy="59" r="2" fill="#6366f1"/><path d="M55 75 Q60 78 65 75" fill="none" stroke="#c97878" stroke-width="2"/><rect x="52" y="88" width="16" height="15" fill="#FFE0BD"/><path d="M30 100 L25 175 L95 175 L90 100 Q60 85 30 100" fill="url(#stars1)"/><circle cx="45" cy="130" r="2" fill="#fbbf24"/><circle cx="75" cy="120" r="2" fill="#fbbf24"/><circle cx="55" cy="145" r="1.5" fill="#fbbf24"/><circle cx="70" cy="155" r="1.5" fill="#fbbf24"/></svg>`,
-
-// MÁGICOS
-fairy_forest: `<svg viewBox="0 0 120 180"><defs><linearGradient id="forest1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#86efac"/><stop offset="100%" style="stop-color:#16a34a"/></linearGradient></defs><path d="M20 70 Q10 50 30 60 Q25 40 45 55" fill="#86efac" opacity="0.7"/><path d="M100 70 Q110 50 90 60 Q95 40 75 55" fill="#86efac" opacity="0.7"/><ellipse cx="60" cy="60" rx="25" ry="28" fill="#FFE0BD"/><path d="M30 50 Q35 25 60 20 Q85 25 90 50 L88 70 Q60 75 32 70 Z" fill="#16a34a"/><ellipse cx="48" cy="58" rx="4" ry="5" fill="#fff"/><ellipse cx="72" cy="58" rx="4" ry="5" fill="#fff"/><circle cx="49" cy="59" r="2" fill="#16a34a"/><circle cx="73" cy="59" r="2" fill="#16a34a"/><path d="M55 73 Q60 77 65 73" fill="none" stroke="#f9a8d4" stroke-width="2"/><rect x="52" y="85" width="16" height="12" fill="#FFE0BD"/><path d="M35 95 L30 160 L90 160 L85 95 Q60 85 35 95" fill="url(#forest1)"/><path d="M45 100 L40 155 M75 100 L80 155" stroke="#166534" stroke-width="2"/></svg>`,
-
-fairy_crystal: `<svg viewBox="0 0 120 180"><defs><linearGradient id="crystal1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#f0abfc"/><stop offset="50%" style="stop-color:#c084fc"/><stop offset="100%" style="stop-color:#818cf8"/></linearGradient></defs><path d="M15 65 Q5 50 25 58 Q18 35 40 50" fill="#c084fc" opacity="0.6"/><path d="M105 65 Q115 50 95 58 Q102 35 80 50" fill="#c084fc" opacity="0.6"/><ellipse cx="60" cy="60" rx="25" ry="28" fill="#FFE0BD"/><path d="M30 50 Q35 25 60 20 Q85 25 90 50 L88 70 Q60 75 32 70 Z" fill="#e9d5ff"/><ellipse cx="48" cy="58" rx="4" ry="5" fill="#fff"/><ellipse cx="72" cy="58" rx="4" ry="5" fill="#fff"/><circle cx="49" cy="59" r="2" fill="#a855f7"/><circle cx="73" cy="59" r="2" fill="#a855f7"/><path d="M55 73 Q60 77 65 73" fill="none" stroke="#f9a8d4" stroke-width="2"/><rect x="52" y="85" width="16" height="12" fill="#FFE0BD"/><path d="M35 95 L30 160 L90 160 L85 95 Q60 85 35 95" fill="url(#crystal1)"/></svg>`,
-
-elf_archer: `<svg viewBox="0 0 120 180"><defs><linearGradient id="elf1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#065f46"/><stop offset="100%" style="stop-color:#064e3b"/></linearGradient></defs><ellipse cx="60" cy="60" rx="26" ry="30" fill="#f5deb3"/><path d="M25 55 L15 50 L28 58" fill="#f5deb3"/><path d="M95 55 L105 50 L92 58" fill="#f5deb3"/><ellipse cx="60" cy="42" rx="22" ry="16" fill="#fbbf24"/><ellipse cx="48" cy="58" rx="4" ry="5" fill="#fff"/><ellipse cx="72" cy="58" rx="4" ry="5" fill="#fff"/><circle cx="49" cy="59" r="2" fill="#16a34a"/><circle cx="73" cy="59" r="2" fill="#16a34a"/><path d="M55 75 Q60 78 65 75" fill="none" stroke="#c97878" stroke-width="2"/><rect x="52" y="88" width="16" height="15" fill="#f5deb3"/><path d="M30 100 L25 170 L95 170 L90 100 Q60 85 30 100" fill="url(#elf1)"/><path d="M95 60 L110 40 L110 100 L95 80" fill="#8b4513" stroke="#654321" stroke-width="1"/></svg>`,
-
-elf_mage: `<svg viewBox="0 0 120 180"><defs><linearGradient id="elfmage1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#7c3aed"/><stop offset="100%" style="stop-color:#4c1d95"/></linearGradient></defs><ellipse cx="60" cy="60" rx="26" ry="30" fill="#f5deb3"/><path d="M25 55 L15 50 L28 58" fill="#f5deb3"/><path d="M95 55 L105 50 L92 58" fill="#f5deb3"/><path d="M28 50 Q25 15 60 10 Q95 15 92 50 L92 85 Q60 90 28 85 Z" fill="#e9d5ff"/><ellipse cx="48" cy="58" rx="4" ry="5" fill="#fff"/><ellipse cx="72" cy="58" rx="4" ry="5" fill="#fff"/><circle cx="49" cy="59" r="2" fill="#7c3aed"/><circle cx="73" cy="59" r="2" fill="#7c3aed"/><path d="M55 73 Q60 77 65 73" fill="none" stroke="#f9a8d4" stroke-width="2"/><rect x="52" y="85" width="16" height="12" fill="#f5deb3"/><path d="M30 95 L20 170 L100 170 L90 95 Q60 85 30 95" fill="url(#elfmage1)"/><path d="M95 100 L100 60 L105 100" fill="#7c3aed" stroke="#fbbf24" stroke-width="2"/><circle cx="100" cy="60" r="5" fill="#fbbf24"/></svg>`,
-
-// CIENCIA FICCIÓN
-astronaut: `<svg viewBox="0 0 120 180"><defs><linearGradient id="space1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#e5e7eb"/><stop offset="100%" style="stop-color:#9ca3af"/></linearGradient></defs><ellipse cx="60" cy="58" rx="32" ry="36" fill="url(#space1)" stroke="#6b7280" stroke-width="3"/><ellipse cx="60" cy="55" rx="22" ry="24" fill="#1e3a5f"/><ellipse cx="60" cy="55" rx="20" ry="22" fill="#0c4a6e" opacity="0.5"/><ellipse cx="52" cy="52" rx="5" ry="6" fill="#38bdf8" opacity="0.3"/><rect x="50" y="90" width="20" height="15" fill="url(#space1)"/><path d="M25 102 L20 175 L100 175 L95 102 Q60 92 25 102" fill="url(#space1)" stroke="#6b7280" stroke-width="2"/><ellipse cx="40" cy="120" r="8" fill="#ef4444"/><ellipse cx="80" cy="120" r="8" fill="#3b82f6"/><ellipse cx="60" cy="145" r="10" fill="#6b7280"/></svg>`,
-
-robot_friendly: `<svg viewBox="0 0 120 180"><defs><linearGradient id="robot1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#60a5fa"/><stop offset="100%" style="stop-color:#2563eb"/></linearGradient></defs><rect x="35" y="30" width="50" height="55" rx="10" fill="url(#robot1)" stroke="#1d4ed8" stroke-width="2"/><rect x="55" y="15" width="10" height="20" fill="#60a5fa"/><circle cx="60" cy="10" r="5" fill="#fbbf24"/><ellipse cx="48" cy="52" rx="8" ry="10" fill="#111"/><ellipse cx="72" cy="52" rx="8" ry="10" fill="#111"/><circle cx="48" cy="52" r="4" fill="#00f2ff"/><circle cx="72" cy="52" r="4" fill="#00f2ff"/><rect x="45" y="70" width="30" height="8" rx="4" fill="#111"/><rect x="50" y="72" width="5" height="4" fill="#00f2ff"/><rect x="58" y="72" width="5" height="4" fill="#00f2ff"/><rect x="66" y="72" width="5" height="4" fill="#00f2ff"/><rect x="50" y="85" width="20" height="15" fill="#60a5fa"/><rect x="30" y="98" width="60" height="70" rx="5" fill="url(#robot1)" stroke="#1d4ed8" stroke-width="2"/><circle cx="60" cy="130" r="15" fill="#1d4ed8"/><circle cx="60" cy="130" r="10" fill="#60a5fa"/></svg>`,
-
-alien_cool: `<svg viewBox="0 0 120 180"><defs><linearGradient id="alien1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#86efac"/><stop offset="100%" style="stop-color:#22c55e"/></linearGradient></defs><ellipse cx="60" cy="55" rx="35" ry="40" fill="url(#alien1)"/><ellipse cx="45" cy="50" rx="12" ry="18" fill="#111"/><ellipse cx="75" cy="50" rx="12" ry="18" fill="#111"/><ellipse cx="45" cy="50" rx="8" ry="12" fill="#000"/><ellipse cx="75" cy="50" rx="8" ry="12" fill="#000"/><ellipse cx="47" cy="48" rx="3" ry="4" fill="#fff" opacity="0.5"/><ellipse cx="77" cy="48" rx="3" ry="4" fill="#fff" opacity="0.5"/><path d="M50 80 Q60 85 70 80" fill="none" stroke="#166534" stroke-width="2"/><rect x="50" y="92" width="20" height="12" fill="url(#alien1)"/><path d="M35 102 L30 170 L90 170 L85 102 Q60 95 35 102" fill="#6366f1"/><path d="M55 110 L55 160 M65 110 L65 160" stroke="#818cf8" stroke-width="3"/></svg>`,
-
-// TECH
-hacker_pro: `<svg viewBox="0 0 120 180"><defs><linearGradient id="hacker1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#1f2937"/><stop offset="100%" style="stop-color:#111827"/></linearGradient></defs><ellipse cx="60" cy="60" rx="28" ry="32" fill="#FFE0BD"/><ellipse cx="60" cy="42" rx="25" ry="18" fill="#1f2937"/><ellipse cx="32" cy="58" rx="10" ry="12" fill="#1f2937"/><ellipse cx="88" cy="58" rx="10" ry="12" fill="#1f2937"/><path d="M32 46 Q60 38 88 46" fill="none" stroke="#1f2937" stroke-width="8"/><rect x="40" y="52" width="40" height="15" rx="3" fill="#111" stroke="#00f2ff" stroke-width="1"/><line x1="44" y1="59" x2="76" y2="59" stroke="#00f2ff" stroke-width="2"/><path d="M55 78 Q60 82 65 78" fill="none" stroke="#c97878" stroke-width="2"/><rect x="52" y="90" width="16" height="12" fill="#FFE0BD"/><path d="M30 100 L25 170 L95 170 L90 100 Q60 88 30 100" fill="url(#hacker1)"/><text x="60" y="140" text-anchor="middle" fill="#00f2ff" font-family="monospace" font-size="12">&lt;/&gt;</text></svg>`,
-
-hacker_girl: `<svg viewBox="0 0 120 180"><defs><linearGradient id="hackerg1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#1f2937"/><stop offset="100%" style="stop-color:#111827"/></linearGradient></defs><ellipse cx="60" cy="60" rx="28" ry="32" fill="#FFE0BD"/><path d="M28 50 Q25 20 60 15 Q95 20 92 50 L92 80 Q60 85 28 80 Z" fill="#7c3aed"/><ellipse cx="32" cy="58" rx="10" ry="12" fill="#1f2937"/><ellipse cx="88" cy="58" rx="10" ry="12" fill="#1f2937"/><path d="M32 46 Q60 38 88 46" fill="none" stroke="#1f2937" stroke-width="8"/><rect x="40" y="52" width="40" height="15" rx="3" fill="#111" stroke="#a855f7" stroke-width="1"/><line x1="44" y1="59" x2="76" y2="59" stroke="#a855f7" stroke-width="2"/><path d="M55 78 Q60 82 65 78" fill="none" stroke="#f9a8d4" stroke-width="2"/><rect x="52" y="90" width="16" height="12" fill="#FFE0BD"/><path d="M30 100 L25 170 L95 170 L90 100 Q60 88 30 100" fill="url(#hackerg1)"/><text x="60" y="140" text-anchor="middle" fill="#a855f7" font-family="monospace" font-size="12">{...}</text></svg>`,
-
-gamer_boy: `<svg viewBox="0 0 120 180"><defs><linearGradient id="gamer1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#7c3aed"/><stop offset="100%" style="stop-color:#5b21b6"/></linearGradient></defs><ellipse cx="60" cy="60" rx="28" ry="32" fill="#FFE0BD"/><path d="M35 45 Q40 25 60 22 Q80 25 85 45" fill="#1f2937"/><ellipse cx="32" cy="55" rx="12" ry="15" fill="#1f2937"/><ellipse cx="88" cy="55" rx="12" ry="15" fill="#1f2937"/><path d="M32 40 Q60 32 88 40" fill="none" stroke="#1f2937" stroke-width="10"/><ellipse cx="30" cy="55" rx="5" ry="6" fill="#a855f7"/><ellipse cx="90" cy="55" rx="5" ry="6" fill="#a855f7"/><ellipse cx="48" cy="60" rx="4" ry="5" fill="#fff"/><ellipse cx="72" cy="60" rx="4" ry="5" fill="#fff"/><circle cx="49" cy="61" r="2" fill="#333"/><circle cx="73" cy="61" r="2" fill="#333"/><path d="M55 78 Q60 82 65 78" fill="none" stroke="#c97878" stroke-width="2"/><rect x="52" y="90" width="16" height="12" fill="#FFE0BD"/><path d="M30 100 L25 170 L95 170 L90 100 Q60 88 30 100" fill="url(#gamer1)"/><text x="60" y="140" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="14" font-weight="bold">GG</text></svg>`,
-
-gamer_girl: `<svg viewBox="0 0 120 180"><defs><linearGradient id="gamerg1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#ec4899"/><stop offset="100%" style="stop-color:#be185d"/></linearGradient></defs><ellipse cx="60" cy="60" rx="28" ry="32" fill="#FFE0BD"/><path d="M28 50 Q25 20 60 15 Q95 20 92 50 L92 80 Q60 85 28 80 Z" fill="#f472b6"/><ellipse cx="32" cy="55" rx="12" ry="15" fill="#1f2937"/><ellipse cx="88" cy="55" rx="12" ry="15" fill="#1f2937"/><path d="M32 40 Q60 32 88 40" fill="none" stroke="#1f2937" stroke-width="10"/><ellipse cx="30" cy="55" rx="5" ry="6" fill="#ec4899"/><ellipse cx="90" cy="55" rx="5" ry="6" fill="#ec4899"/><ellipse cx="48" cy="60" rx="4" ry="5" fill="#fff"/><ellipse cx="72" cy="60" rx="4" ry="5" fill="#fff"/><circle cx="49" cy="61" r="2" fill="#333"/><circle cx="73" cy="61" r="2" fill="#333"/><path d="M55 78 Q60 82 65 78" fill="none" stroke="#f9a8d4" stroke-width="2"/><rect x="52" y="90" width="16" height="12" fill="#FFE0BD"/><path d="M30 100 L25 170 L95 170 L90 100 Q60 88 30 100" fill="url(#gamerg1)"/><text x="60" y="140" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="14" font-weight="bold">GG</text></svg>`,
-
-// ANIMALES
-wolf_warrior: `<svg viewBox="0 0 120 180"><defs><linearGradient id="wolf1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#6b7280"/><stop offset="100%" style="stop-color:#374151"/></linearGradient></defs><ellipse cx="60" cy="60" rx="30" ry="32" fill="#6b7280"/><path d="M30 45 L20 15 L40 40" fill="#6b7280"/><path d="M90 45 L100 15 L80 40" fill="#6b7280"/><ellipse cx="60" cy="75" rx="15" ry="10" fill="#374151"/><ellipse cx="48" cy="55" rx="6" ry="8" fill="#fbbf24"/><ellipse cx="72" cy="55" rx="6" ry="8" fill="#fbbf24"/><ellipse cx="48" cy="55" rx="3" ry="5" fill="#111"/><ellipse cx="72" cy="55" rx="3" ry="5" fill="#111"/><ellipse cx="60" cy="72" rx="5" ry="3" fill="#111"/><path d="M50 82 Q55 78 60 80 Q65 78 70 82" fill="none" stroke="#111" stroke-width="2"/><rect x="50" y="90" width="20" height="15" fill="#6b7280"/><path d="M25 102 L20 175 L100 175 L95 102 Q60 92 25 102" fill="url(#wolf1)"/><path d="M60 110 L50 102 L60 105 L70 102 Z" fill="#9ca3af"/></svg>`,
-
-cat_ninja: `<svg viewBox="0 0 120 180"><defs><linearGradient id="cat1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#1f2937"/><stop offset="100%" style="stop-color:#111827"/></linearGradient></defs><ellipse cx="60" cy="60" rx="28" ry="30" fill="#1f2937"/><path d="M32 50 L25 20 L42 45" fill="#1f2937"/><path d="M88 50 L95 20 L78 45" fill="#1f2937"/><path d="M28 52 L20 25 L35 48" fill="#fca5a5"/><path d="M92 52 L100 25 L85 48" fill="#fca5a5"/><ellipse cx="48" cy="55" rx="8" ry="10" fill="#22c55e"/><ellipse cx="72" cy="55" rx="8" ry="10" fill="#22c55e"/><ellipse cx="48" cy="55" rx="3" ry="6" fill="#111"/><ellipse cx="72" cy="55" rx="3" ry="6" fill="#111"/><ellipse cx="60" cy="68" rx="4" ry="2" fill="#fca5a5"/><path d="M56 72 L60 76 L64 72" fill="none" stroke="#1f2937" stroke-width="1"/><line x1="35" y1="60" x2="20" y2="55" stroke="#6b7280" stroke-width="1"/><line x1="35" y1="65" x2="20" y2="68" stroke="#6b7280" stroke-width="1"/><line x1="85" y1="60" x2="100" y2="55" stroke="#6b7280" stroke-width="1"/><line x1="85" y1="65" x2="100" y2="68" stroke="#6b7280" stroke-width="1"/><rect x="50" y="88" width="20" height="12" fill="#1f2937"/><path d="M30 98 L25 170 L95 170 L90 98 Q60 88 30 98" fill="url(#cat1)"/><rect x="42" y="55" width="36" height="8" fill="#ef4444" opacity="0.9"/></svg>`,
-
-fox_mage: `<svg viewBox="0 0 120 180"><defs><linearGradient id="fox1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#f97316"/><stop offset="100%" style="stop-color:#c2410c"/></linearGradient></defs><ellipse cx="60" cy="60" rx="28" ry="30" fill="#f97316"/><path d="M32 50 L22 18 L45 45" fill="#f97316"/><path d="M88 50 L98 18 L75 45" fill="#f97316"/><path d="M30 48 L22 22 L40 45" fill="#fef3c7"/><path d="M90 48 L98 22 L80 45" fill="#fef3c7"/><ellipse cx="60" cy="72" rx="18" ry="12" fill="#fef3c7"/><ellipse cx="48" cy="55" rx="5" ry="6" fill="#111"/><ellipse cx="72" cy="55" rx="5" ry="6" fill="#111"/><circle cx="49" cy="54" r="1.5" fill="#fff"/><circle cx="73" cy="54" r="1.5" fill="#fff"/><ellipse cx="60" cy="68" rx="4" ry="2" fill="#111"/><path d="M55 75 Q60 78 65 75" fill="none" stroke="#c97878" stroke-width="1"/><rect x="50" y="88" width="20" height="12" fill="#f97316"/><path d="M30 98 L20 170 L100 170 L90 98 Q60 88 30 98" fill="#4c1d95"/><path d="M95 95 L105 50 L100 95" fill="#7c3aed"/><circle cx="100" cy="50" r="6" fill="#fbbf24"/></svg>`,
-
-bunny_hero: `<svg viewBox="0 0 120 180"><defs><linearGradient id="bunny1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#fdf4ff"/><stop offset="100%" style="stop-color:#f5d0fe"/></linearGradient></defs><ellipse cx="60" cy="65" rx="28" ry="28" fill="#fdf4ff"/><ellipse cx="42" cy="25" rx="10" ry="30" fill="#fdf4ff"/><ellipse cx="78" cy="25" rx="10" ry="30" fill="#fdf4ff"/><ellipse cx="42" cy="25" rx="5" ry="22" fill="#fca5a5"/><ellipse cx="78" cy="25" rx="5" ry="22" fill="#fca5a5"/><ellipse cx="50" cy="60" rx="6" ry="7" fill="#111"/><ellipse cx="70" cy="60" rx="6" ry="7" fill="#111"/><circle cx="52" cy="58" r="2" fill="#fff"/><circle cx="72" cy="58" r="2" fill="#fff"/><ellipse cx="60" cy="72" rx="5" ry="3" fill="#fca5a5"/><path d="M55 78 Q60 82 65 78" fill="none" stroke="#f9a8d4" stroke-width="2"/><rect x="50" y="90" width="20" height="12" fill="#fdf4ff"/><path d="M30 100 L25 170 L95 170 L90 100 Q60 90 30 100" fill="url(#bunny1)"/><path d="M45 105 L40 95 M60 102 L60 90 M75 105 L80 95" stroke="#ec4899" stroke-width="3"/></svg>`,
-
-// LEGENDARIOS
-dragon_lord: `<svg viewBox="0 0 120 180"><defs><linearGradient id="dragonl1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#dc2626"/><stop offset="100%" style="stop-color:#7f1d1d"/></linearGradient><filter id="fire"><feGaussianBlur stdDeviation="1" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><ellipse cx="60" cy="60" rx="30" ry="32" fill="url(#dragonl1)"/><path d="M25 45 L10 25 L18 20 L35 40" fill="#7f1d1d"/><path d="M95 45 L110 25 L102 20 L85 40" fill="#7f1d1d"/><path d="M60 30 L55 15 L60 20 L65 15 L60 30" fill="#fbbf24" filter="url(#fire)"/><ellipse cx="48" cy="55" rx="8" ry="10" fill="#fbbf24"/><ellipse cx="72" cy="55" rx="8" ry="10" fill="#fbbf24"/><ellipse cx="48" cy="55" rx="3" ry="6" fill="#111"/><ellipse cx="72" cy="55" rx="3" ry="6" fill="#111"/><path d="M50 78 L55 72 L60 75 L65 72 L70 78" fill="#111"/><rect x="48" y="90" width="24" height="15" fill="url(#dragonl1)"/><path d="M20 102 L10 175 L110 175 L100 102 Q60 85 20 102" fill="url(#dragonl1)"/><path d="M10 140 L0 120 L20 130 Z" fill="#7f1d1d"/><path d="M110 140 L120 120 L100 130 Z" fill="#7f1d1d"/></svg>`,
-
-goddess_light: `<svg viewBox="0 0 120 180"><defs><linearGradient id="goddess1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#fef3c7"/><stop offset="50%" style="stop-color:#fcd34d"/><stop offset="100%" style="stop-color:#f59e0b"/></linearGradient><filter id="divine"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><circle cx="60" cy="60" r="50" fill="#fef3c7" opacity="0.3" filter="url(#divine)"/><ellipse cx="60" cy="60" rx="28" ry="32" fill="#FFE0BD"/><path d="M20 45 Q15 10 60 5 Q105 10 100 45 L100 85 Q60 95 20 85 Z" fill="#fcd34d"/><path d="M50 10 L55 -5 L60 8 L65 -5 L70 10" fill="#fcd34d"/><ellipse cx="48" cy="58" rx="4" ry="5" fill="#fff"/><ellipse cx="72" cy="58" rx="4" ry="5" fill="#fff"/><circle cx="49" cy="59" r="2" fill="#f59e0b"/><circle cx="73" cy="59" r="2" fill="#f59e0b"/><path d="M55 75 Q60 80 65 75" fill="none" stroke="#f9a8d4" stroke-width="2"/><rect x="52" y="90" width="16" height="12" fill="#FFE0BD"/><path d="M25 100 L10 175 L110 175 L95 100 Q60 88 25 100" fill="url(#goddess1)"/><circle cx="60" cy="135" r="12" fill="#fff" opacity="0.8"/></svg>`,
-
-demon_king: `<svg viewBox="0 0 120 180"><defs><linearGradient id="demon1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#581c87"/><stop offset="100%" style="stop-color:#1e1b4b"/></linearGradient><filter id="evil"><feGaussianBlur stdDeviation="1.5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><ellipse cx="60" cy="60" rx="28" ry="32" fill="#6b21a8"/><path d="M30 50 L15 15 L40 40" fill="#1e1b4b"/><path d="M90 50 L105 15 L80 40" fill="#1e1b4b"/><ellipse cx="48" cy="55" rx="6" ry="8" fill="#111"/><ellipse cx="72" cy="55" rx="6" ry="8" fill="#111"/><ellipse cx="48" cy="55" rx="4" ry="5" fill="#dc2626" filter="url(#evil)"/><ellipse cx="72" cy="55" rx="4" ry="5" fill="#dc2626" filter="url(#evil)"/><path d="M48 72 L52 68 L56 72 L60 68 L64 72 L68 68 L72 72" fill="#fff"/><rect x="50" y="88" width="20" height="15" fill="#6b21a8"/><path d="M20 100 L10 175 L110 175 L100 100 Q60 85 20 100" fill="url(#demon1)"/><path d="M60 110 L55 100 L60 105 L65 100 Z" fill="#dc2626"/><path d="M45 130 L55 125 L50 145 M75 130 L65 125 L70 145" stroke="#dc2626" stroke-width="2"/></svg>`,
-
-angel_warrior: `<svg viewBox="0 0 120 180"><defs><linearGradient id="angel1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#e0f2fe"/><stop offset="100%" style="stop-color:#7dd3fc"/></linearGradient><filter id="holy"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><ellipse cx="60" cy="15" rx="15" ry="5" fill="#fcd34d" filter="url(#holy)"/><path d="M15 90 Q0 50 20 70 Q10 40 35 60" fill="#e0f2fe" opacity="0.9"/><path d="M105 90 Q120 50 100 70 Q110 40 85 60" fill="#e0f2fe" opacity="0.9"/><ellipse cx="60" cy="60" rx="28" ry="32" fill="#FFE0BD"/><path d="M25 50 Q22 20 60 15 Q98 20 95 50 L95 80 Q60 85 25 80 Z" fill="#fef3c7"/><ellipse cx="48" cy="58" rx="4" ry="5" fill="#fff"/><ellipse cx="72" cy="58" rx="4" ry="5" fill="#fff"/><circle cx="49" cy="59" r="2" fill="#0ea5e9"/><circle cx="73" cy="59" r="2" fill="#0ea5e9"/><path d="M55 75 Q60 80 65 75" fill="none" stroke="#f9a8d4" stroke-width="2"/><rect x="52" y="90" width="16" height="12" fill="#FFE0BD"/><path d="M25 100 L15 175 L105 175 L95 100 Q60 88 25 100" fill="url(#angel1)"/><path d="M60 105 L60 165" stroke="#fcd34d" stroke-width="3"/><path d="M45 125 L75 125" stroke="#fcd34d" stroke-width="3"/></svg>`
+// URLs de avatares 3D - ÚNICOS CON NOMBRES DESCRIPTIVOS
+const avatar3DImages = {
+    // CHICOS CON SUDADERA
+    chico_sonriente: 'https://images.unsplash.com/photo-1772371272206-0525c3183ca9?w=300&h=300&fit=crop',
+    chico_guino: 'https://images.unsplash.com/photo-1772371272208-412168748f2a?w=300&h=300&fit=crop',
+    chico_feliz: 'https://images.unsplash.com/photo-1772371272152-d1806d4351e0?w=300&h=300&fit=crop',
+    chico_contento: 'https://images.unsplash.com/photo-1772371272141-0fbd644b65c4?w=300&h=300&fit=crop',
+    chico_wink: 'https://images.unsplash.com/photo-1772371272218-d39eca1efdeb?w=300&h=300&fit=crop',
+    
+    // CHICAS
+    chica_kawaii: 'https://images.unsplash.com/photo-1706694668159-42105c6c99c9?w=300&h=300&fit=crop',
+    chica_morena: 'https://images.unsplash.com/photo-1707396174323-dd31d3dd4a97?w=300&h=300&fit=crop',
+    chica_rizos: 'https://images.unsplash.com/photo-1685286545059-56bfb4c52102?w=300&h=300&fit=crop',
+    chica_coletas: 'https://images.unsplash.com/photo-1677896752000-9c30c8b821cc?w=300&h=300&fit=crop',
+    
+    // MUÑECA / PRINCESA
+    princesa_rosa: 'https://images.unsplash.com/photo-1733765601550-0d79dc6566e2?w=300&h=300&fit=crop',
+    nina_campo: 'https://images.unsplash.com/photo-1631582053308-40f482e7ace5?w=300&h=300&fit=crop',
+    hadas_bosque: 'https://images.unsplash.com/photo-1623412563865-23e5294b2d91?w=300&h=300&fit=crop',
+    
+    // GUERREROS Y CABALLEROS
+    vikingo_escudo: 'https://images.unsplash.com/photo-1650521552329-4a669b69b7b8?w=300&h=300&fit=crop',
+    vikingo_casco: 'https://images.unsplash.com/photo-1650521552472-28ee8c3349b5?w=300&h=300&fit=crop',
+    samurai_espada: 'https://images.unsplash.com/photo-1768268768362-00b5c53bd273?w=300&h=300&fit=crop',
+    guerrero_rojo: 'https://images.unsplash.com/photo-1615038403861-0dd2cd9c4276?w=300&h=300&fit=crop',
+    guerrera_katana: 'https://images.unsplash.com/photo-1615038403732-e6aeebb072f3?w=300&h=300&fit=crop',
+    
+    // ROBOTS Y TECNOLOGÍA  
+    robot_azul: 'https://images.unsplash.com/photo-1657641898365-48ae7d64e676?w=300&h=300&fit=crop',
+    robot_marron: 'https://images.unsplash.com/photo-1614583224978-f05ce51ef5fa?w=300&h=300&fit=crop',
+    robot_naranja: 'https://images.unsplash.com/photo-1639628735078-ed2f038a193e?w=300&h=300&fit=crop',
+    maniqui_blanco: 'https://images.unsplash.com/photo-1747595435884-29c6b5235030?w=300&h=300&fit=crop',
+    
+    // ASTRONAUTAS
+    astronauta_cohete: 'https://images.unsplash.com/photo-1645536908932-652fbd998029?w=300&h=300&fit=crop',
+    astronauta_casco: 'https://images.unsplash.com/photo-1622313762347-3c09fe5f2719?w=300&h=300&fit=crop',
+    
+    // FIGURAS Y LEGO
+    naruto_lego: 'https://images.unsplash.com/photo-1615382249864-a1d7052b1b08?w=300&h=300&fit=crop',
+    caballero_metal: 'https://images.unsplash.com/photo-1599937054672-14f207a40120?w=300&h=300&fit=crop',
+    robot_vintage: 'https://images.unsplash.com/photo-1615382249969-6c318434d964?w=300&h=300&fit=crop',
+    astronauta_retro: 'https://images.unsplash.com/photo-1581822261290-991b38693d1b?w=300&h=300&fit=crop',
+    
+    // BUSTOS ARTISTICOS
+    busto_mohawk: 'https://images.unsplash.com/photo-1743247299142-35028faf885d?w=300&h=300&fit=crop',
+    busto_serio: 'https://images.unsplash.com/photo-1743247299142-76ba40201c5d?w=300&h=300&fit=crop',
+    maniqui_coletas: 'https://images.unsplash.com/photo-1677541829506-2084c4bba14c?w=300&h=300&fit=crop'
 };
 
-return svgs[characterId] || svgs['student_m'];
+// Genera el avatar 3D del personaje
+function generateCharacterSVG(characterId) {
+    // Usar imagen 3D si está disponible
+    if (avatar3DImages[characterId]) {
+        return `<img src="${avatar3DImages[characterId]}" alt="${characterId}" style="width:100%;height:100%;object-fit:cover;border-radius:12px;"/>`;
+    }
+    // Fallback al primer avatar si no existe
+    return `<img src="${avatar3DImages['chico_sonriente']}" alt="avatar" style="width:100%;height:100%;object-fit:cover;border-radius:12px;"/>`;
 }
 
 // Actualiza el avatar en el sidebar
 function updateAvatarDisplay() {
 if (!gameState) return;
 
-const selectedAvatar = gameState.selectedAvatar || 'student_m';
+const selectedAvatar = gameState.selectedAvatar || 'chico_sonriente';
 const avatarContainer = document.getElementById('avatarCharacter');
 if (avatarContainer) {
 avatarContainer.innerHTML = generateCharacterSVG(selectedAvatar);
@@ -7218,7 +7275,6 @@ window.startMatchingGame = () => matchingGame.start();
 // ============================================
 // VERSIÓN COMPLETA PARA GITHUB PAGES
 // ============================================
-// ============================================
 // SISTEMA DE USUARIOS Y AUTENTICACIÓN
 // ============================================
 class UserManager {
@@ -7227,6 +7283,7 @@ this.usersKey = 'smr_quiz_users';
 this.currentUserKey = 'smr_quiz_current_user';
 this.users = this.loadUsers();
 this.currentUser = null;
+this.apiUrl = window.location.origin + '/api';
 }
 loadUsers() {
 try {
@@ -7244,21 +7301,34 @@ localStorage.setItem(this.usersKey, JSON.stringify(this.users));
 console.error('Error al guardar usuarios:', error);
 }
 }
-register(userData) {
-// Validar que el usuario no exista
+async syncUserToBackend(user) {
+try {
+await fetch(this.apiUrl + '/users/sync', {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify({
+username: user.username,
+email: user.email,
+name: user.name,
+gameState: user.gameState
+})
+});
+} catch (e) { /* silently fail */ }
+}
+async loadUserFromBackend(identifier) {
+try {
+const res = await fetch(this.apiUrl + '/users/load?identifier=' + encodeURIComponent(identifier));
+if (res.ok) return await res.json();
+} catch (e) { /* silently fail */ }
+return null;
+}
+async register(userData) {
 if (this.users.some(u => u.username === userData.username)) {
-return {
-success: false,
-error: 'El nombre de usuario ya existe'
-};
+return { success: false, error: 'El nombre de usuario ya existe' };
 }
 if (this.users.some(u => u.email === userData.email)) {
-return {
-success: false,
-error: 'El email ya está registrado'
-};
+return { success: false, error: 'El email ya está registrado' };
 }
-// Crear nuevo usuario
 const newUser = {
 id: Date.now().toString(),
 name: userData.name,
@@ -7268,39 +7338,30 @@ password: this.hashPassword(userData.password),
 createdAt: new Date().toISOString(),
 lastLogin: null,
 gameState: this.createInitialGameState(),
-avatar: {
-initials: this.getInitials(userData.name),
-color: this.getRandomColor()
-}
+avatar: { initials: this.getInitials(userData.name), color: this.getRandomColor() }
 };
 this.users.push(newUser);
 this.saveUsers();
-return {
-success: true,
-user: newUser
-};
+this.syncUserToBackend(newUser);
+return { success: true, user: newUser };
 }
-login(identifier, password) {
-const user = this.users.find(u => u.username === identifier || u.email === identifier);
+async login(identifier, password) {
+let user = this.users.find(u => u.username === identifier || u.email === identifier);
 if (!user) {
-return {
-success: false,
-error: 'Usuario o contraseña incorrectos'
-};
+const backendUser = await this.loadUserFromBackend(identifier);
+if (backendUser && backendUser.password === this.hashPassword(password)) {
+this.users.push(backendUser);
+this.saveUsers();
+user = backendUser;
 }
-const hashedPassword = this.hashPassword(password);
-if (user.password !== hashedPassword) {
-return {
-success: false,
-error: 'Usuario o contraseña incorrectos'
-};
+}
+if (!user) return { success: false, error: 'Usuario o contraseña incorrectos' };
+if (user.password !== this.hashPassword(password)) {
+return { success: false, error: 'Usuario o contraseña incorrectos' };
 }
 user.lastLogin = new Date().toISOString();
 this.saveUsers();
-return {
-success: true,
-user: user
-};
+return { success: true, user: user };
 }
 logout() {
 this.saveCurrentUser();
@@ -9378,38 +9439,125 @@ matrixBg.querySelectorAll('.matrix-rain').forEach(drop => drop.remove());
 // ============================================
 // FUNCIONES DE AUTENTICACIÓN Y JUEGO
 // ============================================
-window.showLoginForm = function(formType) {
-const loginForm = document.getElementById('loginForm');
-const registerForm = document.getElementById('registerForm');
-document.querySelectorAll('.login-tab').forEach(tab => tab.classList.remove('active'));
-if (formType === 'login') {
-loginForm.style.display = 'block';
-registerForm.style.display = 'none';
-document.querySelectorAll('.login-tab')[0].classList.add('active');
-} else {
-loginForm.style.display = 'none';
-registerForm.style.display = 'block';
-document.querySelectorAll('.login-tab')[1].classList.add('active');
+
+// API Base URL - Use current origin for API calls
+const API_BASE_URL = window.location.origin;
+
+async function processOAuthSession(sessionId) {
+    try {
+        console.log('Processing OAuth session:', sessionId);
+        const response = await fetch(`${API_BASE_URL}/api/auth/session?session_id=${sessionId}`, {
+            method: 'GET',
+            credentials: 'include'
+        });
+        
+        console.log('OAuth response status:', response.status);
+        
+        if (response.ok) {
+            const data = await response.json();
+            console.log('OAuth data received:', data);
+            
+            // Store user data and load game
+            const user = data.user;
+            const initials = user.name ? user.name.split(' ').map(n => n[0]).join('').substring(0,2).toUpperCase() : 'US';
+            
+            userManager.currentUser = {
+                id: user.user_id,
+                name: user.name,
+                email: user.email,
+                picture: user.picture,
+                isGoogleUser: true,
+                avatar: {
+                    initials: initials,
+                    color: '#00f2ff'
+                },
+                gameState: userManager.createInitialGameState()
+            };
+            
+            // Load game state from server
+            await loadGameStateFromServer();
+            
+            // Clear the hash and start game
+            window.history.replaceState(null, '', window.location.pathname);
+            startGameSession();
+            showNotification(`¡Bienvenido ${user.name}!`, 'success');
+        } else {
+            const errorText = await response.text();
+            console.error('OAuth error response:', errorText);
+            showNotification('Error al iniciar sesión con Google', 'error');
+        }
+    } catch (error) {
+        console.error('OAuth error:', error);
+        showNotification('Error de conexión: ' + error.message, 'error');
+    }
 }
-};
+
+async function loadGameStateFromServer() {
+    try {
+        const response = await fetch(`${API_BASE_URL}/api/game/state`, {
+            credentials: 'include'
+        });
+        if (response.ok) {
+            const serverState = await response.json();
+            if (userManager.currentUser) {
+                userManager.currentUser.gameState = {
+                    ...userManager.createInitialGameState(),
+                    ...serverState
+                };
+                gameState = userManager.currentUser.gameState;
+            }
+        }
+    } catch (error) {
+        console.error('Error loading game state:', error);
+    }
+}
+
+async function saveGameStateToServer() {
+    if (!userManager.currentUser?.isGoogleUser) return;
+    
+    try {
+        await fetch(`${API_BASE_URL}/api/game/state`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            credentials: 'include',
+            body: JSON.stringify(gameState)
+        });
+    } catch (error) {
+        console.error('Error saving game state:', error);
+    }
+}
+
+// REMINDER: DO NOT HARDCODE THE URL, OR ADD ANY FALLBACKS OR REDIRECT URLS, THIS BREAKS THE AUTH
+function loginWithGoogle() {
+    const redirectUrl = window.location.origin + window.location.pathname;
+    window.location.href = `https://auth.emergentagent.com/?redirect=${encodeURIComponent(redirectUrl)}`;
+}
+
+window.showLoginForm = function(formType) {
+    const loginForm = document.getElementById('loginForm');
+    const registerForm = document.getElementById('registerForm');
+    const tabs = document.querySelectorAll('.login-tab');
+    
+    clearFormErrors();
+    
+    tabs.forEach(tab => tab.classList.remove('active'));
+    
+    if (formType === 'login') {
+        loginForm.style.display = 'block';
+        registerForm.style.display = 'none';
+        if (tabs[0]) tabs[0].classList.add('active');
+    } else {
+        loginForm.style.display = 'none';
+        registerForm.style.display = 'block';
+        if (tabs[1]) tabs[1].classList.add('active');
+    }
 };
 
-document.querySelectorAll('.login-tab').forEach(tab => tab.classList.remove('active'));
-document.querySelectorAll('.login-form').forEach(form => form.classList.remove('active'));
-if (formType === 'login') {
-document.querySelectorAll('.login-tab')[0].classList.add('active');
-document.getElementById('loginForm').classList.add('active');
-} else {
-document.querySelectorAll('.login-tab')[1].classList.add('active');
-document.getElementById('registerForm').classList.add('active');
-}
-clearFormErrors();
-};
 function clearFormErrors() {
-document.querySelectorAll('.form-error').forEach(error => {
-error.classList.remove('show');
-error.textContent = '';
-});
+    document.querySelectorAll('.form-error').forEach(error => {
+        error.classList.remove('show');
+        error.textContent = '';
+    });
 }
 window.showFormError = function(fieldId, message) {
 const errorElement = document.getElementById(fieldId + 'Error');
@@ -9480,11 +9628,11 @@ isValid = false;
 }
 return isValid;
 }
-window.login = function() {
+window.login = async function() {
 if (!validateLoginForm()) return;
 const username = document.getElementById('loginUsername').value.trim();
 const password = document.getElementById('loginPassword').value.trim();
-const result = userManager.login(username, password);
+const result = await userManager.login(username, password);
 if (result.success) {
 userManager.currentUser = result.user;
 gameState = result.user.gameState;
@@ -9494,7 +9642,7 @@ showFormError('loginUsername', result.error);
 showFormError('loginPassword', result.error);
 }
 };
-window.register = function() {
+window.register = async function() {
 if (!validateRegisterForm()) return;
 const userData = {
 name: document.getElementById('registerName').value.trim(),
@@ -9502,16 +9650,16 @@ username: document.getElementById('registerUsername').value.trim(),
 email: document.getElementById('registerEmail').value.trim(),
 password: document.getElementById('registerPassword').value.trim()
 };
-const result = userManager.register(userData);
+const result = await userManager.register(userData);
 if (result.success) {
 userManager.currentUser = result.user;
 gameState = result.user.gameState;
 startGameSession();
 showNotification(`¡Bienvenido ${userData.name}! Tu cuenta ha sido creada exitosamente.`, 'success');
 } else {
-if (result.error.includes('usuario')) showFormError('registerUsername', result.error);
-else if (result.error.includes('email')) showFormError('registerEmail', result.error);
-else showNotification(result.error, 'error');
+if (result.error && result.error.includes('usuario')) showFormError('registerUsername', result.error);
+else if (result.error && result.error.includes('email')) showFormError('registerEmail', result.error);
+else showNotification(result.error || 'Error al registrar', 'error');
 }
 };
 window.logout = function() {
@@ -9613,10 +9761,10 @@ gameState = userManager.currentUser.gameState;
 
 // Inicializar avatares si no existen
 if (!gameState.ownedAvatars) {
-gameState.ownedAvatars = ['student_m', 'student_f'];
+gameState.ownedAvatars = ['chico_sonriente', 'chica_kawaii'];
 }
 if (!gameState.selectedAvatar) {
-gameState.selectedAvatar = 'student_m';
+gameState.selectedAvatar = 'chico_sonriente';
 }
 
 renderLevels();
@@ -9670,8 +9818,13 @@ const config = levelConfig[levelKey];
 const isUnlocked = gameState.unlockedLevels.includes(levelKey);
 const isCompleted = gameState.completedLevels.includes(levelKey);
 const completedCount = isCompleted && questions[levelKey] ? questions[levelKey].length : 0;
+// Determinar clase de dificultad por el nombre del nivel
+let difficultyClass = '';
+if (levelKey.includes('_facil')) difficultyClass = 'level-facil';
+else if (levelKey.includes('_medio')) difficultyClass = 'level-medio';
+else if (levelKey.includes('_dificil')) difficultyClass = 'level-dificil';
 html += `
-<div class="level-card ${isUnlocked ? '' : 'locked'}">
+<div class="level-card ${difficultyClass} ${isUnlocked ? '' : 'locked'}">
 <div class="level-header">
 <div class="level-icon" style="color: ${config.color}">${config.icon}</div>
 <span style="color: ${config.color}; font-size: 12px;">${config.title}</span>
@@ -10001,6 +10154,7 @@ feedback.classList.add('show', 'correct');
 gameState.correctAnswers++;
 } else {
 let correctAnswerText = '';
+let explanation = '';
 if (type === 'text' || type === 'find_error') {
 correctAnswerText = Array.isArray(question.a) ? question.a[0] : (question.errors ? question.errors.join(', ') : 'Ver explicación');
 } else if (type === 'multiple_choice') {
@@ -10014,7 +10168,15 @@ correctAnswerText = question.steps.join(' → ');
 } else if (type === 'match_pairs') {
 correctAnswerText = 'Ver las coincidencias correctas';
 }
-feedback.textContent = `❌ Incorrecto. La respuesta correcta: ${correctAnswerText} (Tiempo: ${timeUsed}s)`;
+// Explicaciones por tipo de pregunta
+if (question.explanation) {
+explanation = question.explanation;
+} else {
+explanation = getAutoExplanation(question, correctAnswerText);
+}
+feedback.innerHTML = `❌ <strong>Incorrecto.</strong><br>
+<span style="color: #00f2ff;">✓ Respuesta correcta:</span> ${correctAnswerText}<br>
+<span style="color: #94a3b8; font-size: 0.9em;">💡 ${explanation}</span>`;
 feedback.classList.add('show', 'incorrect');
 }
 feedback.style.display = 'block';
@@ -10031,6 +10193,31 @@ return text.toLowerCase()
 .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
 .replace(/\s+/g, ' ').trim();
 }
+
+// Genera explicaciones automáticas basadas en la pregunta
+function getAutoExplanation(question, correctAnswer) {
+const q = question.q.toLowerCase();
+// Explicaciones por tema
+if (q.includes('raid')) return 'RAID combina discos para redundancia o rendimiento. RAID 0 es striping, RAID 1 es espejo, RAID 5 usa paridad distribuida.';
+if (q.includes('dhcp')) return 'DHCP asigna IPs automáticamente. El servidor mantiene un pool de direcciones y las arrienda por tiempo limitado.';
+if (q.includes('dns')) return 'DNS traduce nombres de dominio a IPs. Usa registros A (IPv4), AAAA (IPv6), MX (correo), CNAME (alias).';
+if (q.includes('firewall')) return 'El firewall filtra tráfico de red basándose en reglas de puertos, IPs y protocolos.';
+if (q.includes('malware') || q.includes('virus') || q.includes('ransomware')) return 'El malware incluye virus, troyanos, ransomware y spyware. Cada uno tiene comportamientos distintos.';
+if (q.includes('cifrado') || q.includes('aes') || q.includes('rsa')) return 'AES es cifrado simétrico (misma clave). RSA es asimétrico (clave pública/privada).';
+if (q.includes('linux') || q.includes('bash') || q.includes('/etc')) return 'En Linux, los archivos de configuración suelen estar en /etc. Los comandos son case-sensitive.';
+if (q.includes('windows') || q.includes('registro')) return 'El registro de Windows almacena configuración del sistema y aplicaciones en claves jerárquicas.';
+if (q.includes('red') || q.includes('ip') || q.includes('máscara') || q.includes('subred')) return 'Las IPs se dividen en red y host. La máscara determina cuántos bits son para cada parte.';
+if (q.includes('html') || q.includes('css') || q.includes('javascript')) return 'HTML estructura, CSS da estilo, JavaScript añade interactividad a las páginas web.';
+if (q.includes('sql') || q.includes('base de datos')) return 'SQL gestiona bases de datos relacionales. SELECT lee, INSERT añade, UPDATE modifica, DELETE elimina.';
+if (q.includes('active directory') || q.includes('gpo') || q.includes('dominio')) return 'Active Directory centraliza la gestión de usuarios y equipos en redes Windows.';
+if (q.includes('backup') || q.includes('copia')) return 'Los backups protegen datos. Completo copia todo, incremental solo cambios desde el último backup.';
+if (q.includes('virtualización') || q.includes('vm') || q.includes('hypervisor')) return 'La virtualización permite ejecutar múltiples SO en un mismo hardware físico.';
+if (q.includes('puerto') || q.includes('tcp') || q.includes('udp')) return 'TCP es orientado a conexión y fiable. UDP es sin conexión y más rápido pero no garantiza entrega.';
+if (q.includes('cv') || q.includes('currículum') || q.includes('entrevista')) return 'El CV debe ser claro, conciso y adaptado a cada oferta. La entrevista requiere preparación previa.';
+// Genérico
+return `Este concepto es fundamental en SMR. Revisa el tema para comprender mejor la teoría.`;
+}
+
 window.nextQuestion = function() {
 if (!gameState || !gameState.currentLevelQuestions) return;
 gameState.currentQuestion++;
@@ -10121,7 +10308,7 @@ document.querySelectorAll('.nav-tab')[3].classList.add('active');
 // Actualizar preview del avatar
 const avatarPreview = document.getElementById('avatarPreviewFull');
 if (avatarPreview) {
-avatarPreview.innerHTML = generateCharacterSVG(gameState.selectedAvatar || 'student_m');
+avatarPreview.innerHTML = generateCharacterSVG(gameState.selectedAvatar || 'chico_sonriente');
 }
 
 document.getElementById('coinsAvailable').textContent = gameState.coins;
@@ -10258,7 +10445,7 @@ if (!char) return;
 
 if (gameState.coins >= char.cost) {
 gameState.coins -= char.cost;
-if (!gameState.ownedAvatars) gameState.ownedAvatars = ['student_m', 'student_f'];
+if (!gameState.ownedAvatars) gameState.ownedAvatars = ['chico_sonriente', 'chica_kawaii'];
 gameState.ownedAvatars.push(charId);
 gameState.selectedAvatar = charId;
 updateStats();
@@ -10608,6 +10795,14 @@ document.addEventListener('DOMContentLoaded', () => {
 init();
 startMatrixRain();
 NexusAI.init();
+
+// Check for OAuth callback after everything is loaded
+if (window.location.hash?.includes('session_id=')) {
+    const sessionId = window.location.hash.split('session_id=')[1]?.split('&')[0];
+    if (sessionId) {
+        processOAuthSession(sessionId);
+    }
+}
 });
 </script>
 
@@ -10746,6 +10941,7 @@ addBotMessage('Error de conexión. Intenta de nuevo.');
 </script>
 
 <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;7f7b0fd8732c4326aae4b9d58d5c514a&quot;,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous" style="display: none !important;"></script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e93e5717fa81d3b',t:'MTc3NTY3ODgyNQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./SMR Quiz_files/saved_resource.html"></iframe>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e93e5717fa81d3b',t:'MTc3NTY3ODgyNQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./index_files/saved_resource.html"></iframe><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./index_files/saved_resource(1).html"></iframe>
 
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;7f7b0fd8732c4326aae4b9d58d5c514a&quot;,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous" style="display: none !important;"></script>
 </body></html>
